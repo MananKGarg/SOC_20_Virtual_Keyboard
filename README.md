@@ -20,17 +20,17 @@ This project is also a little hardware intensive along with the software part as
 
 ## References
 
-[GitHub Basics](https://guides.github.com/activities/hello-world/)<br>
-[Dual Boot Setup](https://www.youtube.com/watch?v=u5QyjHIYwTQ)<br>
-[Markdown Quickguide](https://www.youtube.com/watch?v=bpdvNwvEeSE)<br>
-[Markdown Extensive Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)<br>
-[Linux Command Line Basics](https://github.com/learnbyexample/Linux_command_line)<br>
-[The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)<br>
-[Linux Commands Cheat Sheet](https://github.com/iamshm/Linux-Unix-Commands/blob/master/Commands.md)<br>
-[Python Resource 1](https://docs.python.org/3/tutorial/)<br>
-[Python Resource 2](https://www.learnpython.org/)<br>
-[Python SciPy](https://scipy-lectures.org/)<br>
-[Python Practice](https://www.hackerrank.com/domains/python)
+* [GitHub Basics](https://guides.github.com/activities/hello-world/)<br>
+* [Dual Boot Setup](https://www.youtube.com/watch?v=u5QyjHIYwTQ)<br>
+* [Markdown Quickguide](https://www.youtube.com/watch?v=bpdvNwvEeSE)<br>
+* [Markdown Extensive Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)<br>
+* [Linux Command Line Basics](https://github.com/learnbyexample/Linux_command_line)<br>
+* [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)<br>
+* [Linux Commands Cheat Sheet](https://github.com/iamshm/Linux-Unix-Commands/blob/master/Commands.md)<br>
+* [Python Resource 1](https://docs.python.org/3/tutorial/)<br>
+* [Python Resource 2](https://www.learnpython.org/)<br>
+* [Python SciPy](https://scipy-lectures.org/)<br>
+* [Python Practice](https://www.hackerrank.com/domains/python)
 
 
 ## Teams
@@ -42,6 +42,26 @@ Team 1 | Team 2 | Team 3 | Team 4 | Team 5 | Team 6 | Team 7
 . |. | . | . |  .  |  .  |  .  |
 . | . | . | . | . | . | . |
 
+
+## Weekly Targets
+
+### Week 1 (23rd March - 29th March)
+
+* Dual Boot your PC and install Ubuntu 18.04 (Recommended but not Necessary).
+* Learn basic use of GitHub (Branching, Forking, Merge, Pull, Push operations).
+* Learn basics of Markdown and make a repository for proper documentation of your progress during the project.
+* Learn using Linux via terminal command lines.
+* Learn Python through the resources given.
+
+# Week 2 (30th March - 5th April)
+
+* Properly document your previous week's progress.
+* Set your hands and get a flow in Python by practicing problems on HackerRank.
+* Formation of teams for upcoming assignment.
+* First assignment on **2nd April**
+* Submission of first assignment by **5th April 11:59 PM**
+
+ 
 
 
 
