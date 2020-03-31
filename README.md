@@ -6,7 +6,7 @@ With OpenCV vision library, it is fast to find the finger outline which is get b
 
 After that, our task would be to fetch programs for individual as well as combination of keys (ex. Shift + any letter = Capital).
 
-This project is also a little hardware intensive along with the software part as proper calibration, correct positioning of different components and code testing needs to be done at various steps. Hardware testing would be done by the mentors and mentees who would be in the insti during the summer vacations. 
+This project is also a little hardware intensive along with the software part as proper calibration, correct positioning of different components and code testing needs to be done at various steps. Hardware testing shall be done by the mentors and mentees who would be in the insti during the summer vacations and the results and changes would be shared with those at home.
 
 
 
