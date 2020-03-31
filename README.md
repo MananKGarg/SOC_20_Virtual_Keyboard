@@ -1,7 +1,7 @@
 # SOC_20 Virtual Keyboard
 
 
-This is a project I'am mentoring along with Parth Laturia (https://github.com/ParthLa) as a part of Seasons of Code, WnCC IITB.
+This is a project I'am mentoring along with Parth Laturia (https://github.com/ParthLa) as a part of Seasons of Code, WnCC IIT Bombay.
 
 ![manan-keyboard](https://user-images.githubusercontent.com/62146744/77977952-75282600-731e-11ea-8af9-4ec8a559eff3.jpeg)
 
