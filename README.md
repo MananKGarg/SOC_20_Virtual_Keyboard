@@ -1,4 +1,4 @@
-# SOC 20 Virtual Keyboard
+# SOC_20 Virtual Keyboard
 
 
 This is a project I'am mentoring along with Parth Laturia (https://github.com/ParthLa) as a part of Seasons of Code, WnCC IIT Bombay.
