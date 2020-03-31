@@ -1,9 +1,11 @@
 # SOC_20 Virtual Keyboard
 
 
-This is a project I'am mentoring along with Parth Laturia (https://github.com/ParthLa) as a part of Seasons of Code, Web and Coding Club IIT Bombay.
+This is a project I'am mentoring along with Parth Laturia (https://github.com/ParthLa) as a part of Seasons of Code, Web and Coding Club, IIT Bombay.<br><br><br>
+
 
 ![manan-keyboard](https://user-images.githubusercontent.com/62146744/77977952-75282600-731e-11ea-8af9-4ec8a559eff3.jpeg)
+
 
 
 ## Project Overview
@@ -29,6 +31,16 @@ This project is also a little hardware intensive along with the software part as
 [Python Resource 2](https://www.learnpython.org/)<br>
 [Python SciPy](https://scipy-lectures.org/)<br>
 [Python Practice](https://www.hackerrank.com/domains/python)
+
+
+## Teams
+
+Team 1 | Team 2 | Team 3 | Team 4 | Team 5 | Team 6 | Team 7
+------------ | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- 
+. | . |. |. |  .  |  .  |  .   |
+. |. | . | . |  .  |  .  |  .  |
+. |. | . | . |  .  |  .  |  .  |
+. | . | . | . | . | . | . |
 
 
 
