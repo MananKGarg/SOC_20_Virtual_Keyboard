@@ -16,6 +16,19 @@ After that, our task would be to fetch programs for individual as well as combin
 
 This project is also a little hardware intensive along with the software part as proper calibration, correct positioning of different components and code testing needs to be done at various steps. Hardware testing shall be done by the mentors and mentees who would be in the insti during the summer vacations and the results and changes would be shared with those at home.
 
+## References
+
+[GitHub Basics](https://guides.github.com/activities/hello-world/)
+[Dual Boot Setup](https://www.youtube.com/watch?v=u5QyjHIYwTQ)
+[Markdown Quickguide](https://www.youtube.com/watch?v=bpdvNwvEeSE)
+[Markdown Extensive Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+[Linux Command Line Basics](https://github.com/learnbyexample/Linux_command_line)
+[The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)
+[Linux Commands Cheat Sheet](https://github.com/iamshm/Linux-Unix-Commands/blob/master/Commands.md)
+[Python Resource 1](https://docs.python.org/3/tutorial/)
+[Python Resource 2](https://www.learnpython.org/)
+[Python SciPy](https://scipy-lectures.org/)
+.
 
 
 
