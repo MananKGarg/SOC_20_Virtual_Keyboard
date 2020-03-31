@@ -42,6 +42,17 @@ Team 1 | Team 2 | Team 3 | Team 4 | Team 5 | Team 6 | Team 7
 . |. | . | . |  .  |  .  |  .  |
 . | . | . | . | . | . | . |
 
+## Leaderboard
+
+Team | Score
+--------- |----------
+.|.|
+.|.|
+.|.|
+.|.|
+.|.|
+.|.|
+.|.|
 
 ## Weekly Targets
 
@@ -53,13 +64,14 @@ Team 1 | Team 2 | Team 3 | Team 4 | Team 5 | Team 6 | Team 7
 * Learn using Linux via terminal command lines.
 * Learn Python through the resources given.
 
-# Week 2 (30th March - 5th April)
+### Week 2 (30th March - 5th April)
 
 * Properly document your previous week's progress.
 * Set your hands and get a flow in Python by practicing problems on HackerRank.
 * Formation of teams for upcoming assignment.
 * First assignment on **2nd April**
 * Submission of first assignment by **5th April 11:59 PM**
+* Score Evaluation and Updation of Leaderboard.
 
  
 
