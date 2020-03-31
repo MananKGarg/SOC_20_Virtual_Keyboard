@@ -46,13 +46,13 @@ Yash Sharda | Tanisha Khandelwal | Vishesh Agarwal | Harsh Kumar | Aditya Vijay 
 
 Team | Score
 --------- |----------
- | |
- | |
- | |
- | |
- | |
- | |
- | |
+ .|. |
+ .|. |
+ .|. |
+ .|. |
+ .|. |
+ .|. |
+ .|. |
 
 ## Weekly Targets
 
