@@ -1,7 +1,10 @@
 # SOC_20 Virtual Keyboard
 
 
-This is a project I'am mentoring along with Parth Laturia (https://github.com/ParthLa) as a part of Seasons of Code, WnCC IIT Bombay.
+This is a project I'am mentoring along with Parth Laturia (https://github.com/ParthLa) as a part of Seasons of Code, WnCC IITB.
+
+![manan-keyboard](https://user-images.githubusercontent.com/62146744/77977952-75282600-731e-11ea-8af9-4ec8a559eff3.jpeg)
+
 
 The project is about making a virtual keyboard that can be projected on any flat surface like a table and then can be used to type in real-time. To start with, we need to program image processing that senses touch at a certain key on the virtual setting of keyboard.This can be achieved by detecting and locating the center position of the light outline to discern and detect the position of finger and then map to keyboard position to achieve relative keyboard key events.
 
