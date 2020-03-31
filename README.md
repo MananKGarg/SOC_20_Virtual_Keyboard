@@ -18,17 +18,19 @@ This project is also a little hardware intensive along with the software part as
 
 ## References
 
-[GitHub Basics](https://guides.github.com/activities/hello-world/)
-[Dual Boot Setup](https://www.youtube.com/watch?v=u5QyjHIYwTQ)
-[Markdown Quickguide](https://www.youtube.com/watch?v=bpdvNwvEeSE)
-[Markdown Extensive Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-[Linux Command Line Basics](https://github.com/learnbyexample/Linux_command_line)
-[The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)
-[Linux Commands Cheat Sheet](https://github.com/iamshm/Linux-Unix-Commands/blob/master/Commands.md)
-[Python Resource 1](https://docs.python.org/3/tutorial/)
-[Python Resource 2](https://www.learnpython.org/)
-[Python SciPy](https://scipy-lectures.org/)
-.
+[GitHub Basics](https://guides.github.com/activities/hello-world/)<br>
+[Dual Boot Setup](https://www.youtube.com/watch?v=u5QyjHIYwTQ)<br>
+[Markdown Quickguide](https://www.youtube.com/watch?v=bpdvNwvEeSE)<br>
+[Markdown Extensive Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)<br>
+[Linux Command Line Basics](https://github.com/learnbyexample/Linux_command_line)<br>
+[The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)<br>
+[Linux Commands Cheat Sheet](https://github.com/iamshm/Linux-Unix-Commands/blob/master/Commands.md)<br>
+[Python Resource 1](https://docs.python.org/3/tutorial/)<br>
+[Python Resource 2](https://www.learnpython.org/)<br>
+[Python SciPy](https://scipy-lectures.org/)<br>
+[Python Practice](https://www.hackerrank.com/domains/python)
+
+
 
 
 
