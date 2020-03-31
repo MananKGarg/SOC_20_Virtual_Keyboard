@@ -8,5 +8,5 @@
 * For submission, every team member has to create a file named as **YourName_Problem_Number.py** in your team's folder.
 * In the markdown file, every team member has to fill their portion of problem description and Solution.
 * You can mutually decide about the meme part :)
-* The main purpose of this assignment is to get you acquainted with the nitty-gritties of basic python and basic markdown. Both will be necessary for us to move further.
+* The main purpose of this assignment is to get you acquainted with the nitty-gritties of basic python and markdown, so if you are stuck, google as much as you can.
 
