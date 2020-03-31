@@ -38,7 +38,7 @@ This project is also a little hardware intensive along with the software part as
 Team 1 | Team 2 | Team 3 | Team 4 | Team 5 | Team 6 | Team 7
 ------------ | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- 
 Aanal Sonara | Paarth Jain | Aashuraj Hassani | Sharvaree Sinkar |  Aashwin Agarwal  | Akshat Vira | Shri Ishwaryaa SV |
-Ankit Kumar Jain | Harshavardhan Ragade | Pavithra | Aayush Shrivastav |  Darin Jeff  | Devansh Saini | Chitesh Wadhwani |
+Ankit Kumar Jain | Harshavardhan Ragade | Pavithra | Aayush Shrivastav |  Darin Jeff  | Devansh Saini | Hitesh Wadhwani |
 Dhanush S | Kritin Agarwal | Sudhansh | Nirmal Shah | Nitin Kumar| Riya Agarwal | Pallavi Kochar |
 Yash Sharda | Tanisha Khandelwal | Vishesh Agarwal | Harsh Kumar | Aditya Vijay Jain | Rushil Kopakka | Yashika Singhal |
 
