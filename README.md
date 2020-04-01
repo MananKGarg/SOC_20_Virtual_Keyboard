@@ -39,7 +39,7 @@ Team 1 | Team 2 | Team 3 | Team 4 | Team 5 | Team 6 | Team 7
 ------------ | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- 
 Aanal Sonara | Paarth Jain | Aashuraj Hassani | Sharvaree Sinkar |  Aashwin Agarwal  | Akshat Vira | Shri Ishwaryaa SV |
 Ankit Kumar Jain | Harshavardhan Ragade | Pavithra | Aayush Shrivastav |  Darin Jeff  | Devansh Saini | Hitesh Wadhwani |
-Dhanush S | Kritin Agarwal | Sudhansh | Nirmal Shah | Nitin Kumar| Riya Agarwal | Pallavi Kochar |
+Dhanush S | Kritin Agarwal | Sudhansh | Nirmal Shah | Bitthal Parida | Riya Agarwal | Pallavi Kochar |
 Yash Sharda | Tanisha Khandelwal | Vishesh Agarwal | Harsh Kumar | Aditya Vijay Jain | Rushil Kopakka | Yashika Singhal |
 
 ## Leaderboard
