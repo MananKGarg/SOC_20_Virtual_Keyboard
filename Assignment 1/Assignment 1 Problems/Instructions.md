@@ -9,7 +9,7 @@
 * Merge your branch into master branch only when you have to finally submit your team's solutions.
 * For submission of python solutions, every team member has to create a file named as **YourName_Problem_Number.py** in your team's folder.
 * Don't pay heed to submission methods written inside the problems. Stick to these set of instructions for submissions.
-* In the markdown file, every team member has to fill their portion of problem description and Solution as shown in specimen1.pdf.
+* Every team has to make a markdown file. In the markdown file, every team member has to fill their portion of problem description and Solution as shown in specimen1.pdf. All the formatting features like linking, tables, blockquotes should be implemented properly.
 * You can mutually decide about the meme part :)
 * The main purpose of this assignment is to get you acquainted with the nitty-gritties of basic python and markdown, so if you are stuck, look into resources in project description or just Google it.
 * Deadline for submission of this assignment is **6th April 11:59 PM**
