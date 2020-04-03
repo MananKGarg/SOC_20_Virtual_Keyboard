@@ -1,13 +1,19 @@
 # Team 1 - Team_name
+
 >Tagline
+
 |Problem Number |Team member |
 |--- |--- |
 |Problem 1 |[Aashuraj Hassani](https://github.com/aashurajhassani "Go to the GitHub profile.") |
 
 ## 1. Aashuraj Hassani
-### -Problem
+
+- Problem
+
 >The problem is basically on the use of lists and dictionaries. We input the stats of each match in a proper format and then contruct and print the dictionary containing all stats in a structured manner, followed by a list containing tuples (name, total-score).
-### -Solution
+
+- Solution
+
 ```
 # getting the number of matches
 while True:
