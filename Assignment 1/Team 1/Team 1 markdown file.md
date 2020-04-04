@@ -74,7 +74,7 @@ print(final_list)
 
 ## Problem 2:
 
-##### The problem is some sort of an Image Processing Technique known which aims at filtering out the Salt and Pepper Noise. Here, we have to undertake a simple manipulative approach in which we simply take the mean of the pixel values across various patches and under certain conditions to try and filter out the noise. In this problem, we are simply asked to write down the function that implements it.
+ The problem is some sort of an Image Processing Technique known which aims at filtering out the Salt and Pepper Noise. Here, we have to undertake a simple manipulative approach in which we simply take the mean of the pixel values across various patches and under certain conditions to try and filter out the noise. In this problem, we are simply asked to write down the function that implements it.
 
 ## Requisites:
 
