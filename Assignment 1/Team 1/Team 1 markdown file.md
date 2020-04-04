@@ -13,20 +13,20 @@
 
 ## Problem 1:
 
- The question is based on a statistics of various cricket matches. We have to then create a dictionary that contains the relevant players and their scores and a list than contains the total score of a player across all matches.
+ The problem is based on the statistics of cricket matches. We have to create a dictionary that contains the relevant info about players and their scores and a sorted list than contains the total score of a player across all matches.
 
 ## Requisites:
 
  * Dictionary
  * List
 
-## Code Insights:
+## Insights:
 
- * The data is stored in the string format.
- * It is then splitted first between matches,then players. 
- * It is then stored in a nested dictionary with player name and the corresponding score.
- * To print the list of players and their total score I made a dictionary with players and their score, if the player name repeated, i added it's score to the original player score in dictionary. Then i converted it to a list.
- * Finally the sorted score list (with respect to the scores and then the player name in the lexicographically decreasing order) is obtained.
+ * The match name and the match info is taken via the input stream as a continuous string.
+ * The string is then splitted by certain delimiters to obtain the match name and the corresponding match info(that comprises the player names and their scores) using the **split()** function.
+ * The overall match info of all the matches is then stored as a nested dictionary.
+ * Then to obtain the list of the players and their total score across all matches, we store the player names and their scores in a dictionary. Whenever a player is already present in the dictionary, the score is added to it's value, else a new key is inserted. The dictionary is then converted to a list.
+ * Finally the sorted score list (with respect to the decreasing scores followed by the player name in the lexicographically decreasing order) is obtained using the **sorted()** function.
 
 ## Code:
 
@@ -74,17 +74,17 @@ print(final_list)
 
 ## Problem 2:
 
- The problem is some sort of an Image Processing Technique known which aims at filtering out the Salt and Pepper Noise. Here, we have to undertake a simple manipulative approach in which we simply take the mean of the pixel values across various patches and under certain conditions to try and filter out the noise. In this problem, we are simply asked to write down the function that implements it.
+ The problem is based on an Image Processing Technique which aims at filtering out the Salt and Pepper Noise. To filter out the noise, we undertake an algorithm that assigns a mean of the intensity values of a pixel across the various patches provided as an input. In this problem, we are simply asked to write down the function that implements it.
 
 ## Requisites:
 
  * Numpy Library
 
-## Code Insights:
+## Insights:
 
- * All the data is stored in an array. 
+ * All the data is stored in a Numpy array.
  * All the intermediate arrays have been initialised to the required values.
- * While iterating over the patches, all these arrays have been modified using the Numpy.where() function that is basically a tool to avoid tedious if..else condtions iterating over the array elements.
+ * While iterating over the patches, all these arrays have been modified using the **Numpy.where()** function that is basically a tool to avoid tedious **(if..else)** statemnets while iterating over the array elements.
  * Finally, for the processed array, the given conditions have been imposed appropriately.
 
 ## Code:
@@ -114,20 +114,20 @@ def reconstruct_from_noisy_patches(input_dict, shape):
 
 ## Problem 4:
 
- This question requires us to write a few functions like :
+ This problem requires us to write a few functions namely:
  * mean-filter - an image processing technique to remove some noise and smoothen the edges of an image.
- * sine wave function - it generates data set for the plotting of a sine wave given relevant arguments.
+ * sine wave function - it generates data set for plotting a sine wave.
  * Gaussian noise addition - To make the data more realistic in some sense.
 
 ## Requisites:
 
  * Numpy Library
 
-## Code Insights:
+## Insights:
 
- * mean-filter - numpy striding and array slicing is used to avoid for loops. Strides are really efficient because they jump into the memory locations directly.
- * sine wave function - numpy sin function is used to apply sine function to every term without explicitly writint the for loop, numpy linspace has been used a generator of equi-spaced floating point numbers.
- * Gaussian noise addition - numpy random has been used to generate random numbers from the normal distribution with specific variance and mean.
+ * mean-filter - numpy striding and array slicing is used to avoid **for** loops. Strides are really efficient because they jump into the memory locations directly.
+ * sine wave function - numpy sin function is used to apply sine function to every element of the array without explicitly writing the **for** loop, **numpy.linspace()** has been used a generator of equi-spaced floating point numbers.
+ * Gaussian noise addition - **numpy.random.normal()** has been used to generate random numbers from the normal distribution with specific variance and mean.
 
 ## Code:
 
