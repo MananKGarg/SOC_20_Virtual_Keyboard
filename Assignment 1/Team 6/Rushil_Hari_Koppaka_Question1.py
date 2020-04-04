@@ -9,7 +9,7 @@ while True :                                                 #getting main dicti
     else:
         match_name_list.append(match_name)
         single_match_dict = {}
-        while True:                                           #getting inside dictionary(individua match)
+        while True:                                           #getting inside dictionary(individual match)
             check=input('to go next match type no else press enter\n')
             if check=='no':
                 break
