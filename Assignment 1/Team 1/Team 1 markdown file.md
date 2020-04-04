@@ -22,30 +22,17 @@ for i in range(n):
         dict1[data[0]]=(sub_dict1)
     sub_dict1={}
 print(dict1)
-list_players=[]
-listt=[]
-for key,value in dict1.items():
-    for keys in value:
-        list_players.append((keys))
-        listt.append((value[keys]))
 
-final_list =[]
-for i in range(len(list_players)):
-    if list_players.count(list_players[i])>1:
-        for j in range(i+1, len(list_players)):
-            if list_players[j]==list_players[i]:
-                listt[i] += listt[j]
-                listt[j]=0
-                list_players[j]=0
-t=list_players.count(0)
-for i in range(t):
-    list_players.remove(0)
-    listt.remove(0)
+final_dict={}
+for key, value in dict1.items():
+    for player in value:
+        if player in final_dict:
+            final_dict[player] += value[player]
+        else:
+            final_dict[player] = value[player]
 
-for i in range(len(listt)):
-    final_list.append((list_players[i],listt[i]))
-
-final_list = sorted(final_list, key = lambda x: x[1], reverse=True)
-print(final_list)
-
-```
+final_list = []
+for key in final_dict:
+    final_list.append((key, final_dict[key]))
+final_list=sorted(final_list, key=lambda x: x[1], reverse=True)
+print(final_list)```
