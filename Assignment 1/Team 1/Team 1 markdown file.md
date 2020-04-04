@@ -5,7 +5,7 @@
 | ----------------- | -----------                                     |
 | Problem 1         |  [Aanal Sonara](https://github.com/Aanal2901)   |
 | Problem 2         |  [Ankit Kumar Jain](https://github.com/akj0811) |
-| Problem 3         |                                                 |
+| Problem 3         |  [Aanal Sonara](https://github.com/Aanal2901)                                              |
 | Problem 4         |  [Ankit Kumar Jain](https://github.com/akj0811) |
 
 
@@ -34,7 +34,7 @@
 n=int(input())
 dict1={}
 sub_dict1={}
-
+import numpy as np
 for i in range(n):
     data=input()
     data=data.split(":")
@@ -53,21 +53,64 @@ for key, value in dict1.items():
             final_dict[player] += value[player]
         else:
             final_dict[player] = value[player]
+data =[('name', 'U10'),('score', int)]
+final_list = np.array(list(final_dict.items()), dtype=data)
+final_list[::-1].sort(order= ['score', 'name'])
 
-final_list = []
-for key in final_dict:
-    final_list.append((key, final_dict[key]))
-final_list=sorted(final_list, key=lambda x: x[1], reverse=True)
-
-for i in range(len(final_list)-1):
-    if final_list[i][1]==final_list[i+1][1]:
-        if final_list[i][0]>final_list[i+1][0]:
-            temp = final_list[i]
-            final_list[i]=final_list[i+1]
-            final_list[i+1]=temp
 print(final_list)
 ```
 
+## Problem 3:
+
+ The problem is based on Image Processing Teachnique and Machine Learning unsupervised learning algorithm K-clustering. In this algorithm the data n clusters are formed of the data. The clusters have a centroid. Thus for segmentation of image, the pixels are given the pxel value of the nearest centroid.
+ 
+## Requisites 
+ * Numpy Library
+ * Matplot Library
+ * PIL Library
+ * Scipy Library
+ 
+ ## Insights:
+  
+  * In the first input we have to give the path of the image. (preferable full path)
+  * The second input is the number of clusters.
+  * The image file is first converted into a 3D array. Each pixel value is a 3D vector. 
+  * To pass it to Kmeans it is converted to a 2D array, where number of rows = total number of pixels, number of columns = 3, each row       representing a vector.
+  * After it is passed into Kmeans, k clusters are formed. The returned values are
+      * (k, 3) sized array, which contains value of all the centroids of all clusters.
+      * 1D array of labels, which the cluster number (or centroid) that pixel is closest to.
+  * The centroid array is converted to int and other pixels are given the values of closest centroid.
+  * The small segmented array is reshaped to original array.
+ ## Code:
+ ```
+ from PIL import Image
+import numpy as np
+path=input()
+#'C:\\Users\\TEMP\\Downloads\\pic1.jpg'
+img = np.array(Image.open(path), np.float)
+
+a = [[[] for i in range(3)] for j in range(img.shape[0]*img.shape[1])]
+
+a =np.reshape(img, (img.shape[0]*img.shape[1], 3))
+
+k = int(input())
+from scipy.cluster.vq import kmeans2
+import matplotlib.pyplot as plt
+(centers), labels = kmeans2(a, k, minit='++')
+
+#print(img)
+
+centers = np.uint8(centers)
+labels =labels.flatten()
+seg_img = centers[labels]
+
+seg_img = np.reshape(seg_img, img.shape)
+print(seg_img.shape)
+Image.open()
+
+plt.imshow(seg_img)
+plt.show()
+```
 
 
 # 2. Ankit Kumar Jain
