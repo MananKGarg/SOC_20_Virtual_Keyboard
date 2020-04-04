@@ -13,7 +13,7 @@ TeamName
 
 
 # 1. Rushil Koppaka
- ---
+
  ## - Problem
 	 > Put the description here
 
@@ -58,7 +58,7 @@ print(s2)
 ```
 
 # 2. Akshat Vira
- ---
+ 
  ## - Problem
 	 > Put the description here
 
@@ -70,7 +70,7 @@ print(s2)
 
 
 # 3. Devansh Saini
- ---
+ 
  ## - Problem
 	 > Put the description here
 
@@ -82,7 +82,7 @@ print(s2)
 
 
 # 4. Riya Agrawal
- ---
+ 
  ## - Problem
 	 > Put the description here
 
