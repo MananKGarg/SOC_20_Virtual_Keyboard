@@ -89,7 +89,8 @@ def reconstruct_from_noisy_patches(input_dict, shape):
         mid_total[tlr:brr, tlc:brc] += val
 
     #if mid_count != 0 final value is total/count
-    mid_total = np.where(mid_count == 0, mid_total, np.divide(mid_total, mid_count))
+    #mid_total = np.where(mid_count == 0, mid_total, np.divide(mid_total, mid_count))
+    mid_total = np.divide(mid_total, mid_count + (mid_count == 0))
     #if mid_count is 0 & white>black put 255 else put 0
     mid_total = np.where(mid_count == 0, np.where(white_count >= black_count, 255, 0), mid_total)
 
