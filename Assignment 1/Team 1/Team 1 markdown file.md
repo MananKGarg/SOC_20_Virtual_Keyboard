@@ -13,20 +13,20 @@
 
 ## Problem 1:
 
-##### The question is based on a statistics of various cricket matches. We have to then create a dictionary that contains the relevant players and their scores and a list than contains the total score of a player across all matches.
+ The question is based on a statistics of various cricket matches. We have to then create a dictionary that contains the relevant players and their scores and a list than contains the total score of a player across all matches.
 
 ## Requisites:
 
-##### * Dictionary
-##### * List
+ * Dictionary
+ * List
 
 ## Code Insights:
 
-##### * The data is stored in the string format.
-##### * It is then splitted first between matches,then players. 
-##### * It is then stored in a nested dictionary with player name and the corresponding score.
-##### * To print the list of players and their total score I made a dictionary with players and their score, if the player name repeated, i added it's score to the original player score in dictionary. Then i converted it to a list.
-##### * Finally the sorted score list (with respect to the scores and then the player name in the lexicographically decreasing order) is obtained.
+ * The data is stored in the string format.
+ * It is then splitted first between matches,then players. 
+ * It is then stored in a nested dictionary with player name and the corresponding score.
+ * To print the list of players and their total score I made a dictionary with players and their score, if the player name repeated, i added it's score to the original player score in dictionary. Then i converted it to a list.
+ * Finally the sorted score list (with respect to the scores and then the player name in the lexicographically decreasing order) is obtained.
 
 ## Code:
 
@@ -78,14 +78,14 @@ print(final_list)
 
 ## Requisites:
 
-##### * Numpy Library
+ * Numpy Library
 
 ## Code Insights:
 
-##### * All the data is stored in an array. 
-##### * All the intermediate arrays have been initialised to the required values.
-##### * While iterating over the patches, all these arrays have been modified using the Numpy.where() function that is basically a tool to avoid tedious if..else condtions iterating over the array elements.
-##### * Finally, for the processed array, the given conditions have been imposed appropriately.
+ * All the data is stored in an array. 
+ * All the intermediate arrays have been initialised to the required values.
+ * While iterating over the patches, all these arrays have been modified using the Numpy.where() function that is basically a tool to avoid tedious if..else condtions iterating over the array elements.
+ * Finally, for the processed array, the given conditions have been imposed appropriately.
 
 ## Code:
 
