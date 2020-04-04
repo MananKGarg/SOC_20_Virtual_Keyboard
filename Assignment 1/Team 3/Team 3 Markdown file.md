@@ -14,7 +14,7 @@
 
 - Solution
 
-```
+```python
 # getting the number of matches
 while True:
        try:
