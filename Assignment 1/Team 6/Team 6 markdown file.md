@@ -19,6 +19,6 @@ TeamName
 
 - Solution
 
-```
-def func
+```python
+
 ```
