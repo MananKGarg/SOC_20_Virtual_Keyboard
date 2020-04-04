@@ -1,6 +1,5 @@
 # Team Name
 ## Tagline
----
 
 | Problem Number    | Team Member |
 | ----------------- | ----------- |
