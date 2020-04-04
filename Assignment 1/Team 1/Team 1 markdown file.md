@@ -35,4 +35,13 @@ final_list = []
 for key in final_dict:
     final_list.append((key, final_dict[key]))
 final_list=sorted(final_list, key=lambda x: x[1], reverse=True)
-print(final_list)```
+
+for i in range(len(final_list)-1):
+    if final_list[i][1]==final_list[i+1][1]:
+        if final_list[i][0]>final_list[i+1][0]:
+            temp = final_list[i]
+            final_list[i]=final_list[i+1]
+            final_list[i+1]=temp
+print(final_list)
+
+```
