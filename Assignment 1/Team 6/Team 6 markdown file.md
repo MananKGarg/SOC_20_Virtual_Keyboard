@@ -12,12 +12,12 @@ TeamName
 
 
 
-#1. Rushil Koppaka
+# 1. Rushil Koppaka
  ---
- - Problem
+ ## - Problem
 	 > Put the description here
 
-- Solution
+## - Solution
 
 ```python
 match_name_list=[]                                          #initialising lists
@@ -57,36 +57,36 @@ s2=sorted(s,key= lambda x:x[1],reverse=True)                        #sorting acc
 print(s2)
 ```
 
-##2. Akshat Vira
+# 2. Akshat Vira
  ---
- - Problem
+ ## - Problem
 	 > Put the description here
 
-- Solution
+## - Solution
 
 ```python
 
 ```
 
 
-##3. Devansh Saini
+# 3. Devansh Saini
  ---
- - Problem
+ ## - Problem
 	 > Put the description here
 
-- Solution
+## - Solution
 
 ```python
 
 ```
 
 
-##4. Riya Agrawal
+# 4. Riya Agrawal
  ---
- - Problem
+ ## - Problem
 	 > Put the description here
 
-- Solution
+## - Solution
 
 ```python
 
