@@ -12,7 +12,7 @@ TeamName
 
 
 
- 1. **Rushil Koppaka**
+##1. Rushil Koppaka
  ---
  - Problem
 	 > Put the description here
@@ -55,4 +55,39 @@ s=sorted(scorecard,reverse=True)                                    #sorting nam
 s2=sorted(s,key= lambda x:x[1],reverse=True)                        #sorting according to runs scored
 
 print(s2)
+```
+
+##2. Akshat Vira
+ ---
+ - Problem
+	 > Put the description here
+
+- Solution
+
+```python
+
+```
+
+
+##3. Devansh Saini
+ ---
+ - Problem
+	 > Put the description here
+
+- Solution
+
+```python
+
+```
+
+
+##4. Riya Agrawal
+ ---
+ - Problem
+	 > Put the description here
+
+- Solution
+
+```python
+
 ```
