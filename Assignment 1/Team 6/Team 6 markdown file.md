@@ -12,7 +12,7 @@ TeamName
 
 
 
-##1. Rushil Koppaka
+#1. Rushil Koppaka
  ---
  - Problem
 	 > Put the description here
