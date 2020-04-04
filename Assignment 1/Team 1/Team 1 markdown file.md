@@ -1,12 +1,12 @@
 # Team Name
 ## Tagline
 
-| Problem Number    | Team Member |
-| ----------------- | ----------- |
-| Problem 1         |             |
-| Problem 2         |             |
-| Problem 3         |             |
-| Problem 4         |             |
+| Problem Number    | Team Member                                     |
+| ----------------- | -----------                                     |
+| Problem 1         |  [Aanal Sonara](https://github.com/Aanal2901)   |
+| Problem 2         |  [Ankit Kumar Jain](https://github.com/akj0811) |
+| Problem 3         |                                                 |
+| Problem 4         |                                                 |
 
 
 # 1. Aanal Sonara
