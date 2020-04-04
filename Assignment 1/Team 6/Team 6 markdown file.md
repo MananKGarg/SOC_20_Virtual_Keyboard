@@ -14,10 +14,10 @@ TeamName
 
 # 1. Rushil Koppaka
 
- ## - Problem
+ ## Problem
 	 > Put the description here
 
-## - Solution
+## Solution
 
 ```python
 match_name_list=[]                                          #initialising lists
@@ -59,10 +59,10 @@ print(s2)
 
 # 2. Akshat Vira
  
- ## - Problem
+ ## Problem
 	 > Put the description here
 
-## - Solution
+## Solution
 
 ```python
 
@@ -71,10 +71,10 @@ print(s2)
 
 # 3. Devansh Saini
  
- ## - Problem
+ ## Problem
 	 > Put the description here
 
-## - Solution
+## Solution
 
 ```python
 
@@ -83,10 +83,10 @@ print(s2)
 
 # 4. Riya Agrawal
  
- ## - Problem
+ ## Problem
 	 > Put the description here
 
-## - Solution
+## Solution
 
 ```python
 
