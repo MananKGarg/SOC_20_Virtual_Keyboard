@@ -6,7 +6,7 @@
 | Problem 1         |  [Aanal Sonara](https://github.com/Aanal2901)   |
 | Problem 2         |  [Ankit Kumar Jain](https://github.com/akj0811) |
 | Problem 3         |                                                 |
-| Problem 4         |                                                 |
+| Problem 4         |  [Ankit Kumar Jain](https://github.com/akj0811) |
 
 
 # 1. Aanal Sonara
@@ -111,3 +111,48 @@ def reconstruct_from_noisy_patches(input_dict, shape):
     M = np.where(a == 0, a, M)
     return M
 ```
+
+## Problem 4:
+
+ This question requires us to write a few functions like :
+ * mean-filter - an image processing technique to remove some noise and smoothen the edges of an image.
+ * sine wave function - it generates data set for the plotting of a sine wave given relevant arguments.
+ * Gaussian noise addition - To make the data more realistic in some sense.
+
+## Requisites:
+
+ * Numpy Library
+
+## Code Insights:
+
+ * mean-filter - numpy striding and array slicing is used to avoid for loops. Strides are really efficient because they jump into the memory locations directly.
+ * sine wave function - numpy sin function is used to apply sine function to every term without explicitly writint the for loop, numpy linspace has been used a generator of equi-spaced floating point numbers.
+ * Gaussian noise addition - numpy random has been used to generate random numbers from the normal distribution with specific variance and mean.
+
+## Code:
+
+```python
+import numpy as np
+from numpy.lib.stride_tricks import as_strided
+
+def mean_filter(arr, k):
+    n = len(arr)
+    new  = np.empty([n+2*k])
+    new[k:n+k] = arr[:]
+    new[:k] = arr[::-1][-k:]
+    new[n+k:n+2*k] = arr[::-1][:k]
+    stride = new.strides[0]
+    temp = as_strided(new, shape=(n,2*k+1), strides=(stride, stride))
+    result = np.sum(temp, axis = 1)
+    return result/(2*k+1)
+
+def generate_sine_wave(period, range_, num):
+    a = 2*np.pi/period
+    x = np.linspace(range_[0], range_[1], num)
+    return np.sin(a*x)
+
+def noisify(array, var):
+    result = array + np.random.normal(0, np.sqrt(var), len(array))
+    return result
+```
+
