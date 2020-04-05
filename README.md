@@ -70,7 +70,7 @@ Team | Score
 * Set your hands and get a flow in Python by practicing problems on HackerRank.
 * Formation of teams for upcoming assignment.
 * First assignment on **2nd April**
-* Submission of first assignment by **5th April 11:59 PM**
+* Submission of first assignment by **6th April 11:59 PM**
 * Score Evaluation and Updation of Leaderboard.
 
  
