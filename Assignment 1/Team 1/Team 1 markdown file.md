@@ -26,8 +26,8 @@
  * The match name and the match info is taken via the input stream as a continuous string.
  * The string is then splitted by certain delimiters to obtain the match name and the corresponding match info(that comprises the player names and their scores) using the **[split()](https://www.geeksforgeeks.org/python-string-split/)** function.
  * The overall match info of all the matches is then stored as a nested dictionary.
- * Then to obtain the list of the players and their total score across all matches, we store the player names and their scores in a dictionary. Whenever a player is already present in the dictionary, the score is added to it's value, else a new key is inserted. The dictionary is then converted to a list.
- * Finally the sorted score list (with respect to the decreasing scores followed by the player name in the lexicographically decreasing order) is obtained using the **[sorted()](https://www.geeksforgeeks.org/sorted-function-python/)** function.
+ * Then to obtain the list of the players and their total score across all matches, player names and their scores are stored in a dictionary. Whenever a key(player) is already present in the dictionary, the score is added to the corresponding value, else a new key is inserted. The dictionary is then converted to a list.
+ * Finally the sorted score list (with respect to the decreasing scores and then by the player name in the lexicographically decreasing order) is obtained using the **[sorted()](https://www.geeksforgeeks.org/sorted-function-python/)** function.
 
 ## Code:
 
@@ -64,7 +64,7 @@ print(final_list)
 
 ## Problem 3:
 
- The problem is based on an Image Processing and Machine Learning - Unsupervised learning algorithm K Means Clustering. In this algorithm, **k** clusters are formed out of the data. Each cluster has it's centroid. Thus for segmentation of the image, the pixels are assigned the pixel value of the nearest (minimum Euclidean Distance) centroid.
+ The problem is based on an Image Processing and Machine Learning - Unsupervised learning algorithm K Means Clustering. In this algorithm, **k** clusters are formed out of the data. Each cluster has it's own centroid. For segmentation of the image, the pixels are assigned the pixel value of the nearest (minimum Euclidean Distance) centroid.
  
 ## Requisites 
  * [Numpy Library](https://numpy.org/devdocs/user/quickstart.html)
@@ -76,13 +76,13 @@ print(final_list)
  * The path of the image is given as an input. (preferably the full path)
  * The number of clusters is the second input.
  * The image file is first converted into a 3D array. Each pixel value is a 3D vector of RGB values.
- * To pass it to Kmeans++ it is converted to a 2D array of shape (toal number of pixels, 3) where each row represents a vector of RGB values.
- * After it is passed into **[kmeans++](https://www.geeksforgeeks.org/ml-k-means-algorithm/)**, **k** clusters are formed. The return values of the function are - 
+ * To pass it to Kmeans++ function as an argument, it is converted to a 2D array of shape (total number of pixels, 3) where each row represents a vector of RGB values.
+ * **[kmeans++](https://www.geeksforgeeks.org/ml-k-means-algorithm/)** forms **k** clusters out of the data. The return values of the function are - 
     * (k, 3) sized array, which contains pixel value of the centroid of all the clusters.
     * 1D array of labels, which gives the index of the centroid the pixel is closest to.
- * The centroid array is then converted to **int** and other pixels are given the pixel values of closest centroid.
- * The small segmented array is reshaped to original array.
- * Then, the final image is then generated from the resulting array using the **[fromarray](https://stackoverflow.com/questions/2659312/how-do-i-convert-a-numpy-array-to-and-display-an-image)** function.
+ * The centroid array is then typecasted to **int** and other pixels are given the pixel values of closest centroid.
+ * The small segmented array is reshaped to original array using the **[reshape](https://docs.scipy.org/doc/numpy/reference/generated/numpy.reshape.html)** function.
+ * The final image is then generated from the resulting array using the **[fromarray](https://stackoverflow.com/questions/2659312/how-do-i-convert-a-numpy-array-to-and-display-an-image)** function.
 
 ## Code:
 
@@ -112,7 +112,7 @@ new_img.save('new1.png')
 
 ## Problem 2:
 
- The problem is based on an Image Processing Technique which aims at filtering out the Salt and Pepper Noise. To filter out the noise, we undertake an algorithm that assigns a mean of the intensity values of a pixel across the various patches provided as an input. In this problem, we are simply asked to write down the function that implements it.
+ The problem is based on an Image Processing Technique which aims at filtering out the Salt and Pepper Noise. To filter out the noise, we undertake an algorithm that assigns a mean of the intensity values of a pixel across the various patches provided as input. In this problem, we are simply asked to write down the function that implements it.
 
 ## Requisites:
 
@@ -121,9 +121,9 @@ new_img.save('new1.png')
 ## Insights:
 
  * All the data is stored in a Numpy array.
- * All the intermediate arrays have been initialised to the required values.
- * While iterating over the patches, all these arrays have been modified using the **[Numpy.where()](https://docs.scipy.org/doc/numpy/reference/generated/numpy.where.html)** function that is basically a tool to avoid tedious **(if..else)** statemnets while iterating over the array elements.
- * Finally, for the processed array, the given conditions have been imposed appropriately.
+ * All the intermediate arrays are initialised to the required values.
+ * While iterating over the patches, all these arrays are modified using the **[Numpy.where()](https://docs.scipy.org/doc/numpy/reference/generated/numpy.where.html)** function that is basically a tool to avoid tedious **(if..else)** statemnets while iterating over the array elements.
+ * Finally, for the processed array, the given conditions are imposed appropriately.
 
 ## Code:
 
@@ -155,7 +155,7 @@ def reconstruct_from_noisy_patches(input_dict, shape):
  This problem requires us to write a few functions, namely:
  * mean-filter - an image processing technique to remove some noise and smoothen the edges of an image.
  * sine wave function - it generates data set for plotting a sine wave.
- * Gaussian noise addition - To make the data more realistic in some sense.
+ * Gaussian noise addition - to make the data more realistic in some sense.
 
 ## Requisites:
 
@@ -163,7 +163,7 @@ def reconstruct_from_noisy_patches(input_dict, shape):
 
 ## Insights:
 
- * mean-filter - numpy striding and array slicing is used to avoid **for** loops. Strides are really efficient because they jump into the memory locations directly.
+ * mean-filter - numpy **[stride tricks](https://docs.scipy.org/doc/numpy-1.15.1/reference/generated/numpy.lib.stride_tricks.as_strided.html)** and **[array slicing](https://stackoverflow.com/questions/509211/understanding-slice-notation)** is used to avoid **for** loops. Strides are really efficient because they jump into the memory locations directly.
  * sine wave function - numpy sin function is used to apply sine function to every element of the array without explicitly writing the **for** loop, **[numpy.linspace()](https://www.geeksforgeeks.org/numpy-linspace-python/)** has been used a generator of equi-spaced floating point numbers.
  * Gaussian noise addition - **[numpy.random.normal()](https://docs.scipy.org/doc/numpy-1.15.0/reference/generated/numpy.random.normal.html)** is used to generate random numbers from the normal distribution with specific variance and mean.
 
@@ -193,4 +193,5 @@ def noisify(array, var):
     result = array + np.random.normal(0, np.sqrt(var), len(array))
     return result
 ```
+
 
