@@ -4,9 +4,9 @@ TeamName
 > Tagline(Yet to do decided)
 
 |Problem Number | Team Member |
-| --- | --- |
+| --------- | --------------- |
 | Problem 1 | [Rushil Koppaka]() |
-| Problem 2 | [Akshat Vira]() |
+| Problem 2 | [Akshat Vira](https://github.com/ViraAkshat) |
 | Problem 3 | [Devansh Saini]() |
 | Problem 4 | [Riya Agrawal]() |
 
