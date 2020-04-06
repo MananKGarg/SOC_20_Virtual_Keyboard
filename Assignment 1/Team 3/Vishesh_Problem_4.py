@@ -32,7 +32,7 @@ def generate_sin_wave(period, range_,num):
 
 
 def noisify(array, var):
-	return np.random.normal(0,var,1000)
+	return np.random.normal(0,var,len(clean_sin))
 
 
 noise=noisify(clean_sin,var)
