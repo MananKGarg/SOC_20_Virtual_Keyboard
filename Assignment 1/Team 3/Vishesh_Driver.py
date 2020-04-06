@@ -12,30 +12,9 @@ x=[]
 clean_sin=[]
 dirty_sin=[]
 
-def generate_sin_wave(period, range_,num):
-	a=range_[0]
-	b=range_[1]
-	d=(b-a)/(num-1)
-	i=1
-	while (i<=num):
-		p= a+ (i-1)*d
-		q=math.sin(6.28*p/period)
-		x.append(p)
-		clean_sin.append(q)
-		i=i+1
-
-	return x,clean_sin
-
-
-def noisify(array, var):
-	return np.random.normal(0,var,1000)
-
-	
 generate_sin_wave(period,range_,num)
 
 
-noise=noisify(clean_sin,var)
-dirty_sin=clean_sin+noise
 
 
 print(clean_sin)
@@ -51,6 +30,12 @@ plt.show()
 
 plt.plot(x,dirty_sin,color = 'red', marker = "o")  
 plt.title("dirty_sin")  
+plt.xlabel("X")  
+plt.ylabel("Y")  
+plt.show() 
+cleared_sin=mean_filter(dirty_sin,1)
+plt.plot(x,cleared_sin,color = 'red', marker = "o")  
+plt.title("cleared_sin")  
 plt.xlabel("X")  
 plt.ylabel("Y")  
 plt.show() 
