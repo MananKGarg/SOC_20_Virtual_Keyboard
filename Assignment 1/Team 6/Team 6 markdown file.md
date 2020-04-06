@@ -263,4 +263,4 @@ plt.show()
 
 ---
 
-![Meme](meme.jpeg | 203x248, 100%)
+![Meme](meme.jpeg|203x248, 100%)
