@@ -1,4 +1,4 @@
-# Team 3 - Team_name
+# Team 3 
 
 >Tagline
 
@@ -153,3 +153,4 @@ for x in range(size[0]):
 	for y in range(size[1]):
 		pic[x,y] = tuple(data[x*size[1]+y]) 
 ```
+![meme](https://scontent.fhyd13-1.fna.fbcdn.net/v/t1.0-9/92665420_1049775758742141_7293480417141719040_n.jpg?_nc_cat=106&_nc_sid=825194&_nc_ohc=YfbjBa8NLqsAX9QnPhq&_nc_ht=scontent.fhyd13-1.fna&oh=9b6781d8e51a71aab75cab5f5971aa42&oe=5EAF7EEE)
