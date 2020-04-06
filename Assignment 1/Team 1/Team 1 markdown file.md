@@ -1,11 +1,11 @@
-# Team Name
-## Tagline
+# Runtime Terror
+## We do it for the cookies
 
-| Problem Number    | Team Member                                     |
-| ----------------- | -----------                                     |
+| Problem Number    |                   Team Member                   |
+| ----------------- | ----------------------------------------------- |
 | Problem 1         |  [Aanal Sonara](https://github.com/Aanal2901)   |
 | Problem 2         |  [Ankit Kumar Jain](https://github.com/akj0811) |
-| Problem 3         |                                                 |
+| Problem 3         |  [Aanal Sonara](https://github.com/Aanal2901)   |
 | Problem 4         |  [Ankit Kumar Jain](https://github.com/akj0811) |
 
 
@@ -13,79 +13,114 @@
 
 ## Problem 1:
 
- The question is based on a statistics of various cricket matches. We have to then create a dictionary that contains the relevant players and their scores and a list than contains the total score of a player across all matches.
+ The problem is based on the statistics of cricket matches. We have to create a dictionary that contains the relevant info about players and their scores and a sorted list than contains the total score of a player across all matches.
 
 ## Requisites:
 
- * Dictionary
- * List
+ * [Dictionary](https://www.geeksforgeeks.org/python-dictionary/)
+ * [List](https://www.geeksforgeeks.org/python-list/)
+ * [String](https://www.geeksforgeeks.org/python-strings/)
 
-## Code Insights:
+## Insights:
 
- * The data is stored in the string format.
- * It is then splitted first between matches,then players. 
- * It is then stored in a nested dictionary with player name and the corresponding score.
- * To print the list of players and their total score I made a dictionary with players and their score, if the player name repeated, i added it's score to the original player score in dictionary. Then i converted it to a list.
- * Finally the sorted score list (with respect to the scores and then the player name in the lexicographically decreasing order) is obtained.
+ * The match name and the match info is taken via the input stream as a continuous string.
+ * The string is then splitted by certain delimiters to obtain the match name and the corresponding match info(that comprises the player names and their scores) using the **[split()](https://www.geeksforgeeks.org/python-string-split/)** function.
+ * The overall match info of all the matches is then stored as a nested dictionary.
+ * Then to obtain the list of the players and their total score across all matches, player names and their scores are stored in a dictionary. Whenever a key(player) is already present in the dictionary, the score is added to the corresponding value, else a new key is inserted. The dictionary is then converted to a list.
+ * Finally the sorted score list (with respect to the decreasing scores and then by the player name in the lexicographically decreasing order) is obtained using the **[sorted()](https://www.geeksforgeeks.org/sorted-function-python/)** function.
 
 ## Code:
 
 ```python
+import numpy as np
+
 n=int(input())
 dict1={}
-sub_dict1={}
-
+final_dict={}
 for i in range(n):
     data=input()
+    sub_dict1={}
     data=data.split(":")
     data[1]=data[1].split(',')
     for j in range(len(data[1])):
         data[1][j]=data[1][j].split('-')
         sub_dict1[data[1][j][0]]=int(data[1][j][1])
         dict1[data[0]]=(sub_dict1)
-    sub_dict1={}
+        if data[1][j][0] in final_dict:
+            final_dict[data[1][j][0]] += int(data[1][j][1])
+        else:
+            final_dict[data[1][j][0]] = int(data[1][j][1])
 print(dict1)
 
-final_dict={}
-for key, value in dict1.items():
-    for player in value:
-        if player in final_dict:
-            final_dict[player] += value[player]
-        else:
-            final_dict[player] = value[player]
+data =[('name', 'U10'),('score', int)]
+final_list = np.array(list(final_dict.items()), dtype=data)
+final_list[::-1].sort(order= ['score', 'name'])
 
-final_list = []
-for key in final_dict:
-    final_list.append((key, final_dict[key]))
-final_list=sorted(final_list, key=lambda x: x[1], reverse=True)
-
-for i in range(len(final_list)-1):
-    if final_list[i][1]==final_list[i+1][1]:
-        if final_list[i][0]>final_list[i+1][0]:
-            temp = final_list[i]
-            final_list[i]=final_list[i+1]
-            final_list[i+1]=temp
-print(final_list)
+print(list(final_list))
 ```
 
+## Problem 3:
+
+ The problem is based on an Image Processing and Machine Learning - Unsupervised learning algorithm K Means Clustering. In this algorithm, **k** clusters are formed out of the data. Each cluster has it's own centroid. For segmentation of the image, the pixels are assigned the pixel value of the nearest (minimum Euclidean Distance) centroid.
+ 
+## Requisites 
+ * [Numpy Library](https://numpy.org/devdocs/user/quickstart.html)
+ * [PIL Library](https://pillow.readthedocs.io/en/stable/)
+ * [Scipy Library](https://scipy-lectures.org/intro/scipy.html)
+ 
+## Insights:
+  
+ * The path of the image is given as an input. (preferably the full path)
+ * The number of clusters is the second input.
+ * The image file is first converted into a 3D array. Each pixel value is a 3D vector of RGB values.
+ * To pass it to Kmeans++ function as an argument, it is converted to a 2D array of shape (total number of pixels, 3) where each row represents a vector of RGB values.
+ * **[kmeans++](https://www.geeksforgeeks.org/ml-k-means-algorithm/)** forms **k** clusters out of the data. The return values of the function are - 
+    * (k, 3) sized array, which contains pixel value of the centroid of all the clusters.
+    * 1D array of labels, which gives the index of the centroid the pixel is closest to.
+ * The centroid array is then typecasted to **int** and other pixels are given the pixel values of closest centroid.
+ * The small segmented array is reshaped to original array using the **[reshape](https://docs.scipy.org/doc/numpy/reference/generated/numpy.reshape.html)** function.
+ * The final image is then generated from the resulting array using the **[fromarray](https://stackoverflow.com/questions/2659312/how-do-i-convert-a-numpy-array-to-and-display-an-image)** function.
+
+## Code:
+
+```python
+from PIL import Image
+import numpy as np
+from scipy.cluster.vq import kmeans2
+
+path = input()
+k = int(input())
+
+img = np.array(Image.open(path), np.float)
+a = np.reshape(img, (-1, 3))
+centers, labels = kmeans2(a, k, minit='++')
+
+centers = np.uint8(centers)
+
+seg_img = centers[labels]
+seg_img = np.reshape(seg_img, img.shape)
+
+new_img = Image.fromarray(seg_img, 'RGB')
+new_img.save('new1.png')
+```
 
 
 # 2. Ankit Kumar Jain
 
 ## Problem 2:
 
- The problem is some sort of an Image Processing Technique known which aims at filtering out the Salt and Pepper Noise. Here, we have to undertake a simple manipulative approach in which we simply take the mean of the pixel values across various patches and under certain conditions to try and filter out the noise. In this problem, we are simply asked to write down the function that implements it.
+ The problem is based on an Image Processing Technique which aims at filtering out the Salt and Pepper Noise. To filter out the noise, we undertake an algorithm that assigns a mean of the intensity values of a pixel across the various patches provided as input. In this problem, we are simply asked to write down the function that implements it.
 
 ## Requisites:
 
- * Numpy Library
+ * [Numpy Library](https://numpy.org/devdocs/user/quickstart.html)
 
-## Code Insights:
+## Insights:
 
- * All the data is stored in an array. 
- * All the intermediate arrays have been initialised to the required values.
- * While iterating over the patches, all these arrays have been modified using the Numpy.where() function that is basically a tool to avoid tedious if..else condtions iterating over the array elements.
- * Finally, for the processed array, the given conditions have been imposed appropriately.
+ * All the data is stored in a Numpy array.
+ * All the intermediate arrays are initialised to the required values.
+ * While iterating over the patches, all these arrays are modified using the **[Numpy.where()](https://docs.scipy.org/doc/numpy/reference/generated/numpy.where.html)** function that is basically a tool to avoid tedious **(if..else)** statemnets while iterating over the array elements.
+ * Finally, for the processed array, the given conditions are imposed appropriately.
 
 ## Code:
 
@@ -114,20 +149,20 @@ def reconstruct_from_noisy_patches(input_dict, shape):
 
 ## Problem 4:
 
- This question requires us to write a few functions like :
+ This problem requires us to write a few functions, namely:
  * mean-filter - an image processing technique to remove some noise and smoothen the edges of an image.
- * sine wave function - it generates data set for the plotting of a sine wave given relevant arguments.
- * Gaussian noise addition - To make the data more realistic in some sense.
+ * sine wave function - it generates data set for plotting a sine wave.
+ * Gaussian noise addition - to make the data more realistic in some sense.
 
 ## Requisites:
 
- * Numpy Library
+ * [Numpy Library](https://numpy.org/devdocs/user/quickstart.html)
 
-## Code Insights:
+## Insights:
 
- * mean-filter - numpy striding and array slicing is used to avoid for loops. Strides are really efficient because they jump into the memory locations directly.
- * sine wave function - numpy sin function is used to apply sine function to every term without explicitly writint the for loop, numpy linspace has been used a generator of equi-spaced floating point numbers.
- * Gaussian noise addition - numpy random has been used to generate random numbers from the normal distribution with specific variance and mean.
+ * mean-filter - numpy **[stride tricks](https://docs.scipy.org/doc/numpy-1.15.1/reference/generated/numpy.lib.stride_tricks.as_strided.html)** and **[array slicing](https://stackoverflow.com/questions/509211/understanding-slice-notation)** is used to avoid **for** loops. Strides are really efficient because they jump into the memory locations directly.
+ * sine wave function - numpy sin function is used to apply sine function to every element of the array without explicitly writing the **for** loop, **[numpy.linspace()](https://www.geeksforgeeks.org/numpy-linspace-python/)** has been used a generator of equi-spaced floating point numbers.
+ * Gaussian noise addition - **[numpy.random.normal()](https://docs.scipy.org/doc/numpy-1.15.0/reference/generated/numpy.random.normal.html)** is used to generate random numbers from the normal distribution with specific variance and mean.
 
 ## Code:
 
@@ -155,4 +190,7 @@ def noisify(array, var):
     result = array + np.random.normal(0, np.sqrt(var), len(array))
     return result
 ```
+---
+
+![LOL - Meme](https://user-images.githubusercontent.com/55907159/78553875-abd2d480-7827-11ea-8b65-fc257aff1965.jpeg)
 
