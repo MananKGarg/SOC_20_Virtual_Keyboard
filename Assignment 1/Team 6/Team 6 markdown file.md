@@ -5,10 +5,10 @@ TeamName
 
 |Problem Number | Team Member |
 | --------- | --------------- |
-| Problem 1 | [Rushil Koppaka](https://github.com/rushilkoppaka) |
+| Problem 1 | [Rushil Koppaka]() |
 | Problem 2 | [Akshat Vira](https://github.com/ViraAkshat) |
-| Problem 3 | [Devansh Saini](https://github.com/DevanshSaini18/hello-world) |
-| Problem 4 | [Riya Agrawal](https://github.com/Riyaagrawal2001) |
+| Problem 3 | [Devansh Saini]() |
+| Problem 4 | [Riya Agrawal]() |
 
 
 
@@ -114,7 +114,11 @@ def reconstruct_from_noisy_patches(input_dict, shape):
 # 3. Devansh Saini
  
  ## Problem
-- Put the description here
+ - Basically an image consists of pixels each having different values of Red,blue and green .My task requires to scan all the    RGB composition values , store and then apply modifications on it to make it suitable  to perform kmeans++ algorithm on it.
+
+- After getting label and centroid lists, make a new list in which values of RGB are inserted as per algorithm.
+
+- Finally create a new image from the new list of pixels.
 
 ## Solution
 
