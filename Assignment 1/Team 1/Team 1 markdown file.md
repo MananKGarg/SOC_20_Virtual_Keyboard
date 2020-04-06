@@ -1,4 +1,4 @@
-# Runtime Terror
+# Buffer Mindhogs
 ## We do it for the cookies
 
 | Problem Number    |                   Team Member                   |
