@@ -7,7 +7,7 @@ ___
 |:--------------|:-------------------------------------------:|
 |*Problem 1*    |[Darin Jeff](https://github.com/DarinJeff)   |
 |*Problem 2*    |[Darin Jeff](https://github.com/DarinJeff)   |
-|*Problem 3*    |                                             |
+|*Problem 3*    |[Darin Jeff](https://github.com/DarinJeff)   |
 |*Problem 4*    |                                             |
 
 ## 1. Darin Jeff
@@ -83,7 +83,36 @@ def reconstruct_from_noisy_patches(input_dict, shape):
     
     return image
 ```
+____
+
+## 3. Darin Jeff
+---
+* #####  **Problem**
+    >Making mundane images look cool by coloring patches the colors of their corresponding centroids
+* #####  **Solution**
+```python
+import numpy as np
+import scipy
+from scipy.cluster.vq import kmeans2
+from PIL import Image
+from matplotlib import image
+from matplotlib import pyplot
+
+def make_cool(inp, k):
+    image_array = np.array(Image.open(inp), np.float)                               #convert image to array
+    image_array1 = image_array.reshape((-1,3))                                      #flatten the array
+    
+    centers, labels = kmeans2(image_array1, k, minit='++')                          #obtain kmeans centers and labels
+    centers = np.uint8(centers)
+    
+    output_array = centers[labels].reshape(image_array.shape)                       #build our output array
+    
+    output = Image.fromarray(output_array, 'RGB')                                   #conver our array to an image
+    output.save('pic1.png')                                                         #save our image
+```
 
 ____
+
+
 
 ![Le Meme](https://i.imgflip.com/11fjj7.jpg)
