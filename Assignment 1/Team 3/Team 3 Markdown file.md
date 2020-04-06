@@ -6,7 +6,7 @@
 |--- |--- |
 |Problem 1 |[Aashuraj Hassani](https://github.com/aashurajhassani "Go to the GitHub profile.") |
 |Problem 2 |[Sudhansh](https://github.com/Sudhansh6) |
-|Problem 3 | |
+|Problem 3 | [Pavithra]( https://github.com/PavithraB10) |
 |Problem 4 |[Vishesh Agarwal](https://github.com/Vishesh2k01) |
 
 ## 1. Aashuraj Hassani
@@ -121,7 +121,7 @@ def reconstruct_from_noisy_patches(input_dict, shape):
 	return picture
 ```
 
-## 3.
+## 3. Pavithra
 
 - Problem
 
