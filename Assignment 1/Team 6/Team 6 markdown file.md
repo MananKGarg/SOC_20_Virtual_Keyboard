@@ -263,4 +263,4 @@ plt.show()
 
 ---
 
-![Meme](meme.jpeg)
+<img src = "meme.jpeg" width = 300>
