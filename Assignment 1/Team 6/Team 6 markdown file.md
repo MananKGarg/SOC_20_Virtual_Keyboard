@@ -204,6 +204,7 @@ im2.save(outputpath)
 # 4. Riya Agrawal
  
  ## Problem
+- Gaussian noise is statistical noise having probability distribution function equal to that of normal distribution, also     known as gaussian distribution. In simple words, the values that noise can take on are gaussian distributed. 
 - My task was to first generate a sin wave and than add gaussian noise to it with mean zero and particular variance and Then   we filter that wave to reduce noise.
 - Functions are defined using numpy and then we plot a sine wave with specific parameters.
 - Finally the plots depicts the difference.
