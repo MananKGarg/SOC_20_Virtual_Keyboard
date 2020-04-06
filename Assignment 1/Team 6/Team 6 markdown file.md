@@ -263,4 +263,4 @@ plt.show()
 
 ---
 
-<img src = "meme.jpeg" width = 350 align=center>
+<img src = "meme.jpeg" width = 350>
