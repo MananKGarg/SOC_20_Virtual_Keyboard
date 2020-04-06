@@ -144,7 +144,12 @@ reconstruct_from_noisy_patches(test[1][0],test[1][1])  #using appropriate indice
 # 4. Tanisha Khandelwal
 
 * ## Problem
-  >Short Description
+  >in this problem we need to create three functions-
+mean_filter-creates a floating array of a 1d array given kernel size
+generate_sine_wave- generates an array having samples of sine wave
+noisify-adds gaussian noise with zero mean and variance to array
+ 
+using created functions we create another function driver with given conditions
 
 * ## Solution
 ```python
