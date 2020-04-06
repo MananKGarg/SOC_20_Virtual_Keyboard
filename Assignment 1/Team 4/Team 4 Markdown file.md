@@ -81,7 +81,7 @@ def reconstruct_from_noisy_patches(input_dict, shape):
  
 ## 3. Harsh Kumar
 * __Problem__
-    >Problem is mainly reading a image in an array then change that array using *KMeans++* and then change that array back into a image.
+    >Problem is mainly reading a image in array, it will take the image, apply k-means++ algorithm on its pixels and replace each           pixel by the centroid of the group of its pixel and save the constructed image back.
     
 * __Solution__
 ```python
@@ -92,9 +92,9 @@ import matplotlib.pyplot as plt
 from scipy.cluster import vq
 
 parser = argparse.ArgumentParser()  		#to read command line Arguments
-parser.add_argument('--input')
-parser.add_argument('--k', type=int)
-parser.add_argument('--output')
+parser.add_argument('--input')			#
+parser.add_argument('--k', type=int)		#
+parser.add_argument('--output')			#
 args = parser.parse_args()
 
 img = mpimg.imread(args.input).astype(float) 	# read the image as numpy array
@@ -106,7 +106,7 @@ if not np.all(t):
     img = img/255  				#if not divide by 255
 
 
-(r, c, ch) = img.shape   
+(r, c, ch) = img.shape   			#
 img1 = img.reshape(r*c, ch)			#reshape the array to 2D array
 
 try:
@@ -114,8 +114,8 @@ try:
 except Exception as e:
 	centroid, label = vq.kmeans2(img1, args.k)  #when minit="++" is not appropriate for the given inputs
 
-img1 = centroid[label]
-img1 = img1.reshape(r, c, 3)
+img1 = centroid[label]				#
+img1 = img1.reshape(r, c, 3)			#
 plt.imshow(img1)  				# create image from the array
 plt.savefig(args.output)			#save the image at the desired place
 # plt.show()
