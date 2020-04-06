@@ -15,7 +15,7 @@ TeamName
 # 1. Rushil Koppaka
 
  ## Problem
-	 > Put the description here
+ - Put the description here
 
 ## Solution
 
@@ -63,9 +63,9 @@ print(s2)
 # 2. Akshat Vira
  
  ## Problem
- - Images often contain noises. One such noise is Salt & Pepper noise in which some pixels get corrupted with a certain probability, into either black or white.
+ - The problem requires us to reconstruct an image based on information of its patches whilst minimising the noise while reconstructing the image.
 
-- The problem requires us to reconstruct an image based on information of its patches whilst minimising the noise while reconstructing the image.
+- Images often contain various noises, Salt & Pepper noise is one such noise. Due to this noise, some pixels get corrupted with a certain probability, into either black or white.
 
 - This can be achieved by following an algorithm and applying it to each pixel location of image.
 
@@ -113,7 +113,7 @@ def reconstruct_from_noisy_patches(input_dict, shape):
 # 3. Devansh Saini
  
  ## Problem
-	 > Put the description here
+- Put the description here
 
 ## Solution
 
@@ -125,7 +125,7 @@ def reconstruct_from_noisy_patches(input_dict, shape):
 # 4. Riya Agrawal
  
  ## Problem
-	 > Put the description here
+- Put the description here
 
 ## Solution
 
