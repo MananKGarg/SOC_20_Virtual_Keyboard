@@ -6,6 +6,9 @@
 |--- |--- |
 |Problem 1 |[Aashuraj Hassani](https://github.com/aashurajhassani "Go to the GitHub profile.") |
 |Problem 2 |[Sudhansh](https://github.com/Sudhansh6) |
+|Problem 3 | |
+|Problem 4 |[Vishesh Agarwal](https://github.com/Vishesh2k01) |
+
 ## 1. Aashuraj Hassani
 
 - Problem
@@ -76,10 +79,13 @@ player_total.sort(key=lambda pair:pair[1], reverse=True) # now finally sorting i
 print(player_total)
 ```
 ## 2. Sudhansh
+
 - Problem 
+
 > The problem tests our understanding of the python and numpy library. An array consisting of patches(having intensity at each pixel) of a picture is taken as input. The data is analysed and the picture is put together using the algorithm. The numpy library is used to work out the calculations and the final array having the intensities in the picture is returned.
+
 - Solution
-> 
+ 
 ```python
 import numpy as np
 
@@ -114,11 +120,15 @@ def reconstruct_from_noisy_patches(input_dict, shape):
 	
 	return picture
 ```
+
 ## 3.
+
 - Problem
+
 > The problem requires the use of SciPy(KMeans) and NumPy libraries. It also involves using loops and functions from pillow to edit the given image.
+
 - Solution
->
+
 ```python
 import os, sys
 from PIL import Image
@@ -153,4 +163,55 @@ for x in range(size[0]):
 	for y in range(size[1]):
 		pic[x,y] = tuple(data[x*size[1]+y]) 
 ```
+
+## 4. Vishesh Agarwal
+
+- Problem
+
+> In this problem, three functions are to be created (mean_filter, generate_sign_wave, noisify) which will be used in driver.py.
+
+- Solution
+
+```python
+import numpy as np
+import math
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def mean_filter(a,k):
+	
+	l = len(a)
+	b = np.zeros(l)
+	k1 = a[k-1:0:-1]+[a[0]]		#[a[0]]*a[0]
+	k2 = a[l:l-k-1:-1]		#[a[l-1]]*a[l-1]
+	a_ = np.array(k1+a+k2)
+	b = np.around(list(map(lambda i:np.average(a_[i-k:i+k+1]),range(k,k+l))),1)
+	return b
+
+
+# mean_filter([1,2,3,4,5,6,7,8,9],2)
+
+def generate_sin_wave(period, range_,num):
+	a=range_[0]
+	b=range_[1]
+	d=(b-a)/(num-1)
+	i=1
+	while (i<=num):
+		p= a+ (i-1)*d
+		q=math.sin(6.28*p/period)
+		x.append(p)
+		clean_sin.append(q)
+		i=i+1
+
+	return x,clean_sin
+
+
+def noisify(array, var):
+	return np.random.normal(0,var,1000)
+
+
+noise=noisify(clean_sin,var)
+dirty_sin=clean_sin+noise
+```
+
 ![meme](https://scontent.fhyd13-1.fna.fbcdn.net/v/t1.0-9/92665420_1049775758742141_7293480417141719040_n.jpg?_nc_cat=106&_nc_sid=825194&_nc_ohc=YfbjBa8NLqsAX9QnPhq&_nc_ht=scontent.fhyd13-1.fna&oh=9b6781d8e51a71aab75cab5f5971aa42&oe=5EAF7EEE)
