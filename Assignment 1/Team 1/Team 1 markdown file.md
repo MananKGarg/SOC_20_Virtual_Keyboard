@@ -190,5 +190,7 @@ def noisify(array, var):
     result = array + np.random.normal(0, np.sqrt(var), len(array))
     return result
 ```
-![LOL - Meme](https://user-images.githubusercontent.com/55907159/78553654-3ff06c00-7827-11ea-858d-6e2b1b5bff19.jpeg)
+---
+
+![LOL - Meme](https://user-images.githubusercontent.com/55907159/78553875-abd2d480-7827-11ea-8b65-fc257aff1965.jpeg)
 
