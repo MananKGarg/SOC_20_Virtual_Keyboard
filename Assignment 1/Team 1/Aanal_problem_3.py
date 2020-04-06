@@ -1,31 +1,18 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
+from PIL import Image
 import numpy as np
+from scipy.cluster.vq import kmeans2
 
-n=int(input())
-dict1={}
-final_dict={}
-for i in range(n):
-    data=input()
-    sub_dict1={}
-    data=data.split(":")
-    data[1]=data[1].split(',')
-    for j in range(len(data[1])):
-        data[1][j]=data[1][j].split('-')
-        sub_dict1[data[1][j][0]]=int(data[1][j][1])
-        dict1[data[0]]=(sub_dict1)
-        if data[1][j][0] in final_dict:
-            final_dict[data[1][j][0]] += int(data[1][j][1])
-        else:
-            final_dict[data[1][j][0]] = int(data[1][j][1])
-print(dict1)
+path = input()
+k = int(input())
 
-data =[('name', 'U10'),('score', int)]
-final_list = np.array(list(final_dict.items()), dtype=data)
-final_list[::-1].sort(order= ['score', 'name'])
+img = np.array(Image.open(path), np.float)
+a = np.reshape(img, (-1, 3))
+centers, labels = kmeans2(a, k, minit='++')
 
-print(final_list)
+centers = np.uint8(centers)
+
+seg_img = centers[labels]
+seg_img = np.reshape(seg_img, img.shape)
+
+new_img = Image.fromarray(seg_img, 'RGB')
+new_img.save('new1.png')
