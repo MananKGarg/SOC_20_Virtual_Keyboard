@@ -10,7 +10,7 @@ def mean_filter(a,k):
 	k1 = a[k-1:0:-1]+[a[0]]		#[a[0]]*a[0]
 	k2 = a[l:l-k-1:-1]		#[a[l-1]]*a[l-1]
 	a_ = np.array(k1+a+k2)
-	b = list(map(lambda i:np.average(a_[i-k:i+k+1]),range(k,k+l)))
+	b = np.around(list(map(lambda i:np.average(a_[i-k:i+k+1]),range(k,k+l))),1)
 	return b
 
 
