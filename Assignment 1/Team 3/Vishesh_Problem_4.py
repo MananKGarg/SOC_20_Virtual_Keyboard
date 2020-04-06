@@ -37,5 +37,5 @@ def noisify(array, var):
 	return (array + np.random.normal(0,var,len(clean_sin)))
 
 
-noise=noisify(clean_sin,var)
-dirty_sin=clean_sin+noise
+
+dirty_sin=noisify(clean_sin,var)
