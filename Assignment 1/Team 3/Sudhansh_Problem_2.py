@@ -16,21 +16,17 @@ def reconstruct_from_noisy_patches(input_dict, shape):
 	white_count = np.zeros(shape)
 	mid_count = np.zeros(shape)
 	mid_total = np.zeros(shape)
-	picture=np.zeros(shape)
-	for key,value in input_dict.items():
-		for i in range(0,key[2]-key[0]):
-			for j in range(0,key[3]-key[1]):
-				if(value[i][j]==0):
-					black_count[key[0]+i][key[1]+j]+=1
-				elif(value[i][j]==255):
-					white_count[key[0]+i][key[1]+j]+=1 
-				else:
-					mid_count[key[0]+i][key[1]+j]+=1
-					mid_total[key[0]+i][key[1]+j]+=value[i][j]
-	# print(mid_count,'\n',black_count,'\n',white_count,'\n',mid_total)	
-	picture[np.logical_and(black_count<white_count,mid_count==0)] = 255
-	picture[np.logical_and(black_count==white_count,white_count!=0)] = 255 
-	clean = np.where(mid_count!=0)
-	picture[clean]=mid_total[clean]//mid_count[clean]
+	picture = np.zeros(shape)
 
+	for (r1,c1,r2,c2),value in input_dict.items():
+		value = np.array(value)
+		white_count[r1:r2,c1:c2] += np.where(value == 255,1,0)
+		black_count[r1:r2,c1:c2] += np.where(value == 0,1,0)
+		mid_count[r1:r2,c1:c2] += np.where(np.logical_and(value>0,value<255),1,0)
+		mid_total[r1:r2,c1:c2] += np.where(np.logical_and(value>0,value<255),value,0)
+
+	picture[np.logical_and(black_count<=white_count,white_count!=0)] = 255 
+	clean = np.where(mid_count!=0)
+	picture[clean]=mid_total[clean]//mid_count[clean]	
+	
 	return picture
