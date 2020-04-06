@@ -123,21 +123,42 @@ def reconstruct_from_noisy_patches(input_dict, shape):
     im.imsave('result.jpeg',M)          #saving the reconstructed and denoisified array into a .jpeg image file
 
 reconstruct_from_noisy_patches(test[1][0],test[1][1])  #using appropriate indices to access the required arguments from the dictionary stored in testcases.pkl 
-
-
-
-
-
-
 ```
-# 3. Harshvardhan Ragade
+# 3. Paarth Jain
 
 * ## Problem
-  >Short Description
+  > We have to use the Kmeans++ algorithm to divide the given coloured image into k (given in the question) clusters(based on the pixelvalue).
+  Each cluster has a centroid. The pixelvalue of each pixel belonging to a certain cluster is changed to the central pixelvalue.
+  This way we construct a new array and hence a new image.
 
 * ## Solution
 ```python
-##Code with highlighted syntax comes here
+import numpy as np
+import imageio
+from scipy.cluster.vq import kmeans2
+
+path = input()
+k = int(input())
+
+data_original = imageio.imread(path)
+h,w,a = np.shape(data_original)     #a always has a value 3. it is written here just to avoid error 
+
+data_2d = np.ones((h*w,3))
+for i in range(h):
+    data_2d[i*w:(i+1)*w,:] = data_original[i,:,:]
+ 
+clusters,labels = kmeans2(data_2d,k, minit = '++')
+
+data_new_2d = np.zeros((h*w,3))
+for i in range(h*w):
+    data_new_2d[i] = clusters[labels[i]]
+
+data_new = np.zeros((h,w,3))
+for i in range(h):
+    data_new[i,:,:] = data_new_2d[i*w:(i+1)*w,:]
+
+data_new  = data_new.astype('uint8')        #to avoid 'lossy conversion' warning
+imageio.imwrite(path,data_new)
 
 ```
 
