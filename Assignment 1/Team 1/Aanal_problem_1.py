@@ -22,4 +22,4 @@ data =[('name', 'U10'),('score', int)]
 final_list = np.array(list(final_dict.items()), dtype=data)
 final_list[::-1].sort(order= ['score', 'name'])
 
-print(final_list)
+print(list(final_list))
