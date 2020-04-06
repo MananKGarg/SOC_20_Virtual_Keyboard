@@ -1,7 +1,7 @@
-TeamName
+Optimize Prime
 ---
 
-> Tagline(Yet to do decided)
+> You light my fire(wall)
 
 |Problem Number | Team Member |
 | --------- | --------------- |
