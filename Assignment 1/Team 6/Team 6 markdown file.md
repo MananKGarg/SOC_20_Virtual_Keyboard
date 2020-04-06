@@ -211,6 +211,7 @@ im2.save(outputpath)
 ```python
 import numpy as np
 import math
+import matplotlib.pyplot as plt
 
 def mean_filter(arr, k):
   x = np.pad(arr, (k,k), 'constant', constant_values = (0,0))
@@ -229,6 +230,27 @@ def noisify(array, var):
   noise = np.random.normal(0, math.sqrt(var), len(array))
   result = array + noise
   return result
+  
+clean_sin = generate_sin_wave(2, (-2,8), 1000)
+plt.plot(clean_sin)
+f,ax = plt.subplots()
+ax.plot(clean_sin)
+plt.savefig("clean_sin")
+plt.show() 
+
+dirty_sin = noisify(clean_sin, 0.05**2)
+plt.plot(dirty_sin)
+f,ax = plt.subplots()
+ax.plot(dirty_sin)
+plt.savefig("dirty_sin")
+plt.show()
+
+cleaned_sin = mean_filter(dirty_sin, 1)
+plt.plot(cleaned_sin)
+f, ax = plt.subplots()
+ax.plot(cleaned_sin)
+plt.savefig("cleaned_sin")
+plt.show()  
 
 
 
