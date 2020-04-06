@@ -1,6 +1,6 @@
-# Team 3 
+# <cool_team_name>
 
->Tagline
+>Talk less, Code more...
 
 |Problem Number |Team member |
 |--- |--- |
