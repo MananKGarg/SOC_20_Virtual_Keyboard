@@ -1,5 +1,5 @@
-# Team Name
-## Tagline
+# Runtime Terror
+## We do it for the cookies
 
 | Problem Number    |                   Team Member                   |
 | ----------------- | ----------------------------------------------- |
@@ -56,8 +56,7 @@ data =[('name', 'U10'),('score', int)]
 final_list = np.array(list(final_dict.items()), dtype=data)
 final_list[::-1].sort(order= ['score', 'name'])
 
-print(final_list)
-```
+print(final_list)```
 
 ## Problem 3:
 
@@ -190,5 +189,5 @@ def noisify(array, var):
     result = array + np.random.normal(0, np.sqrt(var), len(array))
     return result
 ```
-
+![LOL - meme](https://drive.google.com/open?id=1InypKSpdJLlfSw9KZDUm1Qw1Zka7r2FR) 
 
