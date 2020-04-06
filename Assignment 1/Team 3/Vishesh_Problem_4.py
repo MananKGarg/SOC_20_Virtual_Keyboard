@@ -6,11 +6,13 @@ import matplotlib.pyplot as plt
 def mean_filter(a,k):
 	
 	l = len(a)
-	b = np.zeros(l)
-	k1 = a[k-1:0:-1]+[a[0]]		#[a[0]]*a[0]
-	k2 = a[l:l-k-1:-1]		#[a[l-1]]*a[l-1]
-	a_ = np.array(k1+a+k2)
-	b = np.around(list(map(lambda i:np.average(a_[i-k:i+k+1]),range(k,k+l))),1)
+	b = np.zeros(l) # Creates an array with all 0's of length of given array
+	k1 = a[k-1:0:-1]+[a[0]]	# Creates a reflection of elements of a for average at edges	#[a[0]]*a[0]
+	k2 = a[l:l-k-1:-1]	# Same as above	#[a[l-1]]*a[l-1]
+	a_ = np.array(k1+a+k2) # If a=[1,2,3,4] with k=2 then a_ = [2,1,1,2,3,4,4,3]
+	b = np.around(list(map(lambda i:np.average(a_[i-k:i+k+1]),range(k,k+l))),1) 
+	# Creates an array with each element as average of k elements around it
+	# for ex: a=[1,2,3,4] with k=2 returns [ 1.8  2.2  3.   4.   5.   6.   7.   7.8  8.2]
 	return b
 
 
