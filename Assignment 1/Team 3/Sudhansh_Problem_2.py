@@ -12,11 +12,11 @@ def reconstruct_from_noisy_patches(input_dict, shape):
 	value: 2d np array: the image patch.
 	shape: shape of the original matrix.
 	"""
-	black_count = np.zeros(shape)#,np.int64)
-	white_count = np.zeros(shape)#,np.int64)
-	mid_count = np.zeros(shape)#,np.int32)
+	black_count = np.zeros(shape)
+	white_count = np.zeros(shape)
+	mid_count = np.zeros(shape)
 	mid_total = np.zeros(shape)
-	picture=np.zeros(shape)# ,np.int32)
+	picture=np.zeros(shape)
 	for key,value in input_dict.items():
 		for i in range(0,key[2]-key[0]):
 			for j in range(0,key[3]-key[1]):
