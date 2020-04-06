@@ -213,5 +213,57 @@ def noisify(array, var):
 noise=noisify(clean_sin,var)
 dirty_sin=clean_sin+noise
 ```
+## Driver Vishesh Agarwal
+
+- Problem
+
+> In this problem, the functions created in Task 4 are used to plot the clean,dirty,cleared sin function on a pair of axes.
+
+- Solution
+
+```python
+import numpy as np
+import math
+import pandas as pd
+import matplotlib.pyplot as plt
+
+range_=(-2,8)
+num=1000
+period=2
+mean=0
+var=0.05
+x=[]
+clean_sin=[]
+dirty_sin=[]
+
+generate_sin_wave(period,range_,num)
+
+
+
+
+print(clean_sin)
+
+print(dirty_sin)
+
+
+plt.plot(x,clean_sin,color = 'red', marker = "o")  
+plt.title("clean sin")  
+plt.xlabel("X")  
+plt.ylabel("Y")  
+plt.show()  
+
+plt.plot(x,dirty_sin,color = 'red', marker = "o")  
+plt.title("dirty_sin")  
+plt.xlabel("X")  
+plt.ylabel("Y")  
+plt.show() 
+cleared_sin=mean_filter(dirty_sin,1)
+plt.plot(x,cleared_sin,color = 'red', marker = "o")  
+plt.title("cleared_sin")  
+plt.xlabel("X")  
+plt.ylabel("Y")  
+plt.show() 
+
+```
 
 ![meme](https://scontent.fhyd13-1.fna.fbcdn.net/v/t1.0-9/92665420_1049775758742141_7293480417141719040_n.jpg?_nc_cat=106&_nc_sid=825194&_nc_ohc=YfbjBa8NLqsAX9QnPhq&_nc_ht=scontent.fhyd13-1.fna&oh=9b6781d8e51a71aab75cab5f5971aa42&oe=5EAF7EEE)
