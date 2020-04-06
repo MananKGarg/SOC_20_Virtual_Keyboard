@@ -14,11 +14,11 @@
 * __Problem__
     >The main task of this problem is to reduce the salt and pepper noise in the gray scale image.
     Here, we are sequentially scanning each mentioned patches for the no. of pixels at each location
-    of image.For that we are given an input dictionary with keys as 'tuples' and keywords as 'array 
-    of pixels'.We have to keep record of black_count,white_count,mid_count,mid_total at each pixel of 
-    image and change it according to the given algorithm.If mid_count is non-zero,change mid_total to 
-    mid_total//mid_count.If black_count>white_count then put '0' and if black-count<=white_count then
-    put 255.Where no patches fall put '0' there.Likewise we have to reconstruct the matrix M of pixels.
+    of image. For that we are given an input dictionary with keys as 'tuples' and keywords as 'array 
+    of pixels'. We have to keep record of black_count, white_count, mid_count, mid_total at each pixel of 
+    image and change it according to the given algorithm. If mid_count is non-zero, change mid_total to 
+    mid_total//mid_count. If black_count > white_count then put '0' and if black-count <= white_count then
+    put 255. Where no patches fall put '0' there. Likewise we have to reconstruct the matrix M of pixels.
     
 * __Solution__
 ```python
