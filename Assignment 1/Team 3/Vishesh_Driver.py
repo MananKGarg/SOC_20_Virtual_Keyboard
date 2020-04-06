@@ -18,7 +18,7 @@ generate_sin_wave(period,range_,num)
 
 
 print(clean_sin)
-print(noise)
+
 print(dirty_sin)
 
 
