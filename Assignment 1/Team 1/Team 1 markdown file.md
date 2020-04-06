@@ -109,7 +109,7 @@ new_img.save('new1.png')
 
 ## Problem 2:
 
- The problem is based on an Image Processing Technique which aims at filtering out the Salt and Pepper Noise. To filter out the noise, we undertake an algorithm that assigns a mean of the intensity values of a pixel across the various patches provided as input. In this problem, we are simply asked to write down the function that implements it.
+ The problem is based on an Image Processing Technique which aims at minimsing the Salt and Pepper Noise. The pixel values in the processed image is evaluated adopting an algorithm on it's values across various patches of the image (that is provided as an input in this problem).
 
 ## Requisites:
 
@@ -119,8 +119,11 @@ new_img.save('new1.png')
 
  * All the data is stored in a Numpy array.
  * All the intermediate arrays are initialised to the required values.
+ * In order to minimise the Salt and Pepper Noise, we adopt the following algorithm :
+    * The mean of the intensity values (excluding black and white values) of a pixel across all patches is evaluated and is assigned to the pixel in the reconstructed image.
+    * If that turns out to be zero, then the pixel value is made equal to 0 or 255, depending on whether black count is greater or the white count, respectively.
+    * If it so happens that the black and white counts are equal for a pixel, then the pixel is assigned 255 (but 0 if white count = 0)
  * While iterating over the patches, all these arrays are modified using the **[Numpy.where()](https://docs.scipy.org/doc/numpy/reference/generated/numpy.where.html)** function that is basically a tool to avoid tedious **(if..else)** statemnets while iterating over the array elements.
- * Finally, for the processed array, the given conditions are imposed appropriately.
 
 ## Code:
 
@@ -152,7 +155,7 @@ def reconstruct_from_noisy_patches(input_dict, shape):
  This problem requires us to write a few functions, namely:
  * mean-filter - an image processing technique to remove some noise and smoothen the edges of an image.
  * sine wave function - it generates data set for plotting a sine wave.
- * Gaussian noise addition - to make the data more realistic in some sense.
+ * Gaussian noise addition - **[Gaussian Noise](https://en.wikipedia.org/wiki/Gaussian_noise)** is basically a statistical noise whose values are Gaussian distributed i.e they have their probablity density function equal to the Gaussian Distribution. These are commonly encountered and hence adding those to our data makes them more realistic in some sense.
 
 ## Requisites:
 
