@@ -43,9 +43,9 @@ def generate_sin_wave(period, range_,num):
 	return x,clean_sin
 
 
+generate_sin_wave(period,range_,num)
 def noisify(array, var):
-	return (array + np.random.normal(0,var,len(clean_sin)))
-
+	return (array+np.random.normal(0,var,1000))
 
 
 dirty_sin=noisify(clean_sin,var)
