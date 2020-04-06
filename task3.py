@@ -29,4 +29,8 @@ def solve(filepath, k):
 
 
 def main():
-    solve(r"C:/Users/ishu/Downloads/images.jpeg",4)
+    filepath = input("Enter path to image : ")
+    k = ("Enter value of k : ")
+    x = "r" + "\"" + filepath + "\""
+    solve(x,k)
+    
