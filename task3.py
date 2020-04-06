@@ -30,7 +30,7 @@ def solve(filepath, k):
 
 def main():
     filepath = input("Enter path to image : ")
-    k = ("Enter value of k : ")
-    x = "r" + "\"" + filepath + "\""
+    k = input("Enter value of k : ")
+    x = "r" + '\"' + filepath + '\"'
     solve(x,k)
     
