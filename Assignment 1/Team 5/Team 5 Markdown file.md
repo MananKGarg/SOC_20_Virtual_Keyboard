@@ -86,4 +86,4 @@ def reconstruct_from_noisy_patches(input_dict, shape):
 
 ____
 
-![Le Meme](https://i.redd.it/prz7lg2pv6231.jpg)
+![Le Meme](https://i.imgflip.com/11fjj7.jpg)
