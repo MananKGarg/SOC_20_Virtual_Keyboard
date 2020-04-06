@@ -204,7 +204,9 @@ im2.save(outputpath)
 # 4. Riya Agrawal
  
  ## Problem
-- Put the description here
+- My task was to first generate a sin wave and than add gaussian noise to it with mean zero and particular variance and Then   we filter that wave to reduce noise.
+- Functions are defined using numpy and then we plot a sine wave with specific parameters.
+- Finally the plots depicts the difference.
 
 ## Solution
 
