@@ -13,21 +13,22 @@
 
 * ## Problem
     > Solution can be described as follows:-
-        > * First we take data input and separate different data from input using
-        split command and store it separately
-        >  * Then we create a dictionary of players and their respective score for first
-        match
-        > * We iterate the loop the number of matches we have to store
-        >  * Then we create another dictionary which contain match name as key
-        and the value as dictionary made in step number 2.
-        >  * Next we make a separate list of all the players that take part , taking care
-        we do not repeat their name
-        >  * Now we make a loop and iterate it over each player name , to take care
-        of the multiple entries of a player
-        >  * Next we make a tuple of player_name and total run score and add it into
-        a list
-        >  * Finally we sort the list in decreasing order of run scored and
-        lexicographically if score is same.
+    >
+    > * First we take data input and separate different data from input using
+    split command and store it separately
+    >  * Then we create a dictionary of players and their respective score for first
+    match
+    >  * We iterate the loop the number of matches we have to store
+    >  * Then we create another dictionary which contain match name as key
+    and the value as dictionary made in step number 2.
+    >  * Next we make a separate list of all the players that take part , taking care
+    we do not repeat their name
+    >  * Now we make a loop and iterate it over each player name , to take care
+    of the multiple entries of a player
+    >  * Next we make a tuple of player_name and total run score and add it into
+    a list
+    >  * Finally we sort the list in decreasing order of run scored and
+    lexicographically if score is same.
 
 * ## Solution
 
