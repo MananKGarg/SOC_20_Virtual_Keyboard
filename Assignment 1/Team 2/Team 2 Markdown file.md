@@ -110,7 +110,47 @@ reconstruct_from_noisy_patches(test[1][0],test[1][1])  #using appropriate indice
 
 * ## Solution
 ```python
-##Code with highlighted syntax comes here
+import matplotlib.pyplot as plt
+import numpy as np
+from numpy.lib.stride_tricks import as_strided
+
+
+def mean_filter(arr, k):  # creating mean-filter function
+    n = len(arr)
+    list = np.empty([n + 2 * k])
+    list[k:n + k] = arr[0:]
+    list[0:k] = arr[::-1][-k:]
+    list[n + k:n + 2 * k] = arr[::-1][:k]
+    stride = list.strides[0]
+    new = as_strided(list, shape=(n, 2 * k + 1), strides=(stride, stride))
+    output = np.sum(new, axis=1)
+    return output / (2 * k + 1)
+
+
+def generate_sine_wave(period, range_, num):  # creating sine wave function
+    x = np.linspace(range_[0], range_[1], num)
+    y = np.sin(2 * x * np.pi / period)
+    return y
+
+
+def noisify(array, var):  # adding gaussian noise with 0 mean and given variance
+    output = array + np.random.normal(0, np.sqrt(var), len(array))
+    return output
+
+    def driver():
+        a = np.arange(-2, 8, 1000)
+    clean_sin = generate_sine_wave(2, [-2, 8], 1000)
+    dirty_sin = noisify(clean_sin, 0.0025)
+    cleaned_sin = mean_filter(dirty_sin, 1)
+    plt.plot(a, clean_sin)
+    plt.savefig("clean_sin.png")
+    plt.plot(a, dirty_sin)
+    plt.savefig("dirty_sin.png")
+    plt.plot(a, cleaned_sin)
+    plt.savefig("cleaned_sin.png")
+
+
+    driver()
 
 ```
 
