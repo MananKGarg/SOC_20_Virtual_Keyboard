@@ -3,6 +3,16 @@ import math
 import pandas as pd
 import matplotlib.pyplot as plt
 
+range_=(-2,8)
+num=1000
+period=2
+mean=0
+var=0.05
+x=[]
+clean_sin=[]
+dirty_sin=[]
+
+
 def mean_filter(a,k):
 	
 	l = len(a)
