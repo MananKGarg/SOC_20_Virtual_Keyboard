@@ -4,13 +4,14 @@ def reconstruct_from_noisy_patches(input_dict, shape):
     """
     input_dict:
     key: 4-tuple: (tlr, tlc, brr, brc):
-            location of the patch in the original image. topleft_row, topleft_col are inclusive but bottomright_row, bottomright_col are evclusive.
-            i.e. if M is the reconstructed matriv. M[topleft_row:bottomright_row, topleft_col:bottomright_col] will give the patch.
+            location of the patch in the original image. tlr, tlc are inclusive but brr, brc are exclusive.
+            i.e. if M is the reconstructed matrix. M[tlr:brr, tlc:brc] will give the patch.
     value: 2d numpy array: the image patch.
     shape: shape of the original matrix.
     """
 
-    black_count, white_count, mid_count, mid_total = np.zeros(shape), np.zeros(shape), np.zeros(shape), np.zeros(shape)
+    black_count, white_count = np.zeros(shape), np.zeros(shape)
+    mid_count, mid_total = np.zeros(shape), np.zeros(shape)
     M = np.zeros(shape)
 
     for tup, val in input_dict.items():
