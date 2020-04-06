@@ -15,7 +15,9 @@ TeamName
 # 1. Rushil Koppaka
 
  ## Problem
- - Put the description here
+ - The problem is based on the use of lists and dictionaries in python
+ - The objective of the Question is to create a league table in the form of a dictionary which displays a particular match and the runs scored by people in that match.
+ - It also asks us to display a list of tuples containing the amount of runs scored by each player in the entire tournament in a descending order based on runs scored.
 
 ## Solution
 
