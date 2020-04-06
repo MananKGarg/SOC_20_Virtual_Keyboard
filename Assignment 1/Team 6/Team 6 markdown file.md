@@ -260,3 +260,7 @@ plt.show()
 
 
 ```
+
+---
+
+![Meme](meme.jpeg)
