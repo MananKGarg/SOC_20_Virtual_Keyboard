@@ -1,5 +1,9 @@
 # Team - 4 (Runtime Terror)
->while(noSuccess)
+>while(noSuccess) {
+        tryAgain();
+        if (Dead)
+            break;
+}
 
 |__Problem Number__|__Team Member__|
 |------------------|---------------|
