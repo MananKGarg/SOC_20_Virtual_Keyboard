@@ -12,10 +12,10 @@
 
 ## 1. Nirmal Shah
 * __Problem__
-    >The main task of this problem was to form a dictionary of scores along with their player 
-    names and to add the scores which were common and to print the sorted dictionary in descending
+    >The main task of this problem was to form a dictionary of scores(as values) along with their player 
+    names(as Key) and to add the scores which were common and to print the sorted dictionary in descending
     order of their totals run scored in all the matches(1st priority) and if the runs scored are same 
-    then we have to order in lexicographic order(2nd order)
+    then we have to order in lexicographic order(2nd priority)
     
 * __Solution__
 ```python
