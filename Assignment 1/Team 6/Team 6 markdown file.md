@@ -63,9 +63,9 @@ print(s2)
 # 2. Akshat Vira
  
  ## Problem
- - The problem requires us to reconstruct an image based on information of its patches whilst minimising the noise while reconstructing the image.
-
 - Images often contain various noises, Salt & Pepper noise is one such noise. Due to this noise, some pixels get corrupted with a certain probability, into either black or white.
+
+- The problem requires us to reconstruct an image based on information of its patches whilst minimising the noise while reconstructing the image.
 
 - This can be achieved by following an algorithm and applying it to each pixel location of image.
 
