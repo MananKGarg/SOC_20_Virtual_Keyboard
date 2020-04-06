@@ -21,7 +21,7 @@
 # getting the number of matches
 while True:
        try:
-              num_matches = int(input('Enter tne number of matches- '))
+              num_matches = int(input('Enter the number of matches- '))
               break
        except ValueError:
               print('Invalid input. Please enter a valid input i.e. an integer')
