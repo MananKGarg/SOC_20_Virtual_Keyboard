@@ -3,6 +3,16 @@ import math
 import pandas as pd
 import matplotlib.pyplot as plt
 
+range_=(-2,8)
+num=1000
+period=2
+mean=0
+var=0.05
+x=[]
+clean_sin=[]
+dirty_sin=[]
+
+
 def mean_filter(a,k):
 	
 	l = len(a)
@@ -33,9 +43,9 @@ def generate_sin_wave(period, range_,num):
 	return x,clean_sin
 
 
+generate_sin_wave(period,range_,num)
 def noisify(array, var):
-	return (array + np.random.normal(0,var,len(clean_sin)))
+	return (array+np.random.normal(0,var,1000))
 
 
-noise=noisify(clean_sin,var)
-dirty_sin=clean_sin+noise
+dirty_sin=noisify(clean_sin,var)
