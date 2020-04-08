@@ -31,6 +31,8 @@ This project is also a little hardware intensive along with the software part as
 * [Python Resource 2](https://www.learnpython.org/)<br>
 * [Python SciPy](https://scipy-lectures.org/)<br>
 * [Python Practice](https://www.hackerrank.com/domains/python)
+* [OpenCV Video Tutorials](https://www.youtube.com/watch?v=kdLM6AOd2vc&list=PLS1QulWo1RIa7D1O6skqDQ-JZ1GGHKK-K)
+* [OpenCV GFG Tutorials](https://www.geeksforgeeks.org/opencv-python-tutorial/)
 
 
 ## Teams
@@ -72,6 +74,13 @@ Team | Score
 * First assignment on **2nd April**
 * Submission of first assignment by **6th April 11:59 PM**
 * Score Evaluation and Updation of Leaderboard.
+
+### Week 3 (6th April - 12th April)
+
+* Evaluation of solutions of assignment 1 (7, 8 April).
+* Documenting previous week's progress on respective GitHub ID's.
+* Start OpenCV Tutorials.
+* Keep practicing Python problems on HackerRank. 
 
  
 
