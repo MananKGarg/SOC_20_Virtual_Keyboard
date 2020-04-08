@@ -79,7 +79,7 @@ Team | Score
 
 * Evaluation of solutions of assignment 1 (7, 8 April).
 * Documenting previous week's progress on respective GitHub ID's.
-* Start OpenCV Tutorials.
+* Start with OpenCV Tutorials.
 * Keep practicing Python problems on HackerRank. 
 
  
