@@ -44,18 +44,6 @@ Ankit Kumar Jain | Harshavardhan Ragade | Pavithra | Aayush Shrivastav |  Darin 
 Dhanush S | Kritin Agarwal | Sudhansh | Nirmal Shah | Bitthal Parida | Riya Agarwal | Pallavi Kochar |
 Yash Sharda | Tanisha Khandelwal | Vishesh Agarwal | Harsh Kumar | Aditya Vijay Jain | Rushil Kopakka | Yashika Singhal |
 
-## Leaderboard
-
-Team | Score
---------- |----------
- .|. |
- .|. |
- .|. |
- .|. |
- .|. |
- .|. |
- .|. |
-
 ## Weekly Targets
 
 ### Week 1 (23rd March - 29th March)
