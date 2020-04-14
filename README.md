@@ -82,6 +82,10 @@ Team | Score
 * Start with OpenCV Tutorials.
 * Keep practicing Python problems on HackerRank. 
 
+### Week 4 (13th April - 19th April)
+
+* Complete OpenCV tutorials.
+
  
 
 
