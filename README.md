@@ -74,6 +74,11 @@ Yash Sharda | Tanisha Khandelwal | Vishesh Agarwal | Harsh Kumar | Aditya Vijay 
 
 * Complete OpenCV tutorials.
 
+### Week 5 (21 April - 27 April)
+
+* Complete Documentation of OpenCV notes 
+* Invisibility Cloak project.
+
  
 
 
