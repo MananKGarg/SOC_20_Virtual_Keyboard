@@ -5,7 +5,7 @@
 3. Segment out desired color cloth by generating a mask.
 4. Generate the final augmented output to create the magical effect of invisible cloak.
 ## Code-
-```
+```Python
 import numpy as np                                                   #importing numpy
 import cv2                                                           #importing opencv 
 
