@@ -17,7 +17,7 @@ while True:                  # to start capturing the video
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV) # to convert the BGR frames of captured video to HSV
 
     lh = 92             # the bounds to seperate the mask
-    ls = 104
+    ls = 104            # the bounds are found using trackbars
     lv = 100
 
     uh = 255
