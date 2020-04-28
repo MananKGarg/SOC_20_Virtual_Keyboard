@@ -78,6 +78,7 @@ Yash Sharda | Tanisha Khandelwal | Vishesh Agarwal | Harsh Kumar | Aditya Vijay 
 
 * Complete Documentation of OpenCV notes 
 * Invisibility Cloak project.
+* Update Progress Reports.
 
  
 
