@@ -12,18 +12,21 @@
     4. Add the same area but from the previously captured background
     
 ## Requisites
-> cv2.morphoplogyEx(src, op, kernel)
+> cv2.morphoplogyEx(src, op, kernel, iterations)
 
 |Argument|Description|
 | ------ | --------- |
 | src | The image to be morphed |
 | op| The type of morphological transformation |
 | kernel | Convolutional Matrix |
+| iterations | No. of times the operation is applied |
 
 | Morphological Operation | Effect |
 | ----------------------- | ------ |
 | MORPH_OPEN | First erodes the boundary of cloak then dilates the smaller areas of cloth to smoothen it |
 | MORPH_DILATE | Dilates the smaller areas of cloth to further smoothen it |
+
+> P.S: Eroding the boundary helps to minimize the sharp difference which occurs around segmented area due to image segmentation.
 
 ```python
 import cv2
