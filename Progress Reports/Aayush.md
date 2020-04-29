@@ -76,6 +76,7 @@ During this week we were also told to practice questions of python on Hackerrank
 In this week first few days we completed the geekforgeeks tutorials on openCV and then we were asked to make notes of openCV video tutorials we watched.
 The video tutorials consisted of total 41 videos having various algos, functions and concepts which we can't remember only just by watching the videos.
 So we made our own notes in the GitHub repo each indiviual were given to choose two videos from the tutorial write the concept, function used and heavily comment the code used in the video.
+The notes we created are [here](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/tree/master/SoC_OpenCV-master)
 
 After that we were given an indiviual project.
 The project consisted of creating the invisiblity cloak of Harry Potter using openCV.
@@ -88,4 +89,4 @@ The project was fun and it included the following steps:-
 
 The project took around 3-4 days to complete as segmenting the cloth of our choice color required time to find and calibrate the HSV values and figuring out how to show background once cloth was detected.
 The project code was easily available on the internet but our mentor asked us do everything from scracth so that we learn more.
-
+The code of my project is [here]()
