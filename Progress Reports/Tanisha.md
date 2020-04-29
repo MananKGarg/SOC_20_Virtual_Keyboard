@@ -9,9 +9,9 @@ GitHub is a code hosting platform for version control and collaboration. It lets
 Learnt how to -
 
 * Create and use a repository
-⋅⋅* Start and manage a new branch
-⋅⋅* Make changes to a file and push them to GitHub as commits
-⋅⋅* Open and merge a pull request
+* Start and manage a new branch
+* Make changes to a file and push them to GitHub as commits
+* Open and merge a pull request
 
  Made my first github repository.
  
@@ -23,12 +23,12 @@ Markdown is a lightweight markup language with plain-text-formatting syntax.Mark
 
 Learnt how to -
 
-..* Create headers H1 to H6
-..* Italicize, bold, strikethrough words
-..* Create ordered and unordered lists
-..* Creating links, tables and linebreaks
-..* Putting images and blockquotes
-..* Code and Syntax Highlighting
+* Create headers H1 to H6
+* Italicize, bold, strikethrough words
+* Create ordered and unordered lists
+* Creating links, tables and linebreaks
+* Putting images and blockquotes
+* Code and Syntax Highlighting
 
 References- [Markdown Quickguide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
@@ -36,7 +36,7 @@ References- [Markdown Quickguide](https://github.com/adam-p/markdown-here/wiki/M
 
 Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
 
-..* Learnt about numbers, strings and lists in python
+* Learnt about numbers, strings and lists in python
 *  Control flow statements: if and for statements, range() function, break, continue, pass statements, defining functions, lambda expressions
 * Data structures: Tuples, dictionaries, 
 * Input and output: formatting strings
@@ -110,6 +110,10 @@ There are several things which I learnt-
 16. Detection of corners with Harris corner detector and Shi Tomasi corner detection
 17. Background Subtraction methods 
 18. Mean shift and Camshift Object tracking
+
+
+References- [OpenCV Tutorials](https://www.geeksforgeeks.org/opencv-python-tutorial/), [OpenCV Videos](https://www.youtube.com/watch?v=kdLM6AOd2vc&list=PLS1QulWo1RIa7D1O6skqDQ-JZ1GGHKK-K)
+
 
 
 Next, we were asked to make 2 files each for different functions of opencv in github opencv-master folder. I wrote about [Bitwise Operations](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/SoC_OpenCVmaster/11.%20(Tanisha)Bitwise%20Operations%20(bitwise%20AND%2C%20OR%2C%20NOT%20and%20XOR).md) and [Simple Image Thresholding](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/SoC_OpenCV-master/14.%20(Tanisha)Simple%20Image%20Thresholding.md)
