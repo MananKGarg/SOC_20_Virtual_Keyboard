@@ -191,13 +191,13 @@ while(cap.isOpened()):
 	hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
 	# Generating mask to detect pink color
-	lower_red = np.array([170,70,70])
-	upper_red = np.array([0,255,255])
-	mask1 = cv2.inRange(hsv,lower_red,upper_red)
+	lb = np.array([170,70,70])
+	ub = np.array([0,255,255])
+	mask1 = cv2.inRange(hsv,lb,ub)
 
-	lower_red = np.array([170,70,70])
-	upper_red = np.array([255,255,255])
-	mask2 = cv2.inRange(hsv,lower_red,upper_red)
+	lb = np.array([170,70,70])
+	ub = np.array([255,255,255])
+	mask2 = cv2.inRange(hsv,lb,ub)
 
 	mask1 = mask1+mask2
 
