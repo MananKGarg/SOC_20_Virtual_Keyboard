@@ -34,17 +34,16 @@ while(cap.isOpened()):
     u_s = cv2.getTrackbarPos("US", "tracking")	
     u_v = cv2.getTrackbarPos("UV", "tracking")	
     
-    # creating the lower and upper bounds for the color 
+    # creating the lower and upper bounds for the colour 
     l_b = np.array([l_h, l_s, l_v])
     u_b = np.array([u_h, u_s, u_v])
     
-    # creating masks and then applying bitwise opperations
-    mask = cv2.inRange(hsv, l_b, u_b)
-    mask1 = cv2.bitwise_not(mask)
-    res = cv2.bitwise_and(frame, frame, mask=mask1)
-    resb = cv2.bitwise_and(img, img, mask=mask)
-    resf = cv2.add(res, resb)
-
+    mask = cv2.inRange(hsv, l_b, u_b)                                        # creating mask of desired colour
+    mask1 = cv2.bitwise_not(mask)                                            # creating the bitwise not of the mask
+    res = cv2.bitwise_and(frame, frame, mask=mask1)                          # taking the common of frame and the mask
+    resb = cv2.bitwise_and(img, img, mask=mask)                              # taking the common of background and mask previously created
+    resf = cv2.add(res, resb)                                                # adding the two results created
+ 
 
     out.write(res2)
 
