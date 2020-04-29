@@ -116,9 +116,9 @@ References- [OpenCV Tutorials](https://www.geeksforgeeks.org/opencv-python-tutor
 
 
 
-Next, we were asked to make 2 files each for different functions of opencv in github opencv-master folder. I wrote about [Bitwise Operations](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/SoC_OpenCVmaster/11.%20(Tanisha)Bitwise%20Operations%20(bitwise%20AND%2C%20OR%2C%20NOT%20and%20XOR).md) and [Simple Image Thresholding](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/SoC_OpenCV-master/14.%20(Tanisha)Simple%20Image%20Thresholding.md)
+Next, we were asked to make 2 files each for different functions of opencv in github opencv-master folder. I wrote about [Bitwise Operations](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/SoC_OpenCV-master/11.%20(Tanisha)Bitwise%20Operations%20(bitwise%20AND%2C%20OR%2C%20NOT%20and%20XOR).md) and [Simple Image Thresholding](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/SoC_OpenCV-master/14.%20(Tanisha)Simple%20Image%20Thresholding.md)
 
-Next, we were asked to write code for ** Invisibility Cloak ** .An invisibility cloak is a magical garment which renders whomever or whatever it covers invisible.
+Next, we were asked to write code for **Invisibility Cloak** .An invisibility cloak is a magical garment which renders whomever or whatever it covers invisible.
 
 Steps involved in it are -
 
