@@ -176,6 +176,8 @@ cap = cv2.VideoCapture(0)
 four_cc = cv2.VideoWriter_fourcc(*'XVID')
 out = cv2.VideoWriter("video.mp4", four_cc, 20.0, (640,480))
 
+
+
 # Capturing and storing the static background frame
 for i in range(60):
 	ret,background = cap.read()
@@ -206,7 +208,7 @@ while(cap.isOpened()):
 	mask1 = cv2.dilate(mask1,np.ones((3,3),np.uint8),iterations = 1)
 	mask2 = cv2.bitwise_not(mask1)
 
-	# Generating the final video
+	# Generating the final 
 	res1 = cv2.bitwise_and(background,background,mask=mask1)
 	res2 = cv2.bitwise_and(img,img,mask=mask2)
 	res = cv2.addWeighted(res1,1,res2,1,0)
