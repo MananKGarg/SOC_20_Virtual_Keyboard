@@ -28,6 +28,8 @@
 
 > P.S: Eroding the boundary helps to minimize the sharp difference which occurs around segmented area due to image segmentation.
 
+## Code
+
 ```python
 import cv2
 import numpy as np
