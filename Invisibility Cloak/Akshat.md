@@ -13,6 +13,7 @@
     
 ## Requisites
 > cv2.morphoplogyEx(src, op, kernel)
+
 |Argument|Description|
 | ------ | --------- |
 | src | The image to be morphed |
