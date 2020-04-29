@@ -15,10 +15,10 @@ while (cap.isOpened()):
     mask = cv.inRange(hsv, lb, ub)
     maskn= cv.bitwise_not(mask)
 
-    neg_cloak = cv.bitwise_and(frame,frame, mask=maskn)
-    cover=cv.bitwise_and(img,img,mask=mask)
+    neg_cloak = cv.bitwise_and(frame,frame, mask=maskn)  #removes the red cloak
+    cover=cv.bitwise_and(img,img,mask=mask)              #extracts the background in place of cloak
 
-    result = cv.bitwise_xor(neg_cloak,cover)
+    result = cv.bitwise_xor(neg_cloak,cover)              #the background is put in place
     
     cv.imshow('magic', result)
     
