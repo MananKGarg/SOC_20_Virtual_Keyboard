@@ -176,8 +176,6 @@ cap = cv2.VideoCapture(0)
 four_cc = cv2.VideoWriter_fourcc(*'XVID')
 out = cv2.VideoWriter("video.mp4", four_cc, 20.0, (640,480))
 
-
-
 # Capturing and storing the static background frame
 for i in range(60):
 	ret,background = cap.read()
