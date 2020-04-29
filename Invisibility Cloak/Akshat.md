@@ -1,6 +1,6 @@
 # Invisibility Cloak
 ## Concept
-- The main idea is to replace the area covered by a *single coloured* cloak, with a memory image(Previously known background).
+- The main idea is to replace the area covered by a **single coloured** cloth(or maybe an object), with a memory image(previously known background).
 - To detect the cloak, we use HSV instead of RGB.Reason:
     * RGB Color values are sensitive to lighting conditions.
     * HSV Color system is quite good when it comes to color detection as it takes into account the intensity of light.
@@ -10,6 +10,14 @@
     2. Detect the area covered by cloak using HSV color scheme
     3. Segment out the area by defining a mask
     4. Add the same area but from the previously captured background
+    
+## Requisites
+> cv2.morphoplogyEx(src, op, kernel)
+|Argument|Description|
+| ------ | --------- |
+| src | The image to be morphed |
+| op| The type of morphological transformation |
+| kernel | Convolutional Matrix |
 
 ```python
 import cv2
