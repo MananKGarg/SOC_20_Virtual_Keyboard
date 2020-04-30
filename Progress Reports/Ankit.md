@@ -59,7 +59,7 @@ I uploaded 3 files -
 * [Hough Lines Method](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/SoC_OpenCV-master/29.%20%5BAnkit%5D%20Hough%20Line%20Transform%20using%20HoughLines%20method%20.md)
 * [Probabilistic Hough Transform](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/SoC_OpenCV-master/30.%20%5BAnkit%5D%20Probabilistic%20Hough%20Transform%20using%20HoughLinesP.md)
 
-## Task 4
+## Task 5
 This was again a relaxed week. We had to do a self-mini project. The project was pretty interesting. We had to perform a magic!!! Yes, that is true. But our magic was in a typical coder's style. We had to play around with the OpenCV Library and make an invisibility cloak that mimics Harry Potter. This was a cool experience. We were asked to make videos and then share those, all of them were **magical** xD.    
 
 **[Here](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/Ankit.md)** is a link to my documentation of the mini-project.    
