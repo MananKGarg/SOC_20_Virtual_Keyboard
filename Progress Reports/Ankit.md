@@ -10,9 +10,9 @@ to type in a virtual setting and that makes it pretty cool.
 Basically, we were assigned tasks each week that included both learning and hands on experience. The tasks helped gain confidence over various concepts that I already knew and also helped me get gain new concepts and learn new theories (say the Hough Transform Theory). I always tried to go beyond the tasks and get into the things deeper so as to get insights into the concepts, code and problems essentially.
 
 ## Task 1
-In the first week, I was asked to explore a wide variety of things -  
-* Github - A really great platform to learn and discover things with such an amazing community. I knew the basics of Github but I never actually used it. Since, I was asked to learn basics of Github as I would be working on it later on, I scanned through various resources to learn it.
-* Markdown Files - One really important aspect of a project is to make a document that speaks out for you the purpose and procedure in brief. And that is where markdown files come into picture. I was asked to learn how to make markdown files and it's various formatting techniques.
+In the first week, we were asked to explore a wide variety of things -  
+* Github - A really great platform to learn and discover things with such an amazing community. I knew the basics of Github but I never actually used it. Since, we were asked to the learn basics of Github as we would be working on it later on, I scanned through various resources to learn it.
+* Markdown Files - One really important aspect of a project is to make a document that speaks out for you the purpose and procedure in brief. And that is where markdown files come into picture. We were asked to learn how to make markdown files and it's various formatting techniques.
 * Python - One of the most popular languages today. A great programming language that one should definitely learn. Being a CSE person, I already knew basics of python but the resources shared with us helped me strengthen my concepts and delve deeper into the python libraries especially Numpy.  
 
 It was essentially a great learning learning week for me.  
@@ -25,11 +25,11 @@ It was essentially a great learning learning week for me.
 * [Python SciPy](https://scipy-lectures.org/)<br>
 
 ## Task 2
-The second week was actually when I started working. I was given an assignment that consisted of 4 problems to be done in a team. The problems were fairly easy to do but the concepts behind them were realy good. Except the first one that was some sort of a warmup, the problems were based on image-processing techniques (say Removal of Salt and Pepper Noise). All the problems required Numpy Library usage. The four problems were -  
+The second week was actually when I started working. We were given an assignment that consisted of 4 problems to be done in a team. The problems were fairly easy to do but the concepts behind them were realy good. Except the first one that was some sort of a warmup, the problems were based on image-processing techniques (say Removal of Salt and Pepper Noise). All the problems required Numpy Library usage. The four problems were -  
 * Involved working on python data structures like Dictionary and Lists.
 * Based on the context of Salt and Pepper Noise, this problem was essentially the best among the four. This required me to implement a standard algorithm of segmenting an image followed by taking some sort of a mean to remove the Salt and Pepper Noise.
-* This was based on a really important image processing technique of K - Means Clustering. Though I was asked to use the inbuilt functionaity of the algorithm but I read the implementation of the algorithm to get a feel of what was actually going on. 
-* This was based on matplotlib library usage and one concept called the Mean Filter. I was given a set of tasks in this problem to be dealt with using the mentioned libraries/concepts.  
+* This was based on a really important image processing technique of K - Means Clustering. Though we were asked to use the inbuilt functionaity of the algorithm but I read the implementation of the algorithm to get a feel of what was actually going on. 
+* This was based on matplotlib library usage and one concept called the Mean Filter. We were given a set of tasks in this problem to be dealt with using the mentioned libraries/concepts.  
 
 This week was really a great hands on experience for me that helped me explore Numpy Library to a greater extent. The assignment problems, solutions and some notes prepared by me on Numpy can be found on my github repo **[here](https://github.com/akj0811/Virtual-Keyboard/tree/master/Week%202)**.
 #### References
@@ -64,4 +64,4 @@ This was again a relaxed week. We had to do a self-mini project. The project was
 
 **[Here](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/Ankit.md)** is a link to my documentation of the mini-project.    
 
-Meanwhile, I was asked to work on a Sudoku-Solver Project, which I am currently working on. I have succeeded to implement my own neural net for digit recognition without the usage of any additional libraries like TensorFlow, Pytorch etc. I now have to work upon the image processing of the sudoku and write an algorithm to solve it.
+Meanwhile, we were asked to work on a Sudoku-Solver Project, which I am currently working on. I have succeeded to implement my own neural net for digit recognition without the usage of any additional libraries like TensorFlow, Pytorch etc. I now have to work upon the image processing of the sudoku and write an algorithm to solve it.
