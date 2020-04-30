@@ -14,7 +14,7 @@ _,bg = cap.read()                                              #keep the first f
 
 fourcc = cv2.VideoWriter_fourcc(*'XVID')                       #fourcc stores the codec information
 out = cv2.VideoWriter('inv_cloak.avi',fourcc,20.0, (640,480))  #specifying the output file with the relevant arguments(
-                                                               filepath, codec, frame rate, and resolution  
+                                                               #filepath, codec, frame rate, and resolution  
  
 
 
@@ -22,7 +22,7 @@ cv2.namedWindow('Tracking')                                    # Named window fo
 l_h = cv2.createTrackbar('LH', 'Tracking', 126, 255, nothing)
 u_h = cv2.createTrackbar('UH', 'Tracking', 255, 255, nothing)
 l_s = cv2.createTrackbar('LS', 'Tracking', 64, 255, nothing)        #creating trackbars with initial l_hsv and u_hsv values 
-                                                                    fixed in order to make it work for a pink cloth.
+                                                                    #fixed in order to make it work for a pink cloth.
 u_s = cv2.createTrackbar('US', 'Tracking', 255, 255, nothing)
 l_v = cv2.createTrackbar('LV', 'Tracking', 127, 255, nothing)
 u_v = cv2.createTrackbar('UV', 'Tracking', 255, 255, nothing)
@@ -34,7 +34,7 @@ while cap.isOpened:
 
     cv2.imshow('Frame', frame)                                # output from webcam for comparison with original result.
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)              # converting to HSV format because it is easier to manipulate
-                                                              the trackbars (hsv is intuitive and easy)
+                                                              #the trackbars (hsv is intuitive and easy)
     l_h = cv2.getTrackbarPos('LH', 'Tracking')
     l_s = cv2.getTrackbarPos('LS', 'Tracking')
     l_v = cv2.getTrackbarPos('LV', 'Tracking')
