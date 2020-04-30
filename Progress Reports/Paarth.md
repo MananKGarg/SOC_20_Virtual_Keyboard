@@ -62,7 +62,7 @@ u_s = cv2.createTrackbar('US', 'Tracking', 255, 255, nothing)
 l_v = cv2.createTrackbar('LV', 'Tracking', 127, 255, nothing)
 u_v = cv2.createTrackbar('UV', 'Tracking', 255, 255, nothing)
 
-while cap.isOpened:
+while cap.isOpened():
     ret, frame = cap.read()
     if frame is None:                                         #checking whether webcam works
         break
