@@ -19,14 +19,14 @@ The problem doesn't end here, each time the system is updated you have to follow
 I had a github account but never did I use it. So, I saw the guide about basic operations which is already there on every Github page.
 
 * **Learn basics of Markdown file**
-- These are text files which have text formatting feature like headings, bold text, tables, code blocks, etc.
-- You will find it on most of the Github repos(the files with extension .md). These are very good proper documentation of a repo.
-- [This cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) provides all things needed to start writing a markdown file
+    - These are text files which have text formatting feature like headings, bold text, tables, code blocks, etc.
+    - You will find it on most of the Github repos(the files with extension .md). These are very good proper documentation of a repo.
+    - [This cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) provides all things needed to start writing a markdown file
 
 * **Ubuntu Terminal**
-- By far the best thing I've ever used! It is an interface which lets you do literalyy anything by typing a few commands, isn't that amazing!
-- Also, there are a lot of resources to learn it. [This cheatsheet](https://github.com/iamshm/Linux-Unix-Commands/blob/master/Commands.md) just sums up everything.
-- Ever tried installing codeblocks in Windows, its literally a pain for beginners, but try installing it in Ubuntu!!!
+    - By far the best thing I've ever used! It is an interface which lets you do literalyy anything by typing a few commands, isn't that amazing!
+    - Also, there are a lot of resources to learn it. [This cheatsheet](https://github.com/iamshm/Linux-Unix-Commands/blob/master/Commands.md) just sums up everything.
+    - Ever tried installing codeblocks in Windows, its literally a pain for beginners, but try installing it in Ubuntu!!!
 
 * **Learn python**  
 Our mentor handed us a lot of python resources. Reading them takes time but when your code runs.... What a satisfaction!
