@@ -5,14 +5,13 @@
 * **Dual boot PC with Ubuntu 18.04**
     - A video regarding dual boot was shared with us, and it seemed I might be able to do it easily.But, it turned out that Ubuntu doesn't support Optane Memory, which was the case with me.
     - But, internet holds the solution too and I got [this video](https://www.youtube.com/watch?v=2uXgbF3P2F8&list=WL&index=12&t=149s) which finally helped me dual boot my system with ubuntu
-The problem doesn't end here, each time the system is updated you have to follow some steps:
-        1. Disable optane from windows
-        2. Switch to AHCI
-        3. Go to ubuntu via chroot (via Live USB) or boot from an older kernel
-        4. Run "sudo update-initramfs && update-grub"
-        5. Switch back to RST Optane
-        6. Enable Optane on Windows
-    - Got this from the comments of same video.
+The problem doesn't end here, each time the system is updated you have to follow some steps(Got this from the comments of same video.):
+1. Disable optane from windows
+2. Switch to AHCI
+3. Go to ubuntu via chroot (via Live USB) or boot from an older kernel
+4. Run "sudo update-initramfs && update-grub"
+5. Switch back to RST Optane
+6. Enable Optane on Windows
 
 > P.S: **Although, simply switching to AHCI in BIOS can solve this without following the above steps.**
 
@@ -62,12 +61,12 @@ I had worked on [Face Detection](https://github.com/MananKGarg/SOC_20_Virtual_Ke
 This project was very interesting. This was kinda direct application of what we learnt in previous weeks. [Here](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/Akshat.md) is my try.
 
 * **Ubuntu issues**  
-    1. I got the error 'UNEXPECTED INCONSISTENCY: Run fsck MANUALLY' while booting into Ubuntu.
+1. I got the error 'UNEXPECTED INCONSISTENCY: Run fsck MANUALLY' while booting into Ubuntu.
 I blindly followed some tricks from internet and ubuntu booted successfully... but, I wasn't able to open terminal, software update center & chrome was uninstalled... And I was doomed.
-    2. I rebooted the system, and now it boots into emergency mode and I'm stuck in it.
-    3. After discussing a lot and finding solutions on google, I finally decided to uninstall ubuntu(Didn't take the risk of reinstalling as my laptop might require some other process than the one shown on youtube)
+2. I rebooted the system, and now it boots into emergency mode and I'm stuck in it.
+3. After discussing a lot and finding solutions on google, I finally decided to uninstall ubuntu(Didn't take the risk of reinstalling as my laptop might require some other process than the one shown on youtube)
     
 * **Conclusion**  
-    1. Do not blindly follow online solutions.
-    2. Find the reason behind the error, discuss with some senior and then apply it.
-    3. **Do not run fsck on mounted filesystems**(Yes, I did that!)
+1. Do not blindly follow online solutions.
+2. Find the reason behind the error, discuss with some senior and then apply it.
+3. **Do not run fsck on mounted filesystems**(Yes, I did that!)
