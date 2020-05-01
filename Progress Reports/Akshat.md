@@ -4,13 +4,14 @@
 * **Dual boot PC with Ubuntu 18.04**
     - A video regarding dual boot was shared with us, and it seemed I might be able to do it easily.But, it turned out that Ubuntu doesn't support Optane Memory, which was the case with me.
     - But, internet holds the solution too and I got [this video](https://www.youtube.com/watch?v=2uXgbF3P2F8&list=WL&index=12&t=149s) which finally helped me dual boot my system with ubuntu
-The problem doesn't end here, each time the system is updated you have to follow some steps(Got this from the comments of same video.):
-1. Disable optane from windows
-2. Switch to AHCI
-3. Go to ubuntu via chroot (via Live USB) or boot from an older kernel
-4. Run "sudo update-initramfs && update-grub"
-5. Switch back to RST Optane
-6. Enable Optane on Windows
+The problem doesn't end here, each time the system is updated you have to follow some steps:  
+(Got this from the comments of same video.)
+        1. Disable optane from windows
+        2. Switch to AHCI
+        3. Go to ubuntu via chroot (via Live USB) or boot from an older kernel
+        4. Run "sudo update-initramfs && update-grub"
+        5. Switch back to RST Optane
+        6. Enable Optane on Windows
 
 > P.S: **Although, simply switching to AHCI in BIOS can solve this without following the above steps.**
 
