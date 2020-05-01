@@ -19,10 +19,10 @@ The problem doesn't end here, each time the system is updated you have to follow
 * **Learn Github**  
 I had a github account but never did I use it. So, I saw the guide about basic operations which is already there on every Github page.
 
-* **Learn basics of Markdown file** 
-    - These are text files which have text formatting feature like headings, bold text, tables, code blocks, etc.
-    - You will find it on most of the Github repos(the files with extension .md). These are very good proper documentation of a repo.
-    - [This cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) provides all things needed to start writing a markdown file
+* **Learn basics of Markdown file**
+- These are text files which have text formatting feature like headings, bold text, tables, code blocks, etc.
+- You will find it on most of the Github repos(the files with extension .md). These are very good proper documentation of a repo.
+- [This cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) provides all things needed to start writing a markdown file
 
 * **Ubuntu Terminal**
     - By far the best thing I've ever used! It is an interface which lets you do literalyy anything by typing a few commands, isn't that amazing!
@@ -42,7 +42,6 @@ As I was learning python for the first time, it was important to practice it and
 * **Assisgnment1**  
     - We were divided into teams of 4 and we had to complete the first assisgnment. It had 4 problems, 1 for each member.
     - I was doing [this task](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Assignment%201/Team%206/AkshatVira_Problem_2.py)
-
     - After completing the task, I went through most of the codes that were written by other mentees & mentor too, and actually I got to learn very different approaches, commenting styles and how to write good explanations.
 
 
@@ -63,12 +62,11 @@ I had worked on [Face Detection](https://github.com/MananKGarg/SOC_20_Virtual_Ke
 This project was very interesting. This was kinda direct application of what we learnt in previous weeks. [Here](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/Akshat.md) is my try.
 
 * **Ubuntu issues**  
-- What I did
     1. I got the error 'UNEXPECTED INCONSISTENCY: Run fsck MANUALLY' while booting into Ubuntu.
-I blindly followed some trickfrom internet and ubuntu booted successfully... but, I wasn't able to open terminal, softaware update center, chrome was uninstalled... And I was doomed.
+I blindly followed some tricks from internet and ubuntu booted successfully... but, I wasn't able to open terminal, software update center & chrome was uninstalled... And I was doomed.
     2. I rebooted the system, and now it boots into emergency mode and I'm stuck in it.
     3. After discussing a lot and finding solutions on google, I finally decided to uninstall ubuntu(Didn't take the risk of reinstalling as my laptop might require some other process than the one shown on youtube)
-- **Conclusion** 
+**Conclusion**  
     1. Do not blindly follow online solutions.
     2. Find the reason behind the error, discuss with some senior and then apply it.
     3. **Do not run fsck on mounted filesystems**(Yes, I did that!)
