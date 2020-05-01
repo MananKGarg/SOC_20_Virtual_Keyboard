@@ -66,7 +66,8 @@ This project was very interesting. This was kinda direct application of what we 
 I blindly followed some tricks from internet and ubuntu booted successfully... but, I wasn't able to open terminal, software update center & chrome was uninstalled... And I was doomed.
     2. I rebooted the system, and now it boots into emergency mode and I'm stuck in it.
     3. After discussing a lot and finding solutions on google, I finally decided to uninstall ubuntu(Didn't take the risk of reinstalling as my laptop might require some other process than the one shown on youtube)
-**Conclusion**  
+    
+* **Conclusion**  
     1. Do not blindly follow online solutions.
     2. Find the reason behind the error, discuss with some senior and then apply it.
     3. **Do not run fsck on mounted filesystems**(Yes, I did that!)
