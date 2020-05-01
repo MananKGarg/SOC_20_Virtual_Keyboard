@@ -24,9 +24,9 @@ I had a github account but never did I use it. So, I saw the guide about basic o
 - [This cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) provides all things needed to start writing a markdown file
 
 * **Ubuntu Terminal**
-    - By far the best thing I've ever used! It is an interface which lets you do literalyy anything by typing a few commands, isn't that amazing!
-    - Also, there are a lot of resources to learn it. [This cheatsheet](https://github.com/iamshm/Linux-Unix-Commands/blob/master/Commands.md) just sums up everything.
-    - Oh! Ever tried installing codeblocks in Windows, its literally a pain for beginners, but try installing it in Ubuntu!!!
+- By far the best thing I've ever used! It is an interface which lets you do literalyy anything by typing a few commands, isn't that amazing!
+- Also, there are a lot of resources to learn it. [This cheatsheet](https://github.com/iamshm/Linux-Unix-Commands/blob/master/Commands.md) just sums up everything.
+- Ever tried installing codeblocks in Windows, its literally a pain for beginners, but try installing it in Ubuntu!!!
 
 * **Learn python**  
 Our mentor handed us a lot of python resources. Reading them takes time but when your code runs.... What a satisfaction!
@@ -53,7 +53,6 @@ The resouces used were [OpenCV Video Tutorials](https://www.youtube.com/watch?v=
 ## Week 4
 * **Document OpenCV Tutorial**  
 We had to document a couple of OpenCV tutorials that were given to us.  
-
 I had worked on [Face Detection](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/SoC_OpenCV-master/35.%20(Akshat)%20Face%20Detection%20using%20Haar%20Cascade%20Classifiers.md) and [Eye Detection](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/SoC_OpenCV-master/36.%20(Akshat)%20Eye%20Detection%20Haar%20Feature%20based%20Cascade%20Classifiers.md)
 
 ## Week 5
