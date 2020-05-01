@@ -1,6 +1,5 @@
-# Virtual Keyboard
+# Virtual Keyboard - Progress Report
 
-# Weekly Targets
 ## Week 1
 * **Dual boot PC with Ubuntu 18.04**
     - A video regarding dual boot was shared with us, and it seemed I might be able to do it easily.But, it turned out that Ubuntu doesn't support Optane Memory, which was the case with me.
