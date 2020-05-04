@@ -1,4 +1,4 @@
- # Invisibility Code
+ # Invisibility Cloak
  ```python
   
 import cv2
