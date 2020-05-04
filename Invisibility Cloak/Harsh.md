@@ -1,9 +1,15 @@
+# Invisibility Cloak
+
+## How it works
+> The code below first captures the background and store it, now whenever any blue coloured object is detected it replaces the blue part by the background at that position.
+
+## Code
 ```python
 import numpy as np
 import cv2
 
 cap = cv2.VideoCapture('video.mp4')
-fourcc =cv2.VideoWriter_fourcc(*'XVID')         # or give arguments as ('X','V','I','D')
+fourcc = cv2.VideoWriter_fourcc(*'XVID')         # or give arguments as ('X','V','I','D')
 out = cv2.VideoWriter('invisible_cloak.avi', fourcc, 25.0, (720,1280))
 
 _, frame = cap.read()
