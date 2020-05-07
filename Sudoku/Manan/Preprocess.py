@@ -15,17 +15,15 @@ def Preprocess(image): # returns perspective transformed binary image of sudoku 
     for cnt in contours:
         area = cv2.contourArea(cnt)
 
-        if area > 4000:
-            # cv2.drawContours(img, cnt, -1,(0,0,255),3)
-            approx = cv2.approxPolyDP(cnt, 20, True)
-            cv2.drawContours(img, [approx], 0, (255, 0, 0), 5)
-            # print(approx)
+        if area > 4000:                                             # To detect the biggest square 
 
-            pts = np.float32([approx[1][0], approx[0][0], approx[2][0], approx[3][0]])
+            approx = cv2.approxPolyDP(cnt, 20, True)
+            cv2.drawContours(img, [approx], 0, (255, 0, 0), 5)      # Drawing blue countour over approximated square
+           
+            pts = np.float32([approx[1][0], approx[0][0], approx[2][0], approx[3][0]])  # Top-left, Top-right, Bottom-left, Bottom-right
             screenpts = np.float32([[0, 0], [449, 0], [0, 449], [449, 449]])
 
             matrix = cv2.getPerspectiveTransform(pts, screenpts)
-
             result = cv2.warpPerspective(thg, matrix, (450, 450))
 
     return(result)
@@ -33,6 +31,7 @@ def Preprocess(image): # returns perspective transformed binary image of sudoku 
 # Testing the code
 img = cv2.imread('sudoku.png')
 res = Preprocess(img)
+cv2.imshow('img',img)
 cv2.imshow('ans',res)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
