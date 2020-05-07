@@ -79,7 +79,13 @@ Yash Sharda | Tanisha Khandelwal | Vishesh Agarwal | Harsh Kumar | Aditya Vijay 
 * Complete Documentation of OpenCV notes 
 * Invisibility Cloak project.
 * Update Progress Reports.
+### Week 6 (28 April - 4 May)
 
+* Wrap up the stuff till now.
+
+### Week 7 (5 May - 11 May)
+
+ * Start with Sudoku Solver Project
  
 
 
