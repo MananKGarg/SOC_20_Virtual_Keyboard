@@ -1,3 +1,10 @@
+### Using the code:
+1. Run the code and bring the keyboard into the frame on the screen.
+2. Click on the four corners of the keyboard and press 't' on the keyboard. (do not move the keyboard after this!). 
+3. If you do however end up moving the keyboard, repeat step 2.
+3. You are good to go!
+4. Press 'c' to clear the text so far and 'p' to print it.
+
 ### Code:
 ```python
 import cv2
@@ -5,8 +12,7 @@ import numpy as np
 from datetime import datetime as dt
 
 # fourcc = cv2.VideoWriter_fourcc(*'X264')
-url='http://192.168.43.1:8080/video'
-vid = cv2.VideoCapture(url)
+vid = cv2.VideoCapture(0)
 # out = cv2.VideoWriter('video.mp4', fourcc, 30.0, (int(vid.get(3)), int(vid.get(4))))
 points = []                             # stores the corners of keyboard in the frame
 cell_ID = (-1, -1)                      # initialising cell_ID to (-1, -1)
