@@ -1,5 +1,6 @@
 # SOC 2020 Virtual Keyboard
 ## Link to codes
+**Assignment** - [Code](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Assignment%201/Team%202/Team%202%20Markdown%20file.md)
 
 **Invisibility Cloak** - [Code](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/Tanisha.md)
 
