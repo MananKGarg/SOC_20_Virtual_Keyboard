@@ -2,6 +2,7 @@
 1. Run the code.
 2. We have to remove our finger from the screen after everytime time we tap a button.
 3. Works even if u tap the key,no necessary time stamp.
+4. press 'q' to quit.
 # code
 ```python
 #Background subtraction
