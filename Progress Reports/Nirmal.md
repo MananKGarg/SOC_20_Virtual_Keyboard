@@ -45,6 +45,6 @@ It is portable and doesn't require any physical space that a normal keyboard req
   -Couldn't complete it as it had invlolved Machine Learning and was stuck in it.
   
   
-* 28th May - 31st May 2020
-  - Started working on the Paper keyboard
+* 28th May - Present
+  - Started working on the Paper keyboard but facing a lot of errors and Logical Errors. Trying to debug it and solved few and i am currrently trying to solve the issues faced by me.
   
