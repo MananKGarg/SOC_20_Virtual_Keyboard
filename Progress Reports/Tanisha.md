@@ -1,7 +1,7 @@
 # SOC 2020 Virtual Keyboard
 ## Link to codes
 
-** Invisibility Cloak ** - [Code](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/Tanisha.md)
+**Invisibility Cloak ** - [Code](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/Tanisha.md)
 # Week-1 progress
 Documentation of what I learnt from 23rd to 29th march 2020
 
