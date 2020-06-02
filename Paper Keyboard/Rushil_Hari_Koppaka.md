@@ -1,7 +1,7 @@
 # how to use
-1.Run the code.
-2.we have to remove our finger from the screen after everytime time we tap a button.
-3.works even if u tap the key,no necessary time stamp.
+1. Run the code.
+2. We have to remove our finger from the screen after everytime time we tap a button.
+3. Works even if u tap the key,no necessary time stamp.
 # code
 ```python
 #Background subtraction
