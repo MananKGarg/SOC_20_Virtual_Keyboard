@@ -57,5 +57,32 @@ The keyboard should be able to read user's input and give corresponding output.
 + Finished code for [Invisibility Cloak](https://github.com/Sudhansh6/Virtual-Keyboard/blob/master/cloak.py)
 + Finished OpenCV part of [Sudoku code](https://github.com/Sudhansh6/Virtual-Keyboard/blob/master/sudoku.py)
 
+*30-04-20 to 14-05-20*
++ Optimized OpenCV part of [Sudoku code](https://github.com/Sudhansh6/Virtual-Keyboard/blob/master/Sudoku/sudoku_final.py)
++ Tried to implement machine learning for digit recognition.
++ Trained a [keras model](https://github.com/Sudhansh6/Virtual-Keyboard/blob/master/Sudoku/train_simple_nn.py) from custom dataset to recognise digits from sudoku board.
++ Looked into pyTesseract for recognising digits.
 
+*20-05-20 to 22-05-20*
++ Started working on code for Virtual Keyboard.
++ Implemented the keyboard to detect multiple pointers.
++ Finished Virtual Keyboard code for one keyboard without shift and caps implementation.
+ Have a look at the [code](https://github.com/Sudhansh6/Virtual-Keyboard/blob/master/Final%20Code/lite_vk.py) and [working video](https://github.com/Sudhansh6/Virtual-Keyboard/blob/master/Final%20Code/successful_1.avi).
+
+*23-05-20 to 26-05-20*
++ Implemented shift, caps and backspace keys in the code.
++ Reviewed and optimised the code. Click [here](https://github.com/Sudhansh6/Virtual-Keyboard/blob/master/Final%20Code/virtual_keyboard.py) for optimized version.
++ Made the program work for multiple keyboard layouts.
+
+## Conclusion
+
+Firstly, I learnt about Markdown files and GitHub. I got to know about a lot of cool libraries in python through this project. My coding skills in python have improved. 
+Libraries that were looked into in the project:
+1. Numpy, pandas and SciPy
+2. os
+3. OpenCV
+4. PyTesseract
+5. Keras and TensorFlow
+
+----------------------------------------------- END OF PROJECT --------------------------------------------
 
