@@ -2,6 +2,7 @@
 ## Link to codes
 
 **Invisibility Cloak** - [Code](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/Tanisha.md)
+**Paper Keyboard** -
 # Week-1 progress
 Documentation of what I learnt from 23rd to 29th march 2020
 
@@ -130,4 +131,6 @@ Steps involved in it are -
 4. Generate the final augmented output to create the magical effect 
 
 # Week 6,7 progress
-We were given Sudoku Solver Project in which I completed Image preprocessing part but had problem in machine learning part of digit recognition.
+We were given Sudoku Solver Project in which I completed Image preprocessing part but could not complete digit recognition part using machine learning .
+# Week 8 progress
+In this we were to implement code for paper keyboard.
