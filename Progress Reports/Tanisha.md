@@ -126,3 +126,6 @@ Steps involved in it are -
 2. Detect red coloured(we can also use some other colour) using color detection algorithm (use trackbars or lower and upper range directly)
 3. Segment out red coloured cloth by generating a mask.
 4. Generate the final augmented output to create the magical effect 
+
+# Week 6,7 progress
+We were given Sudoku Solver Project in which I completed Image preprocessing part but had problem in machine learning part of digit recognition.
