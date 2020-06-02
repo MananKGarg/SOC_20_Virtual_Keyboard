@@ -135,4 +135,4 @@ Steps involved in it are -
 # Week 6,7 progress
 We were given Sudoku Solver Project in which I completed Image preprocessing part but could not complete digit recognition part using machine learning .
 # Week 8 progress
-In this we were to implement code for paper keyboard.
+In this week we were asked to implement code for paper keyboard.
