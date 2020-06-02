@@ -78,8 +78,8 @@ def extract(board_cropped,thresh_cropped):
 	return numbers
 
 while(True):
-	board = cv2.resize(cv2.imread('sudoku1.jpeg'),(360,540))
-	# _,board = cap.read()
+# 	board = cv2.resize(cv2.imread('sudoku1.jpeg'),(360,540))
+	_,board = cap.read()
 
 	pts1,thresh = preprocess(board)
 	M = cv2.getPerspectiveTransform(pts1,pts2)
