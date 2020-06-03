@@ -1,7 +1,7 @@
-#<div align=”center”>SOC - Virtual Keyboard </div>
-#<div align=”center”>[Pavithra B](https://github.com/PavithraB10/Virtual_Keyboard.git)</div>
+# <div align=”center”> SOC - Virtual Keyboard </div>
+# <div align=”center”> [Pavithra B](https://github.com/PavithraB10/Virtual_Keyboard.git) </div>
 
-##Week 1
+## Week 1
 
 1. [PC Dual Boot](https://www.youtube.com/watch?v=u5QyjHIYwTQ)
 2. [Learnt the basics of Github](https://guides.github.com/activities/hello-world/)
@@ -10,19 +10,19 @@
 5. [Started learning Python](https://docs.python.org/3/tutorial/)
 
 
-##Week 2
+## Week 2
 
 1. [Completed Advanced Python Lessons](https://scipy-lectures.org/)
 2. Completed the assignment given with the help of my teammates
 
 
-##Week 3
+## Week 3
 
 1. [Started with the OpenCV tutorials](https://www.youtube.com/watch?v=kdLM6AOd2vc&list=PLS1QulWo1RIa7D1O6skqDQ-JZ1GGHKK-K)
 2. Practiced a few problems on HackerRank
 
 
-##Week 4
+## Week 4
 
 1. [Finished OpenCV tutorials](https://www.geeksforgeeks.org/opencv-python-tutorial/)
 
@@ -33,17 +33,17 @@
 2. Code for Invisiblility Cloak
 
 
-##Week 6
+## Week 6
 
 1. Improved the Invisibility Cloak program
 
 
-##Week 7
+## Week 7
 
 1. Sudoku Solver: Tried to come up with a code but couldn't
 
 
-##Week 9
+## Week 9
 
 1. Started working on paper keyboard.
 
