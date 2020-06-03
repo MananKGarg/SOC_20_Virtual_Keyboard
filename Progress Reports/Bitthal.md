@@ -34,15 +34,15 @@ We aim to build a paper keyboard which would mimic like an actual keyboard.
   - Updated a file in the SoC_OpenCV-master repository based on [Morphological transformations](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/SoC_OpenCV-master/17.%20(Bitthal)Morphological%20Transformations.md)
  
 * 24th to 28th April 2020
-  -Worked in the [Invisibility Cloak project](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/Bitthal.md).
+  - Worked on the [Invisibility Cloak project](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/Bitthal.md).
     
 * 27th April - 10st May 2020
-  -Was trying out various experiments with invisibility cloak code.
+  - Was trying out various experiments with invisibility cloak code.
   
 * Had to change the project plan a bit due to lock down, but started working on sudoku solver.
 
 * 20th May - 25th May 2020
-  -Couldn't complete it as it had involved Machine Learning and was stuck in it.
+  - Couldn't complete it as it had involved Machine Learning and was stuck in it.
   
   
 * 28th May - Present
