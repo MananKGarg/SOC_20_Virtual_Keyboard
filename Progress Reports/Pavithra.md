@@ -1,5 +1,5 @@
-# <div align=”center”> [SOC - Virtual Keyboard] </div>
-# <div align=”center”> [[Pavithra B](https://github.com/PavithraB10/Virtual_Keyboard.git)] </div>
+# <p align=”center”> SOC - Virtual Keyboard </p>
+# <p align=”center”> [Pavithra B](https://github.com/PavithraB10/Virtual_Keyboard.git) </p>
 
 ## Week 1
 
