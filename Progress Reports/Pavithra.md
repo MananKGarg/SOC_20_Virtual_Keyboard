@@ -1,5 +1,5 @@
-# <div align=”center”> SOC - Virtual Keyboard </div>
-# <div align=”center”> [Pavithra B](https://github.com/PavithraB10/Virtual_Keyboard.git) </div>
+# <div align=”center”> [SOC - Virtual Keyboard] </div>
+# <div align=”center”> [[Pavithra B](https://github.com/PavithraB10/Virtual_Keyboard.git)] </div>
 
 ## Week 1
 
@@ -27,7 +27,7 @@
 1. [Finished OpenCV tutorials](https://www.geeksforgeeks.org/opencv-python-tutorial/)
 
 
-##Week 5
+## Week 5
 
 1. Documentation of OpenCV notes : Camera parameters & Date and time
 2. Code for Invisiblility Cloak
