@@ -47,6 +47,6 @@
 
 1. Started working on paper keyboard.
 
-##
+## Week 10
 
-1. Completed the Paper Keyboard!!!
+  Completed the Paper Keyboard!!!
