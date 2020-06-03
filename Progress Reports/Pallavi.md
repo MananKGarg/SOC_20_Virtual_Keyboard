@@ -105,3 +105,6 @@ NumPy is the fundamental package for scientific computing with Python. It contai
 
 # Invisibility cloak
 Here is the [code](https://github.com/pallavikochar/invisibilty-cloak/blob/master/README.md) for invisibility cloak.
+
+# Sudoku solver
+Started working on [sudoku solver](https://github.com/pallavikochar/sudokusolver/blob/master/README.md) project
