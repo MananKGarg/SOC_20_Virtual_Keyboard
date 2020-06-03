@@ -29,13 +29,13 @@
 
 ## Week 5
 
-1. Documentation of OpenCV notes : Camera parameters & Date and time
+1. Documentation of OpenCV notes : [Camera parameters](https://github.com/PavithraB10/Virtual_Keyboard/blob/master/Camera%20Parameters) & [Date and time](https://github.com/PavithraB10/Virtual_Keyboard/blob/master/Date%20Time)
 2. Code for Invisiblility Cloak
 
 
 ## Week 6
 
-1. Improved the Invisibility Cloak program
+1. [Improved the Invisibility Cloak program](https://github.com/PavithraB10/Virtual_Keyboard/blob/master/Invisible_Cloak)
 
 
 ## Week 7
@@ -49,4 +49,4 @@
 
 ## Week 10
 
-  Completed the Paper Keyboard!!!
+  [Completed the Paper Keyboard!!!](https://github.com/PavithraB10/Virtual_Keyboard/blob/master/Virtual_Keyboard)
