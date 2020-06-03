@@ -1,11 +1,11 @@
-## Virtual Keyboard
+# Virtual Keyboard
 
 
-# Aim
+## Aim
 ---
 We aim to build a paper keyboard which would mimic like an actual keyboard.
 
-# Prerequisutes for the project
+## Prerequisutes for the project
 ---
 1. One needs to dual boot windows system with ubuntu
    To do so one needs to download the iso file of the operating system
@@ -14,7 +14,7 @@ We aim to build a paper keyboard which would mimic like an actual keyboard.
 3. Then you can download pycharm and userfriendly ide for python
 
 
-# Progress Report
+## Progress Report
 ---
 
 * 23rd to 2st April 2020
