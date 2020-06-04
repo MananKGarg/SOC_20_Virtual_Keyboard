@@ -181,5 +181,7 @@ Was not able to complete it.
 
 
 Started implementing Paper Keyboard.
+
 Completed it and uploaded the final code.
+
 https://github.com/aashurajhassani/Virtual_Keyboard_SoC_2020/blob/master/paper_keyboard.md
