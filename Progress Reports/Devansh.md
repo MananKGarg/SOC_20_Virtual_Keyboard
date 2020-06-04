@@ -37,6 +37,12 @@ In that assignment work I did:
  # Week 4(13th April-19th April)
  Getting more familiar with open cv
  
+ Document OpenCV Tutorial
+ We had to document a couple of OpenCV tutorials that were given to us.
+ I had worked on Motion Detection and tracking and HSV image histograms
+ https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/SoC_OpenCV-master/24.(%20Devansh_Saini)Motion%20Detection%20and%20Tracking%20Using%20Opencv%20Contours.md and https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/SoC_OpenCV-master/26.%20(Devansh_Saini)Understanding%20image%20Histograms%20.md
+
+ 
  # Week 5(20th - 26th)
  Working on Invisibility Cloak
  
