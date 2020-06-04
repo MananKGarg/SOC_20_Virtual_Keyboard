@@ -64,4 +64,13 @@ This was again a relaxed week. We had to do a self-mini project. The project was
 
 **[Here](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/Ankit.md)** is a link to my documentation of the mini-project.    
 
-Meanwhile, we were asked to work on a Sudoku-Solver Project, which I am currently working on. I have succeeded to implement my own neural net for digit recognition without the usage of any additional libraries like TensorFlow, Pytorch etc. I now have to work upon the image processing of the sudoku and write an algorithm to solve it.
+## Task 6
+We had to work on a Visual Sudoku Solver Project. It was a really interesting project. We had to combine ideas from Machine Learning, OpenCV and Algorithms. I was able to complete the OpenCV and Algorithms part on my own. With the Machine Learning part, I was facing some difficulty on digit recognition. It was probably due to the fact that we were training our model on Hand written digits and trying to identify Printed digits. Being from different distributions, it was a bit challenging to identify all the digits accurately everytime. My Sudoku Solver was not always working correctly.
+
+## Task 7
+We now jumped to the final part of our SoC, the Virtual Keyboard. We had to manage to enable writing over a printed paper keyboard. I was able to complete the OpenCV part and code things up properly. But I was not able to get a printout of the paper keyboard to really test it on and so I couldn't fix in the bugs or any sort of parameters present in my code. So, instead after completing my code, I looked upon the other codes on the repo, they were based on similar logic though with different implementations. Hence, I expect my code to run properly after some bug fixes.
+
+**[Here]()** is the link to my code for the Paper Keyboard.
+
+
+It was a great experience to be a part of this SoC. I got more experienced with Python Language. I got some experience working on ML by working on Sudoku Solver task. And obviously, the Paper Keyboard part was really fun though I couldn't relly test it now but as soon as the lockdown gets over and I can get a printed keyboard, I will check my implementation and update my code here. I was really an amazing journey throughout the summers working on this project.
