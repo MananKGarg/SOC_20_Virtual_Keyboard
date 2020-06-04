@@ -47,4 +47,5 @@ We aim to build a paper keyboard which would mimic like an actual keyboard.
   
 * 28th May - Present
   - Left the sudoku solver half way and took up the paper keyboard to work.
-  - Started working on the Paper keyboard but taking quite a lot of time due to some errors and difficulties. 
+  - Started working on the Paper keyboard but taking quite a lot of time due to some errors and difficulties.
+  - Uploaded my code for the [paper keyboard](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Paper%20Keyboard/Bitthal.md)
