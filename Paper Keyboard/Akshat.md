@@ -87,15 +87,18 @@ def is_key_pressed(x, y):
     xKey = x//128
     yKey = y//120
 
-    if key == (yKey, xKey):
-        enter_new_cell = False
-    else:
-        key = (yKey, xKey)
-        enter_new_cell = True
-        pressed_once = 0
+    enter_new_cell = (key != (yKey, xKey))
+    # if key == (yKey, xKey):
+    #     enter_new_cell = False
+    # else:
+    #     key = (yKey, xKey)
+    #     enter_new_cell = True
+    #     pressed_once = 0
 
     if enter_new_cell:
         t1 = time.monotonic()
+        key = (yKey, xKey)
+        pressed_once = 0
     else:
         t2 = time.monotonic()
 
@@ -136,7 +139,6 @@ while cap.isOpened():
                 text += caps[key]
             else:
                 text += keys[key]
-
         pressed_once += 1
         print(text)
 
