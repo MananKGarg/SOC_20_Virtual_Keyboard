@@ -70,7 +70,7 @@ We had to work on a Visual Sudoku Solver Project. It was a really interesting pr
 ## Task 7
 We now jumped to the final part of our SoC, the Virtual Keyboard. We had to manage to enable writing over a printed paper keyboard. I was able to complete the OpenCV part and code things up properly. But I was not able to get a printout of the paper keyboard to really test it on and so I couldn't fix in the bugs or any sort of parameters present in my code. So, instead after completing my code, I looked upon the other codes on the repo, they were based on similar logic though with different implementations. Hence, I expect my code to run properly after some bug fixes.
 
-**[Here]()** is the link to my code for the Paper Keyboard.
+**[Here](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Paper%20Keyboard/Ankit.md)** is the link to my code for the Paper Keyboard.
 
 
 It was a great experience to be a part of this SoC. I got more experienced with Python Language. I got some experience working on ML by working on Sudoku Solver task. And obviously, the Paper Keyboard part was really fun though I couldn't relly test it now but as soon as the lockdown gets over and I can get a printed keyboard, I will check my implementation and update my code here. I was really an amazing journey throughout the summers working on this project.
