@@ -23,7 +23,7 @@ keys = np.array([['!', '@', '#', '$', '%', '^', '&', '*', '(', ')'],
                  ['z', 'x', 'c', 'v', 'b', 'n', 'm', ' ', ' ', ''],
                  [':', ';', '"', '\'', ',', '.', '<', '>', '/', '?']])
 text = ''
-s, t1, t2, pressed_once, key = 0, 0, 0, 0, (0, 0)
+CAPS, t1, t2, pressed_once, key = False, 0, 0, 0, (0, 0)
 
 cap = cv2.VideoCapture('vid4.mp4')
 
@@ -84,16 +84,8 @@ def coordinates(img):
 # To find which key is pressed
 def is_key_pressed(x, y):
     global t1, t2, key, pressed_once
-    xrange = np.arange(0, 1281, step=128)
-    yrange = np.arange(0, 721, step=120)
-    xKey, yKey = 0, 0
-
-    for i in range(0, 10):
-        if xrange[i] < x < xrange[i + 1]:
-            xKey = i
-    for j in range(0, 6):
-        if yrange[j] < y < yrange[j + 1]:
-            yKey = j
+    xKey = x//128
+    yKey = y//120
 
     if key == (yKey, xKey):
         enter_new_cell = False
@@ -137,28 +129,21 @@ while cap.isOpened():
 
     if pressed_once == 1 and cx != 0:
         if key == (4, 9):
-            if s == 0:
-                s = 1
-                pressed_once += 1
-            else:
-                s = 0
-                pressed_once += 1
+            CAPS = not CAPS
+            pressed_once += 1
         else:
-            if s == 1:
-                text = text + caps[key]
-                pressed_once += 1
-                print(text)
+            if CAPS:
+                text += caps[key]
             else:
-                text = text + keys[key]
-                pressed_once += 1
-                print(text)
+                text += keys[key]
+
+        pressed_once += 1
+        print(text)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 cap.release()
 cv2.destroyAllWindows()
-
-
 
 ```
