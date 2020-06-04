@@ -2,6 +2,7 @@
 
 1. Take a colored object to point a key.(I'm using orange color)
 2. Tap the key and wait for 1sec to print the key
+3. Currently, It can only type Capital letters and symbols but not small letters, will add it soon
 
 ## Code
 
