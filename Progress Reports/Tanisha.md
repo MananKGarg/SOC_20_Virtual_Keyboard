@@ -133,6 +133,7 @@ Steps involved in it are -
 4. Generate the final augmented output to create the magical effect 
 
 # Week 6,7 progress
-We were given Sudoku Solver Project in which I completed Image preprocessing part but could not complete digit recognition part using machine learning .
+We were given Sudoku Solver Project. I was able to complete Image preprocessing part but could not complete digit recognition part using machine learning because of which I could not complete this part. I learnt perspective and warped transformation and approxing polygon.
+I enjoyed working and trying this part.
 # Week 8 progress
-In this week we were asked to implement code for paper keyboard.
+In this week we were asked to implement code for paper keyboard. I am working on it.
