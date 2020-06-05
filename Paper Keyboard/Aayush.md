@@ -1,6 +1,8 @@
 ## Instructions for code
 - The Whole Keyboard should be visible on the frame for code to work.
+- You can use only finger at a time.
 - Sometimes the perspective transform may be buggy re-run the code.
+- Download the layout from [here](https://github.com/aayush2200/Virtual-Keyboard/blob/master/Keyboard.pdf)
 
 ## Code
 ```python
