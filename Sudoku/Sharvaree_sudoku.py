@@ -1,3 +1,4 @@
+# This code for Sudoku solver include image perspective transform,storing individual boxes into an array and reducing their noise.
 import cv2
 import numpy as np
 
