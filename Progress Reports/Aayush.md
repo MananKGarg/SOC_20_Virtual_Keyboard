@@ -71,7 +71,7 @@ Images consist of pixels whose values are stored in arrays. Grayscale images are
 
 During this week we were also told to practice questions of python on Hackerrank to get more grip on the language.
 
-## Week4
+## Week 4 - Week 5
 
 In this week first few days we completed the geekforgeeks tutorials on openCV and then we were asked to make notes of openCV video tutorials we watched.
 The video tutorials consisted of total 41 videos having various algos, functions and concepts which we can't remember only just by watching the videos.
@@ -90,3 +90,28 @@ The project was fun and it included the following steps:-
 The project took around 3-4 days to complete as segmenting the cloth of our choice color required time to find and calibrate the HSV values and figuring out how to show background once cloth was detected.
 The project code was easily available on the internet but our mentor asked us do everything from scracth so that we learn more.
 The code of my project is [here](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/Aayush.md)
+
+## Week 6 - Week 7
+
+Our project was hardware based and getting things due to corona virus was not possible so our mentor changed the project from Virtual Keyboard to Paper keyboard. To fully get aquainted with all the things we need to make paper Keyboard a Augmented Reality Sudoku Solver task was given to do something like [this](https://www.youtube.com/watch?v=QR66rMS_ZfA&feature=youtu.be).
+
+Since the project required ML part and our main aim in SoC didn't involve ML so only the thing important for us to learn that project upto that part was done by me. The code which I wrote for this part doesn't work fully though.
+
+The task was to find the perspective transform of a sudoku while holding it in front of the camera. After perspective transform we have to seperate all the 81 squares and apply digit recognition to find the digit then apply Sudoku solving algorithm. Since ML was required many were not able to complete the task although mentor asked us to copy code from net still most were not able to do the task and mentor told us that mai aim of task was just to get one important function required for Paper Keyboard i.e. Perspective Transform.
+
+## Week 8 - Week 9 - Week 10
+
+In this we have to finally implement the Paper Keyboard the [design](https://github.com/aayush2200/Virtual-Keyboard/blob/master/Keyboard.pdf) was given by the mentor.
+
+Initially color detection approach was proposed to detect finger and register it as a key press but later another approach of contour detection on difference of frame containg hand and without hand. Then contour deetction on the difference frame would give our hand then the tip of the finger is the farthest point on that contour.
+
+The implementation part was tough. I used phone's camera to capture the keyboard. Finding the tip of finger was the toughest part i first went for the centroid of the contour and then finding the farthest point from that centroid but it didn't worked out correctly. Also perspective transform was giving an issue sometimes.
+
+Completed the project just at the deadline of SoC.
+
+## Code and other links
+1. [Paper Keyboard](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Paper%20Keyboard/Aayush.md)
+2. [Invisiblity Cloak](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/Aayush.md)
+3. [Assignment 1 Question 4](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Assignment%201/Team%204/Aayush_Q4.py)
+4. [OpenCV Tutorials created by team](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/tree/master/SoC_OpenCV-master)
+5. [GitHub Repo of the Project](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard)
