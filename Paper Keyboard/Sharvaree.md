@@ -5,10 +5,10 @@
 2. Performing perspective transform and getting max.area which is assumed to be of keyboard.
 3. reducing noise.
 3. Background Subtraction and thresholding hand's frame.
-4. Detecting topmost tip of finger
+4. Detecting topmost tip of finger.
 5. Detecting whether the key is presssed or not.
 6. Checking whether the key is capslock or not
-7. Typing text on frame according to lower_case or upper_case
+7. Typing text on frame according to lower_case or upper_case.
 
 The code is as follows-
 ```python
