@@ -11,7 +11,7 @@ The output of project is to build a laser projected keyboard which when typed up
   - I was unable to install ubuntu on my laptop , therefore worked on windows only.
   
 * 2nd to 5th April 2020
-  - Completed problem number 1 from the 1st assignment. 
+  - Completed problem number 1 from the [1st assignment](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Assignment%201/Team%202/Team%202%20Markdown%20file.md). 
   
 * 7th to 10th April 2020
   - Saw the solutions of the assignment and also the answers provided by other mentees.
@@ -76,7 +76,7 @@ cv2.destroyAllWindows()
   - Completed the OpenCV part of the project (i.e. was able to extract digits out of 81 boxes)
   - Worked on the digit recognition part but was not able to complete it. 
   
-* 25th May - 31st May 2020
-  - Started working on the Virtual Keyboard
+* 25th May - 6st June 2020
+  - Completed the [Virtual Keyboard](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Paper%20Keyboard/Kritin.md) 
   
  
