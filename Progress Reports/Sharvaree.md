@@ -343,4 +343,24 @@ _References_-
 [OpenCV_GitHub](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/tree/master/SoC_OpenCV-master)
 [OpenCV_youtube](https://www.youtube.com/playlist?list=PLS1QulWo1RIa7D1O6skqDQ-JZ1GGHKK-K)
       
+## Sudoku Assignment-
+   The main aim was to find the solution of a given sudoku just by reading the given sudoku image.
+   Following steps were implemented in the code in **preprocessing**-
+   1. Detection of max. area contour i.e. sudoku's 9x9 square.
+   2. Performing Perspective transform.
+   4. Detection of individual 81 squares and storing into another array.
+   5. Reducing noise i.e.unwanted pixels.
+   
+   Digit recognition and finding solutions to the sudoku is to be done by neural networks(ML part).
+                  
+## VIRTUAL KEYBOARD-
+   Following Steps are performed in the code-
 
+   1. Reading of video.
+   2. Performing perspective transform and getting max.area which is assumed to be of keyboard.
+   3. reducing noise.
+   3. Background Subtraction and thresholding hand's frame.
+   4. Detecting topmost tip of finger.
+   5. Detecting whether the key is presssed or not.
+   6. Checking whether the key is capslock or not
+   7. Typing text on frame according to lower_case or upper_case.
