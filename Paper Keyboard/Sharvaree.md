@@ -87,11 +87,13 @@ def get_key(cont):
         return (i,j)
 
 def decide_case(cx,cy):                                                                                                #checking if caps is pressed
-    if cx==9 & cy==4:                                                                                                  #
-        caps=True                                                                                                      #caps is ON
-    else:                                                                                                              #
-        caps=False                                                                                                     #caps is OFF
-    return caps
+    global caps
+    q=caps
+    if (cx,cy)==(9,4) & caps==True:                                                                                                  #
+        q= not caps                                                                                                      #caps is ON
+    if (cx,cy)==(9,4) & caps==False:                                                                                                              #
+        q=not caps                                                                                                     #caps is OFF
+    return q
 
 def detect_press(img):
     global current,initial,o_i,o_j,i,j                                                                                 #
