@@ -14,18 +14,20 @@ caps = np.array([['!', '@', '#', '$', '%', '^', '&', '*', '(', ')'],
                  ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'],
                  ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],
                  ['A', 'S ', 'D', 'F', 'G', 'H', 'J', 'K', 'L', '\n'],
-                 ['Z', 'X', 'C', 'V', 'B', 'N', 'M', ' ', ' ', ''],
+                 ['Z', 'X', 'C', 'V', 'B', 'N', 'M', ' ', ' ', 'caps'],
                  [':', ';', '"', '\'', ',', '.', '<', '>', '/', '?']])
 keys = np.array([['!', '@', '#', '$', '%', '^', '&', '*', '(', ')'],
                  ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'],
                  ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
                  ['a', 's ', 'd', 'f', 'g', 'h', 'j', 'k', 'l', '\n'],
-                 ['z', 'x', 'c', 'v', 'b', 'n', 'm', ' ', ' ', ''],
+                 ['z', 'x', 'c', 'v', 'b', 'n', 'm', ' ', ' ', 'caps'],
                  [':', ';', '"', '\'', ',', '.', '<', '>', '/', '?']])
 text = ''
 CAPS, t1, t2, pressed_once, key = False, 0, 0, 0, (0, 0)
 
 cap = cv2.VideoCapture('vid4.mp4')
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640, 480))
 
 
 # To bring keyboard in perspective
@@ -88,13 +90,6 @@ def is_key_pressed(x, y):
     yKey = y//120
 
     enter_new_cell = (key != (yKey, xKey))
-    # if key == (yKey, xKey):
-    #     enter_new_cell = False
-    # else:
-    #     key = (yKey, xKey)
-    #     enter_new_cell = True
-    #     pressed_once = 0
-
     if enter_new_cell:
         t1 = time.monotonic()
         key = (yKey, xKey)
@@ -102,7 +97,7 @@ def is_key_pressed(x, y):
     else:
         t2 = time.monotonic()
 
-    if (t2 - t1) > 0.8 and not pressed_once:
+    if (t2 - t1) > 0.8 and pressed_once == 0:
         pressed_once += 1
 
 
@@ -120,8 +115,9 @@ while cap.isOpened():
         break
 
     frame = cv2.resize(frame, (1280, 720))  # Resizing the video
-    frame = np.rot90(frame)                 # Tweak this based on orientation of video
-    frame = np.rot90(frame)
+    frame = cv2.rotate(frame, cv2.ROTATE_180)
+    # frame2 = np.rot90(frame)                 # Tweak this based on orientation of video
+    # frame2 = np.rot90(frame2)
     cv2.imshow('one', frame)
 
     res = perspective(frame, keyPos)  # Brings keyboard in perspective
@@ -142,10 +138,19 @@ while cap.isOpened():
         pressed_once += 1
         print(text)
 
+    y0, dy = 650, 40
+    for i, line in enumerate(text.split('\n')):
+        y = y0 + i * dy
+        frame = cv2.putText(frame, line, (50, y), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+    cv2.imshow('frame', frame)
+    out.write(frame)
+
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 cap.release()
+out.release()
 cv2.destroyAllWindows()
+
 
 ```
