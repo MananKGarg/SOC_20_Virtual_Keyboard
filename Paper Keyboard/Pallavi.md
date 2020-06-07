@@ -1,4 +1,4 @@
-# Paper keyboard implementation
+# Paper keyboard 
 ### Steps-
 1. Reading of video.
 2. Masking the frame to get only the pointer visible.
@@ -22,9 +22,7 @@ pts2 = np.float32([[0,0],[640,0],[640,480],[0,480]])
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 out = cv2.VideoWriter('output.avi',fourcc,20,(640,480))
 
-
-def mask(frame): #masks the frame and returns image which has pointers visible 
-        
+def mask(frame): #masks the frame and returns image which has pointers visible    
 	h,s,v = 5,180, 23
 	H,S,V = 15,255,180
 	low = np.array([h,s,v]) 
@@ -34,8 +32,7 @@ def mask(frame): #masks the frame and returns image which has pointers visible
 	img = cv2.morphologyEx(mask, cv2.MORPH_OPEN, np.ones((7,7),np.int8),10)
 	return img
 
-def transform(thresh,frame,pts1): #detects the corners of the the keyboard to finally crop the big rectangle
-        
+def transform(thresh,frame,pts1): #detects the corners of the the keyboard to finally crop the big rectangle        
 	contours,_ = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_NONE)
 	cnts = sorted(contours, key=lambda x: cv2.contourArea(x),reverse = True)[0]
 	a = cv2.approxPolyDP(cnts,0.01*cv2.arcLength(cnts,True),True)
@@ -48,8 +45,7 @@ def transform(thresh,frame,pts1): #detects the corners of the the keyboard to fi
 		pts1 = np.float32(a[c])	
 	return (pts1,contours)
 
-def extract(keyboard): #detects the keys and append them to a list by reading the keys at each location from a manually written text file
-        
+def extract(keyboard): #detects the keys and append them to a list by reading the keys at each location from a manually written text file        
 	images,location = [],[]
 	kcontours,_ = cv2.findContours(keyboard,cv2.RETR_TREE,cv2.CHAIN_APPROX_NONE)
 	for cnt in kcontours:
@@ -71,12 +67,10 @@ def extract(keyboard): #detects the keys and append them to a list by reading th
 	images,location = zip(*sorted(zip(images,location),key = lambda x: (x[1][0][1]//40,x[1][0][0])))
 	f = open('keyboard.txt')
 	data = f.read().replace('\n', '')
-	f.close()
-        
+	f.close()        
 	return (images,data,np.array(location))
 
-def display(pressed,text,frame,typed,shift,caps): #displays the pressed keys on the frame
-        
+def display(pressed,text,frame,typed,shift,caps): #displays the pressed keys on the frame       
 	for i in pressed:
 		if(text[i]=='↲'):
 			x = '\n'
@@ -92,7 +86,6 @@ def display(pressed,text,frame,typed,shift,caps): #displays the pressed keys on 
 	return (typed,shift)
 
 while(True):
-
 	_,frame = cap.read()
 	touched = set()
 	pressed = set()
@@ -102,13 +95,10 @@ while(True):
 		touched_1 = set()
 		touched_2 = set()
 		typed,text = '',''
-
 	gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
 	thresh = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
 			 cv2.THRESH_BINARY_INV,15,15)
-
 	pts1,contours = transform(thresh,frame,pts1)
-
 	M = cv2.getPerspectiveTransform(pts1,pts2)
 	keyboard = cv2.warpPerspective(frame,M,(640,480))
 	if (pts1-pts2).any() and flag:
@@ -117,11 +107,9 @@ while(True):
 		_,board = cv2.threshold(t_keyboard, 100, 255, cv2.THRESH_BINARY_INV)
 		images,text,location = extract(board)
 		l = len(location)
-
 	frame = cv2.rectangle(frame,(0,0),(640,50),(0,0,0),-1)
 	frame = cv2.rectangle(frame,(0,400),(640,480),(0,0,0),-1)
 	pointers = mask(keyboard)
-
 	contours,_ = cv2.findContours(pointers,cv2.RETR_TREE,cv2.CHAIN_APPROX_NONE)
 	pointers = cv2.cvtColor(pointers,cv2.COLOR_GRAY2BGR)
 	k = 0
@@ -129,27 +117,20 @@ while(True):
 		x,y,w,h = cv2.boundingRect(c)
 		if w*h >200:
 			cv2.rectangle(pointers,(x,y),(x+w,y+h),(0,255,0),2)
-			cv2.rectangle(keyboard,(x,y),(x+w,y+h),(0,255,0),2)
-			try:
-				m = list(filter(lambda k : y>location[k][0][1] and y<location[k][1][1],range(l)))
-				n = list(filter(lambda k: x>location[k][0][0] and x<location[k][1][0],m))
-
-				if len(n)==1:
-					touched.update(n)
-					if text[n[0]].isascii():
-						string = text[n[0]]
-						cv2.putText(frame,string,(5+k,40),cv2.FONT_HERSHEY_PLAIN,3,(255,255,0),2)
-						k += 30
-			except:
-				pass
+			cv2.rectangle(keyboard,(x,y),(x+w,y+h),(0,255,0),2)		
+			m = list(filter(lambda k : y>location[k][0][1] and y<location[k][1][1],range(l)))
+			n = list(filter(lambda k: x>location[k][0][0] and x<location[k][1][0],m))
+			if len(n)==1:
+				touched.update(n)
+				if text[n[0]].isascii():
+					string = text[n[0]]
+					cv2.putText(frame,string,(5+k,40),cv2.FONT_HERSHEY_PLAIN,3,(255,255,0),2)
+					k += 30
 	if count% 15 == 5:
 		pressed = touched.intersection(touched_1)
 		touched_1 = touched
-
 	(typed,shift) = display(pressed, text, frame, typed, shift,caps)
-
 	cv2.putText(frame,typed+'|',(0,460),cv2.FONT_HERSHEY_SIMPLEX,2,(0,255,255),2)
-
 	cv2.imshow('keyboard',keyboard)
 	cv2.imshow('frame',frame)
 	out.write(frame)
