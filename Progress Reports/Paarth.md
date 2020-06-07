@@ -1,5 +1,13 @@
 # Virtual Keyboard
 
+## Links
+---
+Here are the links to all the original codes i wrote during my SoC:
+* [Invisibility Cloak]()
+* [Sudoku Solver](https://github.com/Paarth-Jain/Sudoku-Solver)
+* [Virtual Keyboard]()
+
+
 ## Overview
 ---
 We aim to build a laser projected keyboard which when typed upon, outputs the corresponding
@@ -109,9 +117,11 @@ cv2.destroyAllWindows()
   - Started on the Sudoku Solver Project(20th May)
   - Completed the OpenCV part of the project (i.e. perspective transform and extracting all 81 boxes of sudoku.(23rd May)
   - Completed the digit recognition part by making a convolutional neural network using keras.(26th May)
-  - 
+  - [The code](https://github.com/Paarth-Jain/Sudoku-Solver)
   
 * 28th May - 31st May 2020
   - Started working on the Virtual Keyboard
+* 1st June - 6th June
+  - completed the [Virtual Keyboard]()
   
  
