@@ -9,7 +9,8 @@
     1. Capture the background without the cloak in it
     2. Detect the area covered by cloak using HSV color scheme
     3. Segment out the area by defining a mask
-    4. Add the same area but from the previously captured background
+    4. Add the same area but from the previously captured background  
+[Here](https://github.com/ViraAkshat/Virtual_Keyboard/tree/master/Invisibilty%20Cloak) is one of the implementations
     
 ## Requisites
 > cv2.morphoplogyEx(src, op, kernel, iterations)
@@ -37,7 +38,7 @@ import numpy as np
 # Objects for reading and writing videos
 cap = cv2.VideoCapture(0)
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
-out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640, 480))
+out = cv2.VideoWriter('invisible.avi', fourcc, 20.0, (640, 480))
 
 # Pre-magic setup
 background = 0
