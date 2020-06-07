@@ -99,8 +99,8 @@ while(cap.isOpened()):
     cv2.waitKey(100)
     if cv2.waitKey(1) == ord('q'):
         break
-print(check_caps)
+
 cap.release()
 cv2.destroyAllWindows()
-print(check_caps)
+
 ```
