@@ -2,9 +2,13 @@
 ## Link to codes
 **Assignment** - [Code](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Assignment%201/Team%202/Team%202%20Markdown%20file.md)
 
+**OpenCV file 1** - [Bitwise Operations](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/SoC_OpenCV-master/11.%20(Tanisha)Bitwise%20Operations%20(bitwise%20AND%2C%20OR%2C%20NOT%20and%20XOR).md)
+
+**Opencv file 2** - [Simple Image Thresholding](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/SoC_OpenCV-master/14.%20(Tanisha)Simple%20Image%20Thresholding.md)
+
 **Invisibility Cloak** - [Code](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/Tanisha.md)
 
-**Paper Keyboard** -
+**Paper Keyboard** - [Code](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Paper%20Keyboard/Tanisha.md)
 # Week-1 progress
 Documentation of what I learnt from 23rd to 29th march 2020
 
@@ -136,4 +140,4 @@ Steps involved in it are -
 We were given Sudoku Solver Project. I was able to complete Image preprocessing part but could not complete digit recognition part using machine learning because of which I could not complete this part. I learnt perspective and warped transformation and approxing polygon.
 I enjoyed working and trying this part.
 # Week 8 progress
-In this week we were asked to implement code for paper keyboard. I am working on it and trying to debug code.
+In this week we were asked to implement code for paper keyboard. Completed [paper keyboard implementation](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Paper%20Keyboard/Tanisha.md). 
