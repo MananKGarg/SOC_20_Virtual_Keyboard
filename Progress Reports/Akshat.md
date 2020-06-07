@@ -2,10 +2,10 @@
 
 ## Task 1
 * **Dual boot PC with Ubuntu 18.04**
-> **Reason to use Ubuntu**: Ubuntu would be a necessity second year onwards and Ubuntu has a lot of advantages in programming and software dev
+> **Reason to use Ubuntu**: Ubuntu would be a necessity second year onwards and Ubuntu has a lot of advantages in programming and software dev  
 
-    - A video regarding dual boot was shared with us, and it seemed I might be able to do it easily.But, it turned out that Ubuntu doesn't support Optane Memory, which was the case with me.
-    - But, internet holds the solution too and I got [this video](https://www.youtube.com/watch?v=2uXgbF3P2F8&list=WL&index=12&t=149s), which finally helped me dual boot my system with ubuntu
+  - A video regarding dual boot was shared with us, and it seemed I might be able to do it easily.But, it turned out that Ubuntu doesn't support Optane Memory, which was the case with me.
+  - But, internet holds the solution too and I got [this video](https://youtu.be/2uXgbF3P2F8), which finally helped me dual boot my system with ubuntu
 The problem doesn't end here, each time the system is updated you have to follow some steps:  
 (Got this from the comments of same video.)
         1. Disable optane from windows
