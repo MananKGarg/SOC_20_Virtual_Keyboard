@@ -1,3 +1,14 @@
+# PAPER KEYBOARD
+### HOW TO USE-
+1. Select the corner of keyboard (in the order top left,top right,bottom left,bottom right)
+2. A circle will be displayed as soon as you left click to indicate selected points.
+3. A new window will be opened when 4 points are selected.
+4. A trackbar will also be availaible throughout to select upper and lower values for detecting mask.
+5. By default trackbar values are set for orange colour.
+6. A green rectangle will indicate selection of caps lock key
+
+## CODE
+
 ```
 import cv2
 import numpy as np
