@@ -3,9 +3,9 @@
 ## Links
 ---
 Here are the links to all the original codes i wrote during my SoC:
-* [Invisibility Cloak]()
+* [Invisibility Cloak](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/PaarthJain.md#invisibility-cloak)
 * [Sudoku Solver](https://github.com/Paarth-Jain/Sudoku-Solver)
-* [Virtual Keyboard]()
+* [Virtual Keyboard](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Paper%20Keyboard/Paarth.md#code)
 
 
 ## Overview
@@ -122,6 +122,6 @@ cv2.destroyAllWindows()
 * 28th May - 31st May 2020
   - Started working on the Virtual Keyboard
 * 1st June - 6th June
-  - completed the [Virtual Keyboard]()
+  - completed the [Virtual Keyboard](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Paper%20Keyboard/Paarth.md#code)
   
- 
+ This marks the completion of the SoC
