@@ -1,6 +1,7 @@
 # Useful Instructions
 1. This code requires you to use one finger at once for typing
 2. Press the alphabet 'q' to exit the code
+3. Keep shaking your hand in front of the camera at the start of camera else it will show error
 # Code
 ```python
 
@@ -65,7 +66,7 @@ while cap.isOpened():
     print(finger_tip)
     if count == 0:
         t_2=datetime.now()
-        if (t_2-t_1).total_seconds()>=0.01:
+        if (t_2-t_1).total_seconds()>=0.5:
             slot_x=math.floor(x_min/64)
             slot_y=math.floor(y_min/80)
             if slot_x==10 and slot_y==5:
@@ -74,10 +75,13 @@ while cap.isOpened():
             if caps==True:
                 print("upper")
                 text = text+ (upper_keys[slot_y,slot_x])
+                t_1 = datetime.now()
+                t_2 = datetime.now()
             elif caps==False:
                 print("lower")
                 text = text + (lower_keys[slot_y, slot_x])
-
+                t_1 = datetime.now()
+                t_2 = datetime.now()
     else :
         t_1 = datetime.now()
         t_2 = datetime.now()
