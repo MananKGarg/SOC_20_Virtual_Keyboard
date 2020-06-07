@@ -72,7 +72,7 @@ I had worked on [Face Detection](https://github.com/MananKGarg/SOC_20_Virtual_Ke
 ## Task 5
 * **Invisibility Cloak**  
 This project was very interesting. We had to make a code for an invisibility cloak which was used in Harry Potter. This was kinda direct application of what we learnt in previous weeks.[Here](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/Akshat.md) is my try. Take a look at this [video](https://drive.google.com/drive/folders/1TfShKmjxdlR3CUne1xtNW6aYwMUwHq8C?usp=sharing) too!  
-* ** What I learned from this**
+* **What I learned from this**
     - Image segmentation
     - HSV color space and its importance
 
