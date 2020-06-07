@@ -104,4 +104,4 @@ cap.release()
 cv2.destroyAllWindows()
 
 ```
-I have tried to be as accurate as possible, but I faced errors in detecting contours and top most point and lack of a proper paper keyboard to detect proper contours. I regret I could not complete the caps lock part too. 
+I have tried to be as accurate as possible, but I faced errors in detecting contours and top most point and lack of a proper paper keyboard to detect proper contours. 
