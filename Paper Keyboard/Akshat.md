@@ -1,7 +1,16 @@
 # How to Use Keyboard
 
-1. Take a colored object to point a key.(I'm using orange color)
-2. Tap the key and wait for 1sec to print the key
+1. Take an object(with a colored tip) to point a key.(I'm using orange colored tip)
+2. Tap the key and wait for half a sec to print the key
+3. Make sure you have a stable camera
+
+[Here](https://github.com/ViraAkshat/Virtual_Keyboard/tree/master/Paper%20Keyboard) is my try
+
+## How it works
+1. It calculates the corner points of keyboard and brings it in perspective using contours
+2. Then it locates the colored tip and calculates its centroid
+3. If the tip is on a key for half a sec then it registers the key
+4. Then the key pressed is added to a text string which is also displayed on the video
 
 ## Code
 
