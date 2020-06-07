@@ -29,8 +29,8 @@ print(frame1.shape)
 caps=False
 t_1=datetime.now()
 t_2=datetime.now()
-y_min=720
-x_min=1280
+y_min=479
+x_min=639
 while cap.isOpened():
     diff = cv2.absdiff(frame1, frame2)
     gray = cv2.cvtColor(diff, cv2.COLOR_BGR2GRAY)
