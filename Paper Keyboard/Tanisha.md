@@ -62,20 +62,20 @@ while cap.isOpened():
     ret, frame = cap.read()
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     th = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 7)
-    gblur = cv2.GaussianBlur(th, (5, 5), 0)  # blurring the image
-    edges = cv2.Canny(gblur, 50, 150, apertureSize=3)  # canny edge detection
+    gblur = cv2.GaussianBlur(th, (5, 5), 0)  
+    edges = cv2.Canny(gblur, 50, 150, apertureSize=3)  
     contours, hierarchy = cv2.findContours(edges, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     for contour in contours:
         if cv2.contourArea(contour) > 6500:
-            approx = cv2.approxPolyDP(contour, 20, True)  # defining polygon with max.area
-            pts = np.float32([approx[1][0], approx[0][0], approx[2][0], approx[3][0]])  #
-            screenpts = np.float32([[0, 0], [1280, 0], [0, 720], [1280, 720]])  # performing pespective transform
-            matrix = cv2.getPerspectiveTransform(pts, screenpts)  #
+            approx = cv2.approxPolyDP(contour, 20, True)  
+            pts = np.float32([approx[1][0], approx[0][0], approx[2][0], approx[3][0]])  
+            screenpts = np.float32([[0, 0], [1280, 0], [0, 720], [1280, 720]])  
+            matrix = cv2.getPerspectiveTransform(pts, screenpts)  
             warped = cv2.warpPerspective(th, matrix, (1280, 720))
             fgmask = fgbg.apply(warped)
             fgmask = cv2.morphologyEx(fgmask, cv2.MORPH_OPEN, np.ones((5,5), np.uint8))
             masked = cv2.bitwise_and(frame, frame, mask = fgmask)
-            gray_mask = cv2.cvtColor(masked, cv2.COLOR_BGR2GRAY)  # Converting to gray to apply threshold
+            gray_mask = cv2.cvtColor(masked, cv2.COLOR_BGR2GRAY)  
             ret, thresh = cv2.threshold(gray_mask, 95, 255, 0)
             max_contour = maxContour(thresh)
             if max_contour is not None:
