@@ -6,6 +6,7 @@
 import cv2
 import numpy as np
 import math
+from datetime import datetime
 
 cap = cv2.VideoCapture(0)
 frame_width = int( cap.get(cv2.CAP_PROP_FRAME_WIDTH))
@@ -23,7 +24,11 @@ text=""
 ret, frame1 = cap.read()
 ret, frame2 = cap.read()
 print(frame1.shape)
-caps=True
+caps=False
+t_1=datetime.now()
+t_2=datetime.now()
+y_min = 720;
+x_min = 1280;
 while cap.isOpened():
     diff = cv2.absdiff(frame1, frame2)
     gray = cv2.cvtColor(diff, cv2.COLOR_BGR2GRAY)
@@ -36,29 +41,39 @@ while cap.isOpened():
     finger_tip=[y_min,x_min]
     for contour in contours:
         (x, y, w, h) = cv2.boundingRect(contour)
-        tip=[x,y]
-        if(y<y_min):
-            y_min=y
-            x_min=x
-            finger_tip=[y_min,x_min]
+        if cv2.contourArea(contour) > 2000:
+            tip=[x,y]
+            if(y<y_min):
+                y_min=y
+                x_min=x
+                finger_tip=[y_min,x_min]
         if cv2.contourArea(contour) < 2000 or cv2.contourArea(contour)>50000:
             continue
         cv2.rectangle(frame1, (x,y), (x+w,y+h), (0, 255, 0), 2)
         cv2.putText(frame1, "Status: {}".format('Movement'), (10, 20), cv2.FONT_HERSHEY_SIMPLEX,
                     1, (0, 0, 255), 3)
     #cv2.drawContours(frame1, contours, -1, (0, 255, 0), 2)
-    cv2.rectangle(frame1, (finger_tip[0], finger_tip[1]), (finger_tip[0] + 2, finger_tip[1] + 2), (0, 255, 0), 2)
+
 
     print(finger_tip)
-    slot_x=math.floor(finger_tip[0]/128)+1
-    slot_y=math.floor(finger_tip[1]/120)+1
-    if slot_x==10 and slot_y==5:
-        caps= not caps
-    print(caps)
-    if caps==True:
-        text= text+(upper_keys[slot_x,slot_y])
-    elif caps==False:
-        text = text + (lower_keys[slot_x, slot_y])
+    if len(contours) == 0:
+        y_new=y_min
+        x_new=x_min
+        t_2=datetime.now()
+        if (t_2-t_1).total_seconds()>=0.01:
+            slot_x=math.floor(x_new/80)
+            slot_y=math.floor(y_new/64)
+            if slot_x==10 and slot_y==5:
+                caps= not caps
+                print(caps)
+            if caps==True:
+                text = text+ (upper_keys[slot_x,slot_y])
+            elif caps==False:
+                text = text + (lower_keys[slot_x, slot_y])
+            t_1=datetime.now()
+            t_2=datetime.now()
+
+
     print(text)
     image = cv2.resize(frame1, (1280,720))
     out.write(image)
