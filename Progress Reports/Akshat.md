@@ -7,13 +7,13 @@
   - A video regarding dual boot was shared with us, and it seemed I might be able to do it easily.But, it turned out that Ubuntu doesn't support Optane Memory, which was the case with me.
   - But, internet holds the solution too and I got [this video](https://youtu.be/2uXgbF3P2F8), which finally helped me dual boot my system with ubuntu
 The problem doesn't end here, each time the system is updated you have to follow some steps:  
-(Got this from the comments of same video.)
-        1. Disable optane from windows
-        2. Switch to AHCI
-        3. Go to ubuntu via chroot (via Live USB) or boot from an older kernel
-        4. Run "sudo update-initramfs && update-grub"
-        5. Switch back to RST Optane
-        6. Enable Optane on Windows
+(Got this from the comments of same video.)  
+      1. Disable optane from windows  
+      2. Switch to AHCI  
+      3. Go to ubuntu via chroot (via Live USB) or boot from an older kernel  
+      4. Run "sudo update-initramfs && update-grub"  
+      5. Switch back to RST Optane  
+      6. Enable Optane on Windows  
 
 > P.S: **Although, simply switching to AHCI in BIOS can solve this without following the above steps.**
 
@@ -43,7 +43,7 @@ Other than the bascics of python, there were resources for frequently used pytho
     - We were divided into teams of 4 and we had to complete the first assisgnment. It had 4 problems, 1 for each member.
     - I was doing [this task](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Assignment%201/Team%206/AkshatVira_Problem_2.py)
     - After completing the task, I went through most of the codes that were written by other mentees & mentor too, and actually I got to learn very different approaches, commenting styles and how to write good explanations.  
-**Learnings:**
+* **Learnings:**
 - Basic uses of python
 - Image reconstruction
 - K Clustering
@@ -52,14 +52,14 @@ Other than the bascics of python, there were resources for frequently used pytho
 ## Task 3
 * **OpenCV Tutorials**  
 Opencv is one of the most widely used Computer vision library. It has a lot of features like object detection, facial recognition, optical character recognition, image processing and a whole lot more  
-**What I learned:**
-- Basic Image processing
-- Edge detection, hough lines transform
-- Face, eye detection
-- Template matching
+* **What I learned:**
+    - Basic Image processing
+    - Edge detection, hough lines transform
+    - Face, eye detection
+    - Template matching
 and much more.  
 
-**Resources**
+* **Resources**
     - [OpenCV Video Tutorials](https://www.youtube.com/watch?v=kdLM6AOd2vc&list=PLS1QulWo1RIa7D1O6skqDQ-JZ1GGHKK-K)
     - [OpenCV GFG Tutorials](https://www.geeksforgeeks.org/opencv-python-tutorial/)  
 
@@ -72,18 +72,18 @@ I had worked on [Face Detection](https://github.com/MananKGarg/SOC_20_Virtual_Ke
 ## Task 5
 * **Invisibility Cloak**  
 This project was very interesting. We had to make a code for an invisibility cloak which was used in Harry Potter. This was kinda direct application of what we learnt in previous weeks.[Here](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/blob/master/Invisibility%20Cloak/Akshat.md) is my try. Take a look at this [video](https://drive.google.com/drive/folders/1TfShKmjxdlR3CUne1xtNW6aYwMUwHq8C?usp=sharing) too!  
-** What I learned from this**
-- Image segmentation
-- HSV color space and its importance
+* ** What I learned from this**
+    - Image segmentation
+    - HSV color space and its importance
 
 
 ## Task 6
 * **Sudoku Solver**  
 This was a tough one. We had to use image processing and ML to recognize and solve a sudoku grid. I was able to do the OpenCV part, however, the digit recognition(ML part) was quite difficult and I wasn't able to recognize digits properly.  
-**Learnings**
-- Perspective shifting
-- Digit extraction(optical character recognition)
-- Algorithm to solve sudoku
+* **Learnings**
+    - Perspective shifting
+    - Digit extraction(optical character recognition)
+    - Algorithm to solve sudoku
 
 ## Task 7
 * **Paper Keyboard**  
