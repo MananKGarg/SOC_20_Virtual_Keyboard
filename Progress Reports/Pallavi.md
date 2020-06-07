@@ -108,3 +108,7 @@ Here is the [code](https://github.com/pallavikochar/invisibilty-cloak/blob/maste
 
 # Sudoku solver
 Started working on [sudoku solver](https://github.com/pallavikochar/sudokusolver/blob/master/README.md) project
+
+# Virtual Keyboard
+Started working on [Virtual Keyboard](https://github.com/pallavikochar/vk-final-code/blob/master/code.py) project
+
