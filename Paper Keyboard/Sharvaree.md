@@ -10,7 +10,96 @@
 6. Checking whether the key is capslock or not
 7. Typing text on frame according to lower_case or upper_case.
 
-The code is as follows-
+The Code is as follows:
+```python
+import cv2
+import numpy as np
+from datetime import datetime as dt
+
+dict=np.array([['!','@','#','$','%','^','&','*','(',')'],
+               ['1','2','3','4','5','6','7','8','9','0'],
+               ['q','w','e','r','t','y','u','i','o','p'],
+               ['a','s','d','f','g','h','j','k','l',' '],
+               ['z','x','c','v','b','n','m',' ',' ',' '],
+               [':',';','"','`',',','.','<','>','/','?']])
+
+cap=cv2.VideoCapture('keyboard2.mp4')
+
+fgbg=cv2.createBackgroundSubtractorMOG2(detectShadows=False)
+current=dt.now()
+initial=dt.now()
+x,y=0,0
+cx,cy=0,0
+cx_now,cy_now=0,0
+i,j=0,0
+key_pressed=False
+n=30
+
+def get_key(top):
+    #global i,j
+
+    tip = tuple(top[top[:, :, 1].argmin()][0])
+    x, y = tip
+    i = x // 100
+    j = y // 100
+    return i,j
+
+while True:
+    ret, frame = cap.read()
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    thresh = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 199, 6)
+    gblur = cv2.GaussianBlur(thresh, (5, 5), 0)
+    edges = cv2.Canny(gblur, 50, 150, apertureSize=3)
+
+    pts1=np.float32([[23,51],[434,51],[27,299],[434,287]])
+    pts2=np.float32([[0,0],[999,0],[0,599],[999,599]])
+    matrix=cv2.getPerspectiveTransform(pts1,pts2)
+    result = cv2.warpPerspective(thresh, matrix, (1000, 600))
+
+    _,mask=cv2.threshold(result,0,255,cv2.THRESH_BINARY)
+    kernel=np.ones((5,5),np.uint8)
+    erosion=cv2.erode(mask,kernel,iterations=2)
+
+    handmask = fgbg.apply(erosion)
+
+    contours,hierarchy=cv2.findContours(handmask,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
+    maxarea=0
+    for cnt in contours:
+        area=cv2.contourArea(cnt)
+        if(area>=maxarea):
+            maxarea=area
+            desired_contour=cnt
+
+    cx_now,cy_now=cx,cy
+    cx, cy = get_key(desired_contour)
+    if (cx,cy)!=(cx_now,cy_now):
+        initial=dt.now()
+    current=dt.now()
+    diff=current-initial
+    if diff.microseconds>=600000:
+        initial=dt.now()
+        key_pressed=True
+
+    if key_pressed==True:
+        key_value=dict[cy][cx]
+        n = n + 20
+        frame=cv2.putText(frame,''.join(key_value),(n,25),cv2.FONT_HERSHEY_COMPLEX, 1, (0,0,255), 1)
+
+
+    cv2.imshow('frames',frame)
+    cv2.imshow('backsub',handmask)
+    cv2.imshow('final',frame)
+
+    k = cv2.waitKey(30)
+    if k == 'q' or k == 27:
+        break
+
+cap.release()
+cv2.destroyAllWindows()
+
+```
+
+The code with introduction of capslock key is as follows-
 ```python
 import cv2
 import numpy as np
