@@ -57,7 +57,7 @@ def extract(keyboard): #detects the keys and append them to a list by reading th
 			location.append((a[c[0]],a[c[2]]))
 			print('keyboard')
 	images,location = zip(*sorted(zip(images,location),key = lambda x: (x[1][0][1]//40,x[1][0][0])))
-	f = open('keyboard3.txt')
+	f = open('keyboard.txt')
 	data = f.read().replace('\n', '')
 	f.close()
         
