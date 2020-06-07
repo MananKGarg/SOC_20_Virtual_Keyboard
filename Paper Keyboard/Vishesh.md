@@ -4,6 +4,7 @@
 # Code
 ```python
 
+
 import cv2
 import numpy as np
 import math
@@ -13,7 +14,8 @@ cap = cv2.VideoCapture(0)
 frame_width = int( cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 
 frame_height =int( cap.get( cv2.CAP_PROP_FRAME_HEIGHT))
-
+print(frame_height)
+print(frame_width)
 fourcc = cv2.VideoWriter_fourcc('X','V','I','D')
 
 out = cv2.VideoWriter("output.avi", fourcc, 5.0, (1280,720))
@@ -21,15 +23,15 @@ upper_key_list=np.array(['!','@','#','$','%','^','&','*','(',')','1','2','3','4'
 lower_key_list=np.array(['!','@','#','$','%','^','&','*','(',')','1','2','3','4','5','6','7','8','9','0','q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','\n','z','x','c','v','b','n','m',' ',' ','shift',':',';','"',"'",',','.','<','>','/','?'])
 upper_keys=np.reshape(upper_key_list,(6,10))
 lower_keys=np.reshape(lower_key_list,(6,10))
-text=""
+text="hi"
 ret, frame1 = cap.read()
 ret, frame2 = cap.read()
 print(frame1.shape)
 caps=False
 t_1=datetime.now()
 t_2=datetime.now()
-y_min = 10000
-x_min =10000
+y_min = 720
+x_min =1280
 y_store=720
 x_store=1280
 while cap.isOpened():
@@ -39,7 +41,7 @@ while cap.isOpened():
     _, thresh = cv2.threshold(blur, 20, 255, cv2.THRESH_BINARY)
     dilated = cv2.dilate(thresh, None, iterations=3)
     contours, _ = cv2.findContours(dilated, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-    finger_tip=[y_min,x_min]
+    finger_tip=[x_min,y_min]
     count=0;
     for contour in contours:
         (x, y, w, h) = cv2.boundingRect(contour)
@@ -48,6 +50,8 @@ while cap.isOpened():
             tip=[x,y]
             if count==1:
                 y_min=y
+                x_min = x
+                finger_tip = [y_min, x_min]
             if(y<y_min):
                 y_min=y
                 x_min=x
@@ -60,20 +64,24 @@ while cap.isOpened():
     #cv2.drawContours(frame1, contours, -1, (0, 255, 0), 2)
 
     print(finger_tip)
-    if len(contours) == 0:
+    if count == 0:
         t_2=datetime.now()
-        if (t_2-t_1).total_seconds()>=0.01:
-            slot_x=math.floor(x_store/80)
-            slot_y=math.floor(y_store/64)
-            #if slot_x==10 and slot_y==5:
-            #    caps= not caps
-             #   print(caps)
-            #if caps==True:
-                #text = text+ (upper_keys[slot_x,slot_y])
-            #elif caps==False:
-                #text = text + (lower_keys[slot_x, slot_y])
-            t_1=datetime.now()
-            t_2=datetime.now()
+        #if (t_2-t_1).total_seconds()>=0.01:
+        slot_x=math.floor(x_min/64)
+        slot_y=math.floor(y_min/80)
+        if slot_x==10 and slot_y==5:
+            caps= not caps
+        print(caps)
+        if caps==True:
+            print("upper")
+            text = text+ (upper_keys[slot_x,slot_y])
+        elif caps==False:
+            print("lower")
+            text = text + (lower_keys[slot_x, slot_y])
+
+    else :
+        t_1 = datetime.now()
+        t_2 = datetime.now()
 
 
     print(text)
