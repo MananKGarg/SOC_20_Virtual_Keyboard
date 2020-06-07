@@ -1,14 +1,14 @@
 # Virtual-Keyboard-Documentation
 # Github:
-## 1. What is Github?
-## 2. Creating repositories(used to organise a single project)
-## 3. Creating branch(work on different versions of a repository at one time)
-##### References: https://guides.github.com/activities/hello-world/
+##### 1. What is Github?
+##### 2. Creating repositories(used to organise a single project)
+##### 3. Creating branch(work on different versions of a repository at one time)
+##### References: [github](https://guides.github.com/activities/hello-world/)
 
 # Dual boot: 
-##### Reference: https://www.youtube.com/watch?v=u5QyjHIYwTQ
+##### Reference: [dual boot](https://www.youtube.com/watch?v=u5QyjHIYwTQ)
 # Markdown:
-##### References: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+##### References: [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 # PYTHON:
 Python is a high level programming language which is easy to understand by its code. It is widely used by software developers, programmers, etc.
 ## 1. An Informal Introduction to Python
@@ -95,7 +95,7 @@ Python is a high level programming language which is easy to understand by its c
 8. Iterators
 9. Generators
 10. Generator Expressions
-##### References: https://docs.python.org/3/tutorial/ , https://www.learnpython.org/
+##### References: [python](https://docs.python.org/3/tutorial/ , https://www.learnpython.org/)
 # OpenCV [open source computer vision library]:
 Computer Vision is the way of teaching intelligence to machines and making them see thing just like humans. 
 OpenCV is image processwing library. Available on windows, linux, mac. Works in C, C++, Python.
