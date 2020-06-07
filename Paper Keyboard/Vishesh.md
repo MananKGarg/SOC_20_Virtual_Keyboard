@@ -15,13 +15,15 @@ frame_height =int( cap.get( cv2.CAP_PROP_FRAME_HEIGHT))
 fourcc = cv2.VideoWriter_fourcc('X','V','I','D')
 
 out = cv2.VideoWriter("output.avi", fourcc, 5.0, (1280,720))
-key_list=np.array(['!','@','#','$','%','^','&','*','(',')','1','2','3','4','5','6','7','8','9','0','Q','W','E','R','T','Y','U','I','O','P','A','S','D','F','G','H','J','K','L','\n','Z','X','C','V','B','N','M',' ',' ','shift',':',';','"',"'",',','.','<','>','/','?'])
-keys=np.reshape(key_list,(6,10))
+upper_key_list=np.array(['!','@','#','$','%','^','&','*','(',')','1','2','3','4','5','6','7','8','9','0','Q','W','E','R','T','Y','U','I','O','P','A','S','D','F','G','H','J','K','L','\n','Z','X','C','V','B','N','M',' ',' ','shift',':',';','"',"'",',','.','<','>','/','?'])
+lower_key_list=np.array(['!','@','#','$','%','^','&','*','(',')','1','2','3','4','5','6','7','8','9','0','q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','\n','z','x','c','v','b','n','m',' ',' ','shift',':',';','"',"'",',','.','<','>','/','?'])
+upper_keys=np.reshape(upper_key_list,(6,10))
+lower_keys=np.reshape(lower_key_list,(6,10))
 text=""
 ret, frame1 = cap.read()
 ret, frame2 = cap.read()
 print(frame1.shape)
-
+caps=True
 while cap.isOpened():
     diff = cv2.absdiff(frame1, frame2)
     gray = cv2.cvtColor(diff, cv2.COLOR_BGR2GRAY)
@@ -48,9 +50,15 @@ while cap.isOpened():
     cv2.rectangle(frame1, (finger_tip[0], finger_tip[1]), (finger_tip[0] + 2, finger_tip[1] + 2), (0, 255, 0), 2)
 
     print(finger_tip)
-    slot_x=math.floor(finger_tip[0]/213.33)+1
-    slot_y=math.floor(finger_tip[1]/72)+1
-    text= text+(keys[slot_x,slot_y])
+    slot_x=math.floor(finger_tip[0]/128)+1
+    slot_y=math.floor(finger_tip[1]/120)+1
+    if slot_x==10 and slot_y==5:
+        caps= not caps
+    print(caps)
+    if caps==True:
+        text= text+(upper_keys[slot_x,slot_y])
+    elif caps==False:
+        text = text + (lower_keys[slot_x, slot_y])
     print(text)
     image = cv2.resize(frame1, (1280,720))
     out.write(image)
