@@ -1,3 +1,15 @@
+# Paper keyboard implementation
+### Steps-
+1. Reading of video.
+2. Masking the frame to get only the pointer visible.
+3. Performing perspective transform to get the main rectangle of the keyboard.
+4. Extracting the keys of the keyboard and appending it into a list.
+5. Detecting whether the key is presssed or not.
+6. Display the keys which are being pressed.
+
+
+# Code
+
 ```
 import numpy as np
 import cv2
