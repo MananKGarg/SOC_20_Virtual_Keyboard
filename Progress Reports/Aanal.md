@@ -76,3 +76,18 @@ The third part was to write a code for [invisibility cloak](https://github.com/M
 * Using inverse of mask (to get non-red part which will be foreground) we get the frame without red part
 * Adding the above two images, we get final image with fore-ground and back ground in place of red-cloth.
 * To use any other color for cloak, change mask range.
+
+### Task 3:
+The final task was to make a paper keyboard. To do this we first need a paper keyboard (with a proper outline to get proper contour), then use the webcam to use it as a keyboard. The code is provided [here](https://github.com/MananKGarg/SOC_20_Virtual_Keyboard/tree/master/Paper%20Keyboard). To complete this task we first had to learn how to make a sudoku solver and some of it's concepts such as perspective transformation were integrated in this project too. The algorithm followed is:
+* First use thresholding, perspective transformation on the image to get only the keyboard.
+* Decide which space would be considered which key. I used a dictionary to make it wasy.
+* Now for each frame of the video, find the difference between this frame and keyboard
+* Find the top most point of the contour of this difference image.
+* Check where this point lies in the keyboard.
+* Check if it is pressed for more than a second, in that case consider it pressed.
+Please note a few things:
+* I could not arrange for a paper keyboard, hence my code may face a few bugs, I tried to reduce as many as I could.
+* I can only use one finger at a time.
+* Since I have to wait for a second to press a key it is slower than conventional keyboard. 
+
+#### Despite being slower than the conventional keyboard it is still a step forward towards conputer vision and augmented reality. And surely in the future we will develop better methods/algorithms for virtual keyboard and other devices to solve the problems of space occupancy, transport/ portability etc. And I am grateful I got to be a part of this project. I may not have perfectly completed it, but it was a wonderful learning experience. 
