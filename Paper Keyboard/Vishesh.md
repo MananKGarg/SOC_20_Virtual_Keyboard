@@ -5,8 +5,6 @@
 # Code
 ```python
 
-
-
 import cv2
 import numpy as np
 import math
@@ -66,7 +64,7 @@ while cap.isOpened():
     print(finger_tip)
     if count == 0:
         t_2=datetime.now()
-        if (t_2-t_1).total_seconds()>=2:
+        if (t_2-t_1).total_seconds()>=1:
             slot_x=math.floor(x_min/64)
             slot_y=math.floor(y_min/80)
             if slot_x==10 and slot_y==5:
@@ -90,7 +88,8 @@ while cap.isOpened():
     print(text)
     image = cv2.resize(frame1, (1280,720))
     out.write(image)
-    cv2.imshow("feed", frame1)
+    screen_output=cv2.putText( frame1,text,(50,50),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),2)
+    cv2.imshow("feed", screen_output)
     frame1 = frame2
     ret, frame2 = cap.read()
 
