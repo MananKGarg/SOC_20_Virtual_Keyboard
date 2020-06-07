@@ -4,7 +4,6 @@
 3. Keep shaking your hand in front of the camera at the start of camera else it will show error
 # Code
 ```python
-
 import cv2
 import numpy as np
 import math
@@ -23,7 +22,7 @@ upper_key_list=np.array(['!','@','#','$','%','^','&','*','(',')','1','2','3','4'
 lower_key_list=np.array(['!','@','#','$','%','^','&','*','(',')','1','2','3','4','5','6','7','8','9','0','q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','\n','z','x','c','v','b','n','m',' ',' ','shift',':',';','"',"'",',','.','<','>','/','?'])
 upper_keys=np.reshape(upper_key_list,(6,10))
 lower_keys=np.reshape(lower_key_list,(6,10))
-text="hi"
+text=" "
 ret, frame1 = cap.read()
 ret, frame2 = cap.read()
 print(frame1.shape)
@@ -64,7 +63,7 @@ while cap.isOpened():
     print(finger_tip)
     if count == 0:
         t_2=datetime.now()
-        if (t_2-t_1).total_seconds()>=1:
+        if (t_2-t_1).total_seconds()>=0.5:
             slot_x=math.floor(x_min/64)
             slot_y=math.floor(y_min/80)
             if slot_x==10 and slot_y==5:
