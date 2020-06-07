@@ -5,6 +5,7 @@
 ```python
 
 
+
 import cv2
 import numpy as np
 import math
@@ -23,17 +24,15 @@ upper_key_list=np.array(['!','@','#','$','%','^','&','*','(',')','1','2','3','4'
 lower_key_list=np.array(['!','@','#','$','%','^','&','*','(',')','1','2','3','4','5','6','7','8','9','0','q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','\n','z','x','c','v','b','n','m',' ',' ','shift',':',';','"',"'",',','.','<','>','/','?'])
 upper_keys=np.reshape(upper_key_list,(6,10))
 lower_keys=np.reshape(lower_key_list,(6,10))
-text=" "
+text="hi"
 ret, frame1 = cap.read()
 ret, frame2 = cap.read()
 print(frame1.shape)
 caps=False
 t_1=datetime.now()
 t_2=datetime.now()
-y_min = 720
-x_min =1280
-y_store=720
-x_store=1280
+y_min=720
+x_min=1280
 while cap.isOpened():
     diff = cv2.absdiff(frame1, frame2)
     gray = cv2.cvtColor(diff, cv2.COLOR_BGR2GRAY)
@@ -66,18 +65,18 @@ while cap.isOpened():
     print(finger_tip)
     if count == 0:
         t_2=datetime.now()
-        #if (t_2-t_1).total_seconds()>=0.01:
-        slot_x=math.floor(x_min/64)
-        slot_y=math.floor(y_min/80)
-        if slot_x==10 and slot_y==5:
-            caps= not caps
-        print(caps)
-        if caps==True:
-            print("upper")
-            text = text+ (upper_keys[slot_x,slot_y])
-        elif caps==False:
-            print("lower")
-            text = text + (lower_keys[slot_x, slot_y])
+        if (t_2-t_1).total_seconds()>=0.01:
+            slot_x=math.floor(x_min/64)
+            slot_y=math.floor(y_min/80)
+            if slot_x==10 and slot_y==5:
+                caps= not caps
+                print(caps)
+            if caps==True:
+                print("upper")
+                text = text+ (upper_keys[slot_y,slot_x])
+            elif caps==False:
+                print("lower")
+                text = text + (lower_keys[slot_y, slot_x])
 
     else :
         t_1 = datetime.now()
