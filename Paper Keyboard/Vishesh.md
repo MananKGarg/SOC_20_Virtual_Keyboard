@@ -1,7 +1,7 @@
 # Useful Instructions
 1. This code requires you to use one finger at once for typing
 2. Press the alphabet 'q' to exit the code
-3. Keep shaking your hand in front of the camera at the start of camera else it will show error
+3. Start typing within half a second of starting program, else it will enter pre-initialised digits (?) until you type
 # Code
 ```python
 import cv2
