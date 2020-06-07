@@ -1,6 +1,9 @@
 # Aim:
+
 Make a real time laser projection keyboard
+
 # Progress Report
+
 * SOC Start-31st March
   -Got familiar with python syntax by reading the given material and solving some problems
   -Learned Github and make an account on it
