@@ -4,6 +4,7 @@
 import cv2
 import numpy as np
 from datetime import datetime
+
 fgbg = cv2.bgsegm.createBackgroundSubtractorMOG()
 keys = np.array([['!','@','#','$','%','^','&','*','(',')'],
                ['1','2','3','4','5','6','7','8','9','0'],
@@ -16,6 +17,7 @@ i, j = 0, 0
 initial_i, initial_j = 0, 0
 start = current = datetime.now()
 text = [""]
+
 def maxContour(thresh):
     max_area = 0
     contours, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
@@ -56,7 +58,6 @@ def detect_keypress(contour):
         get_text(keys[j][i])
 
 cap = cv2.VideoCapture("keybrd2.mp4")
-
 while cap.isOpened():
     ret, frame = cap.read()
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
