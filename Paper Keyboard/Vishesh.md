@@ -66,7 +66,7 @@ while cap.isOpened():
     print(finger_tip)
     if count == 0:
         t_2=datetime.now()
-        if (t_2-t_1).total_seconds()>=0.5:
+        if (t_2-t_1).total_seconds()>=2:
             slot_x=math.floor(x_min/64)
             slot_y=math.floor(y_min/80)
             if slot_x==10 and slot_y==5:
